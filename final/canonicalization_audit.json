@@ -1,0 +1,17 @@
+{
+  "RoanokeStar_Base": {
+    "volume_change_mm3": -1.4551915228366852e-11,
+    "triangles": 13940,
+    "watertight": true
+  },
+  "RoanokeStar_Lights": {
+    "volume_change_mm3": -3.637978807091713e-12,
+    "triangles": 9208,
+    "watertight": true
+  },
+  "Tree_Mount": {
+    "volume_change_mm3": 0.0,
+    "triangles": 6074,
+    "watertight": true
+  }
+}

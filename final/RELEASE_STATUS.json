@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-10",
+  "release_ready": false,
+  "landmark_geometry_verified": false,
+  "geometry_accepted_by_user": false,
+  "light_self_intersection_candidates": 163,
+  "source_change_pending_blender_rebuild": true,
+  "physical_print_tested": false,
+  "blockers": [
+    "unverified photographic metric reconstruction",
+    "Mac locked: pending Blender GUI rebuild and mesh revalidation"
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "purpose": "Counterexample: exact same photograph reprojection after composing each camera homography with the inverse deformation. Does not quantify actual error or propose new geometry.",
+  "assumptions_preserved": [
+    "bilateral symmetry",
+    "horizontal shoulders",
+    "overall published width-to-height ratio"
+  ],
+  "missing_metric_evidence": [
+    "measured vertex/edge positions",
+    "calibrated camera pose/intrinsics or orthographic elevation"
+  ],
+  "examples": [
+    {
+      "example_parameter_k": -0.15,
+      "apex_angle_deg": 30.6818910633927,
+      "shoulder_below_apex_mm": 82.3301980267534,
+      "frame_heights_mm": [
+        200.0,
+        139.7744185183068,
+        77.7744263297596
+      ],
+      "max_roundtrip_error_mm": 4.263256414560601e-14,
+      "transform_from_current": [
+        [
+          0.9522606152523535,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999999999999999,
+          -15.000000000000002
+        ],
+        [
+          0.0,
+          -0.0015,
+          1.0
+        ]
+      ]
+    },
+    {
+      "example_parameter_k": 0,
+      "apex_angle_deg": 36.66049736220883,
+      "shoulder_below_apex_mm": 68.17374350156895,
+      "frame_heights_mm": [
+        200.0,
+        140.68167054021103,
+        79.09011166015277
+      ],
+      "max_roundtrip_error_mm": 0.0,
+      "transform_from_current": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "example_parameter_k": 0.15,
+      "apex_angle_deg": 44.427946771372135,
+      "shoulder_below_apex_mm": 55.30734342900607,
+      "frame_heights_mm": [
+        200.0,
+        138.35996771401375,
+        77.39341179447824
+      ],
+      "max_roundtrip_error_mm": 4.263256414560601e-14,
+      "transform_from_current": [
+        [
+          1.0477393847476466,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9999999999999999,
+          15.000000000000002
+        ],
+        [
+          0.0,
+          0.0015,
+          1.0
+        ]
+      ]
+    }
+  ]
+}
