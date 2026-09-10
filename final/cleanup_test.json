@@ -1,0 +1,17 @@
+{
+  "RoanokeStar_Base": {
+    "nonmanifold": 57,
+    "degenerate": 0,
+    "volume": 41967.74083368611
+  },
+  "RoanokeStar_Lights": {
+    "nonmanifold": 0,
+    "degenerate": 0,
+    "volume": 15365.129680892765
+  },
+  "Tree_Mount": {
+    "nonmanifold": 0,
+    "degenerate": 0,
+    "volume": 25881.39807818908
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "straight_insertion_overlap_mm3": {
+    "lights": {
+      "0": 0.0,
+      "0.1": 0.0,
+      "0.3": 0.0,
+      "0.6": 0.0,
+      "1": 0.0,
+      "1.3": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "10": 0.0
+    },
+    "mount": {
+      "0": 0.0,
+      "0.1": 0.0,
+      "0.3": 0.0,
+      "0.6": 0.0,
+      "1": 0.0,
+      "1.3": 0.0,
+      "2": 0.0,
+      "4": 0.0,
+      "10": 0.0
+    }
+  },
+  "tapered_bore_mandrel_overlap_mm3": 0.0,
+  "mandrel_radial_test_allowance_mm": 0.05,
+  "assembled_reference_stl": {
+    "watertight": true,
+    "shells": 8,
+    "dimensions_mm": [
+      190.96043395996094,
+      199.99722290039062,
+      47.53606653213501
+    ]
+  }
+}

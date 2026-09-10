@@ -1,0 +1,10 @@
+{
+  "previous": {
+    "rms_pixels": 29.095133290416037,
+    "normalized_to_200mm": 2.7159192126639047
+  },
+  "reconstructed": {
+    "rms_pixels": 15.807486177197427,
+    "normalized_to_200mm": 1.475568267175163
+  }
+}

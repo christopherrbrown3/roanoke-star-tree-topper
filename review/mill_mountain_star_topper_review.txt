@@ -1,0 +1,59 @@
+Mill Mountain Star Tree Topper Review
+====================================
+
+Outputs
+- White star STL: /path/to/src/Codex Projects/roanoke-star-tree-topper/models/mill_mountain_star_topper_star_white.stl
+- Dark scaffold STL: /path/to/src/Codex Projects/roanoke-star-tree-topper/models/mill_mountain_star_topper_scaffold_dark.stl
+- Single-color assembly STL: /path/to/src/Codex Projects/roanoke-star-tree-topper/models/mill_mountain_star_topper_assembly.stl
+- Front preview: /path/to/src/Codex Projects/roanoke-star-tree-topper/review/mill_mountain_star_topper_front.png
+- Side preview: /path/to/src/Codex Projects/roanoke-star-tree-topper/review/mill_mountain_star_topper_side.png
+
+Design revisions from feedback
+- Split into separate AMS-friendly color bodies.
+- Rebuilt the star rings from a landmark-specific traced silhouette instead of a generic regular-star formula.
+- Retuned the nested-star spacing against the frontal reference photos for a clearer outer/middle/inner step.
+- Removed the visible scaffold and replaced it with a recessed black backplate that captures all three rings structurally.
+- Added dual-row bulb texture so each ring reads more like paired light runs instead of a single dotted track.
+
+White star body
+- Watertight: True
+- Volume mesh: True
+- Face count: 63856
+- Extents (mm): [215.6, 3.3500000834465027, 200.64]
+
+Dark backplate body
+- Watertight: True
+- Volume mesh: True
+- Face count: 4344
+- Extents (mm): [207.49132690429687, 32.214574337005615, 191.97291442871094]
+
+Combined single-color assembly
+- Watertight: True
+- Volume mesh: True
+- Face count: 68200
+- Extents (mm): [215.60000610351562, 35.51457518339157, 200.63999938964844]
+
+Accuracy notes
+- The final star ring ratios are tuned to approximately 1.00 / 0.77 / 0.54 from outer to inner.
+- The white star remains the dominant front-facing geometry.
+- The black backplate is inset so it reads as darkness behind the star rather than as a visible plaque.
+
+Structural review
+- Main remaining weak points are still the top apex and the two outer side points of the visible star.
+- Those points are now backed by a continuous masked backplate, which captures the inner ring and supports all three layers.
+- The mount load is distributed through the backplate and lower plate before reaching the visible white star.
+
+Bambu A1 print notes
+- Use the white star STL as the white AMS body.
+- Use the scaffold STL as the black AMS backplate body.
+- Import both STLs together into Bambu Studio as one multi-part object.
+- If you prefer a single-color print, use the assembly STL.
+- Recommended nozzle: 0.4 mm.
+- Recommended layer height: 0.20 mm.
+- Recommended perimeters: 4.
+- Recommended infill: 10 to 15 percent gyroid.
+- Supports should be limited mainly to the rear socket zone.
+
+If the first print shows too much flex
+- Increase only the hidden backplate thickness or lower mount depth first.
+- Do not thicken the visible white ring lines unless appearance clearly demands it.

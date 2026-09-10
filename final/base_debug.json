@@ -1,0 +1,173 @@
+{
+  "initial": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      3.200000047683716
+    ],
+    "volume_mm3": 33741.778198406944,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 156,
+    "faces": 230,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "band0": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 42997.55489034137,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 259,
+    "faces": 301,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "band1": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 47731.3074900122,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 290,
+    "faces": 321,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "band2": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 50606.688415594566,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 328,
+    "faces": 341,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "pocket0": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 46370.364481886,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 487,
+    "faces": 487,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "pocket1": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 43854.47389258238,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 613,
+    "faces": 600,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "pocket2": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 42272.89253437474,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 742,
+    "faces": 716,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "before_bevel": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 42178.5151694139,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 1264,
+    "faces": 988,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "final": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.9990234375,
+      5.0
+    ],
+    "volume_mm3": 42178.51238851938,
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "wire_edges": 0,
+    "degenerate_faces": 0,
+    "vertices": 1247,
+    "faces": 988,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

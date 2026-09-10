@@ -1,0 +1,128 @@
+{
+  "parts": {
+    "roanoke_star_base.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "shells": 1,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 0,
+      "manifold_kernel_status": "Error.NoError",
+      "volume_cm3": 54.660442996103846,
+      "solid_PLA_g": 67.77894931516877,
+      "center_of_mass_mm": [
+        9.628052009504556e-06,
+        -7.041325967648648,
+        1.9757988768373946
+      ],
+      "bounds_mm": [
+        [
+          -95.48021697998047,
+          -99.9999771118164,
+          0.0
+        ],
+        [
+          95.48021697998047,
+          99.99724578857422,
+          5.0
+        ]
+      ]
+    },
+    "roanoke_star_lights.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "shells": 6,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 0,
+      "manifold_kernel_status": "Error.NoError",
+      "volume_cm3": 13.69584596858231,
+      "solid_PLA_g": 16.982849001042062,
+      "center_of_mass_mm": [
+        1.796277714555513e-06,
+        -6.185904534226612,
+        5.100000070183407
+      ],
+      "bounds_mm": [
+        [
+          -94.1787338256836,
+          -98.69596862792969,
+          3.8
+        ],
+        [
+          94.1787338256836,
+          98.69583129882812,
+          6.400000143051147
+        ]
+      ]
+    },
+    "roanoke_star_tree_mount.stl": {
+      "watertight": true,
+      "winding_consistent": true,
+      "positive_volume": true,
+      "shells": 1,
+      "degenerate_triangles": 0,
+      "duplicate_triangles": 0,
+      "manifold_kernel_status": "Error.NoError",
+      "volume_cm3": 25.190078047727194,
+      "solid_PLA_g": 31.235696779181723,
+      "center_of_mass_mm": [
+        -5.627306002445036e-05,
+        7.32791640262032,
+        -15.669419873599926
+      ],
+      "bounds_mm": [
+        [
+          -26.600000381469727,
+          -32.0,
+          -41.13606643676758
+        ],
+        [
+          26.600000381469727,
+          48.0,
+          1.200000047683716
+        ]
+      ]
+    }
+  },
+  "pair_intersections_mm3": {
+    "roanoke_star_base.stl + roanoke_star_lights.stl": 7.916651709077441e-15,
+    "roanoke_star_base.stl + roanoke_star_tree_mount.stl": 2.950563449081558e-13,
+    "roanoke_star_lights.stl + roanoke_star_tree_mount.stl": 0.0
+  },
+  "white_frame_intersections_mm3": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "assembled": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.99722290039062,
+      47.53606657981872
+    ],
+    "volume_cm3": 93.54636701241336,
+    "solid_PLA_g": 115.99749509539255,
+    "solid_PETG_g": 118.80388610576496,
+    "center_of_mass_mm": [
+      -9.26436451520286e-06,
+      -3.046750134098962,
+      -2.318284068366703
+    ],
+    "socket_axis_depth_mm": -21.8,
+    "center_of_mass_forward_of_socket_axis_mm": 19.481715931633296,
+    "gravity_torque_Nm_solid_PLA": 0.022168934735131044
+  }
+}
