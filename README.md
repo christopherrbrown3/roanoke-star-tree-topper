@@ -9,8 +9,8 @@ The photographic outline reconstruction, editable Blender scene, printable candi
 ## Current issues
 
 1. **Geometric accuracy remains unresolved.** The previous free-homography comparison does not establish correct metric proportions. Different symmetric face-on shapes can give the same photograph after a different perspective transform. See [the accuracy audit](research/ACCURACY_AUDIT.md) and its [sensitivity diagram](research/projective_ambiguity_audit.png).
-2. **The latest exported light mesh has 163 self-intersection candidates.** A source change removing the problematic rail bevel is prepared, but it still needs to be executed and verified in Blender. Watertightness alone does not resolve this check.
-3. The latest requested Blender rebuild is blocked while the Mac is locked. Current preview images and exported meshes are retained as review candidates.
+2. The continuous-insert candidate was rebuilt in Blender on 12 September and now reports **zero self-intersection candidates**, watertight solids, and no collisions on the tested assembly paths.
+3. The user has requested individually visible tube sections. A new segmented-tube revision is in progress; the current exports still show continuous outlines.
 4. There has been no physical test print or successful printer-specific slicer validation.
 
 ## Files
@@ -31,6 +31,8 @@ The unrelated temporary working folder, caches, and Blender backup files are exc
 A dark backing carries six white closed-loop inserts arranged in three pairs. A removable tapered rear socket attaches using keys and four small screws. The candidate envelope is approximately 200 × 191 × 47.5 mm. These are model dimensions, not a certificate that every landmark angle and gap has been recovered correctly.
 
 See [the design report](final/DESIGN_REPORT.md) for dimensions and proposed printing/assembly, and [REBUILD.md](scripts/REBUILD.md) for the build sequence.
+
+The [supplied-research review](research/USER_RESEARCH_REVIEW.md), [angle worksheet](research/ANGLE_WORKSHEET.md), and [original-plan search](research/PLAN_SEARCH.md) record the latest evidence and its limitations.
 
 ## Reference rights
 
