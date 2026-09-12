@@ -12,6 +12,6 @@ The GUI build scripts currently contain the original workspace path in `ROOT`. A
 8. In Blender, render the front, three-quarter and rear using `render_view` from the build script. Inspect orthographic front/side/rear and the assembled view.
 9. Update the report and status to match the results, then execute `scripts/final_scene_blender.py` to embed current source/report text and save a tidy front-view scene.
 
-As of 10 September, the prepared source omits the light-rail bevel that generated near-corner overlap candidates. This source change still needs its Blender rebuild and verification. The existing STL/BLEND exports do not yet incorporate it.
+On 12 September the source without the light-rail bevel was rebuilt through Blender's GUI, canonicalized, re-exported, checked, and rendered. It reports zero self-intersection candidates. The existing STL/BLEND exports now incorporate this repair. A subsequent segmented-tube design is in progress.
 
 Mesh validity and landmark accuracy are separate release criteria. A printable solid may still have incorrect proportions.

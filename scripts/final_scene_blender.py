@@ -3,10 +3,10 @@ import bpy
 from pathlib import Path
 ROOT=Path('/Users/chris/Codex Projects/roanoke-star-tree-topper')
 for t in list(bpy.data.texts):
- if any(t.name.startswith(n) for n in ['BUILD_SOURCE.py','README','MEASURED_PATHS.json','TOPPER_PROFILES.json','DESIGN_REPORT.md']):bpy.data.texts.remove(t)
-for name,file in [('BUILD_SOURCE.py','scripts/build_roanoke_blender.py'),('MEASURED_PATHS.json','final/profile_measurements.json'),('TOPPER_PROFILES.json','scripts/topper_profiles.json'),('DESIGN_REPORT.md','final/DESIGN_REPORT.md')]:
+ if any(t.name.startswith(n) for n in ['BUILD_SOURCE.py','README','MEASURED_PATHS.json','TOPPER_PROFILES.json','DESIGN_REPORT.md','ACCURACY_AUDIT.md','RELEASE_STATUS.json','USER_RESEARCH_REVIEW.md']):bpy.data.texts.remove(t)
+for name,file in [('BUILD_SOURCE.py','scripts/build_roanoke_blender.py'),('MEASURED_PATHS.json','final/profile_measurements.json'),('TOPPER_PROFILES.json','scripts/topper_profiles.json'),('DESIGN_REPORT.md','final/DESIGN_REPORT.md'),('ACCURACY_AUDIT.md','research/ACCURACY_AUDIT.md'),('RELEASE_STATUS.json','final/RELEASE_STATUS.json'),('USER_RESEARCH_REVIEW.md','research/USER_RESEARCH_REVIEW.md')]:
  t=bpy.data.texts.new(name);t.write((ROOT/file).read_text())
-t=bpy.data.texts.new('README');t.write('Final corrected Roanoke Star topper: six independently measured outline inserts in three pairs. Three named object groups, two physical colors. All mesh coordinates/export units are millimeters. See DESIGN_REPORT.md for printing, mounting, validation, and accuracy limits. Hidden Reference_Geometry contains the six editable paths and the packed city aerial. All three printable groups are watertight. The light group intentionally contains six closed loops. Individual STLs are oriented for printing; the 3MF and assembled STL show assembly positions.')
+t=bpy.data.texts.new('README');t.write('Roanoke Star topper candidate: landmark geometry remains unverified and has not been accepted as exact. Six traced outline inserts in three pairs; three named object groups and two physical colors. All mesh coordinates/export units are millimeters. See RELEASE_STATUS.json, ACCURACY_AUDIT.md and DESIGN_REPORT.md for current validation and limitations. Hidden Reference_Geometry contains the six editable paths and the packed city aerial. The light group intentionally contains six closed loops. Individual STLs are oriented for printing; the 3MF and assembled STL show assembly positions.')
 bpy.data.orphans_purge(do_recursive=True)
 cam=bpy.context.scene.camera;cam.location=(0,0,440);cam.data.ortho_scale=235;look(cam,(0,0,0))
 active(bpy.data.objects['RoanokeStar_Base'])

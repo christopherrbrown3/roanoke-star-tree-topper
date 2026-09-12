@@ -1,13 +1,16 @@
 {
-  "date": "2026-09-10",
+  "date": "2026-09-12",
   "release_ready": false,
   "landmark_geometry_verified": false,
   "geometry_accepted_by_user": false,
-  "light_self_intersection_candidates": 163,
-  "source_change_pending_blender_rebuild": true,
+  "light_self_intersection_candidates": 0,
+  "source_change_pending_blender_rebuild": false,
   "physical_print_tested": false,
   "blockers": [
     "unverified photographic metric reconstruction",
-    "Mac locked: pending Blender GUI rebuild and mesh revalidation"
-  ]
+    "individual tube section revision in progress",
+    "no physical print test or successful printer-specific slicing"
+  ],
+  "digital_mesh_checks_passed": true,
+  "segmented_tube_revision_pending": true
 }

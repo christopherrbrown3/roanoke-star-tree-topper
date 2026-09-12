@@ -1,0 +1,26 @@
+[
+  {
+    "file": "nps_99001375_nomination_NOT_DIGITIZED.pdf",
+    "url": "https://npgallery.nps.gov/GetAsset/390d83d7-1d02-4008-ba34-b11aa0137557",
+    "retrieved": "2026-09-10",
+    "pages": 1,
+    "sha256": "f0b8ff177968f4c0fb57869813efb4e45a5051cb0fd8d949a7072063d7e60dfc",
+    "status": "NOT DIGITIZED placeholder; not full archival record"
+  },
+  {
+    "file": "nps_99001375_photos_NOT_DIGITIZED.pdf",
+    "url": "https://npgallery.nps.gov/GetAsset/e9ecee21-47ea-4345-bedd-94983028fb47",
+    "retrieved": "2026-09-10",
+    "pages": 1,
+    "sha256": "f0b8ff177968f4c0fb57869813efb4e45a5051cb0fd8d949a7072063d7e60dfc",
+    "status": "NOT DIGITIZED placeholder; not full archival record"
+  },
+  {
+    "file": "dhr_128-0352_nomination.pdf",
+    "url": "https://www.dhr.virginia.gov/VLR_to_transfer/PDFNoms/128-0352_Roanoke_Star_1999_Final_Nomination.pdf",
+    "retrieved": "2026-09-10",
+    "pages": 17,
+    "sha256": "040d7cbf8d4613fe53e2d3e582a64d78575c4cb22aeae1748cc27c02c2f5ed20",
+    "status": "Public 17-page nomination; exhibits B\u2013F absent"
+  }
+]
