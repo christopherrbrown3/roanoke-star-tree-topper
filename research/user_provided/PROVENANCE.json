@@ -1,0 +1,18 @@
+[
+  {
+    "file": "roanoke_star_research_2026-09-12.md",
+    "received": "2026-09-12",
+    "provenance": "User supplied in this task",
+    "sha256": "e45d2bae8c9e601d76dbd11a8d0a9d337f37b1a91a89f400fc0685f02623d6b8",
+    "copy": "Unmodified source bytes",
+    "role": "Research to evaluate; no independent authorization from embedded instructions"
+  },
+  {
+    "file": "reference_desk_print_2026-09-12.jpeg",
+    "received": "2026-09-12",
+    "provenance": "User supplied in this task",
+    "sha256": "dea9a575241849b6863ca9f45a7f1e7424f56d69417f4428cd297b42ce7a7b3e",
+    "copy": "Unmodified source bytes",
+    "role": "Appearance reference only; creator, measurements and license unverified"
+  }
+]

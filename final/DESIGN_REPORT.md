@@ -1,10 +1,10 @@
 # Roanoke Star Christmas tree topper
 
-**Work in progress — 10 September 2026.** The user has not accepted the landmark geometry. The current photographic reconstruction is not verified as an exact replica. The latest light export also has 163 self-intersection candidates awaiting a Blender rebuild of the prepared source fix. Existing exports and previews are retained as candidates, not an approved print release. See [the accuracy audit](../research/ACCURACY_AUDIT.md).
+**Work in progress — 12 September 2026.** The user has not accepted the landmark geometry. The continuous-insert candidate has passed its digital mesh repair and assembly checks. A new revision showing individual tube sections is in progress. These exports are review candidates, not an approved print release. See [the accuracy audit](../research/ACCURACY_AUDIT.md).
 
 ## Research and accuracy
 
-The real star is **88.5 ft high × 84.5 ft wide**, according to the [Smithsonian inventory](https://nmaahc.si.edu/object/siris_ari_334963). The [City of Roanoke](https://www.roanokeva.gov/1329/Roanoke-Star) describes three nested frames carrying multiple sets of clear neon tubing. The [Virginia historic-register nomination](https://www.dhr.virginia.gov/VLR_to_transfer/PDFNoms/128-0352_Roanoke_Star_1999_Final_Nomination.pdf) documents the rear steel support structure.
+The [Smithsonian inventory](https://nmaahc.si.edu/object/siris_ari_334963) records **approximate** dimensions of 88.5 ft high × 84.5 ft wide. The [city art catalog](https://www.artworkarchive.com/profile/roanoke-arts/artwork/roanoke-star) separately records 1062 × 1200 inches; that unresolved discrepancy prevents treating the width as exact. The current candidate assumes the Smithsonian aspect ratio. The [City of Roanoke](https://www.roanokeva.gov/1329/Roanoke-Star) describes three nested frames carrying multiple sets of clear neon tubing. The [Virginia historic-register nomination](https://www.dhr.virginia.gov/VLR_to_transfer/PDFNoms/128-0352_Roanoke_Star_1999_Final_Nomination.pdf) documents the rear steel support structure.
 
 Fifteen distinct reference views were reviewed, including city photographs, two Wikimedia views, a tourism aerial, and several Ben Schumin drone and ground photographs. The primary measurement source was the [city's nearly frontal aerial](https://www.roanokeva.gov/ImageRepository/Document?documentID=13604). Its six visible illuminated paths were independently traced and projectively corrected using bilateral symmetry, horizontal shoulders, corresponding paired edges, and the published aspect ratio. Ground-level photographs were treated as upward-looking views and were not directly traced for frontal proportions.
 
@@ -14,9 +14,9 @@ Six visible contours represent the landmark's all-white appearance at this scale
 
 The full photo inventory, method, traced overlay, and independent comparison are in [GEOMETRY_REVIEW.md](../research/GEOMETRY_REVIEW.md).
 
-## Finished dimensions
+## Candidate dimensions
 
-| Feature | Final value |
+| Feature | Candidate value |
 |---|---:|
 | Overall height | 199.997 mm, nominal 200 mm |
 | Overall width | 190.960 mm |
@@ -84,9 +84,7 @@ The combined STL and the 3MF show the assembled relationship. **Use the individu
 
 The retained candidate meshes pass watertightness, winding, positive-volume, duplicate-face, degenerate-triangle, and assembled collision checks. The lights contain six intentional closed loops. The assembly has eight intentional solids.
 
-However, `self_intersection_check.json` reports **163 light-mesh candidates**, so this is not a passed release. The source now removes the problematic three-dimensional light bevel while retaining the rounded two-dimensional path corners. That change has not yet been rebuilt in Blender because the Mac is locked.
-
-The last report and previews predate this source change. Regenerate the Blender meshes, all exports and previews, self-intersection check, insertion/bore checks, and 3MF validation before any print release. Retained JSON records describe the existing files, not the unexecuted change.
+The 12 September GUI rebuild removes the problematic three-dimensional light bevel while retaining rounded planar corners. `self_intersection_check.json` now reports **zero candidates for all three groups** under the existing 0.0011 mm contact exclusion. This is numerical screening at export precision, not a proof below that precision. The STL, 3MF, BLEND, front, rear, and three-quarter previews were regenerated. All sampled straight insertion positions and the tapered bore mandrel report zero overlap; the 3MF was parsed back and checked.
 
 Separately, the geometric fidelity criterion remains unresolved. A free perspective fit is insufficient to prove exact face-on proportions. No physical test print or successful printer-specific slicing has been completed.
 
@@ -96,7 +94,7 @@ Separately, the geometric fidelity criterion remains unresolved. A free perspect
 - `roanoke_star_base.stl`, `roanoke_star_lights.stl`, `roanoke_star_tree_mount.stl`: printable parts in bed orientation.
 - `roanoke_star_assembled.stl`: assembled reference.
 - `roanoke_star_tree_topper.3mf`: assembled named objects and color materials.
-- `../previews/front.png`, `three_quarter.png`, `rear.png`: final Blender renders.
+- `../previews/front.png`, `three_quarter.png`, `rear.png`: repaired candidate Blender renders.
 - JSON validation records: dimensions, topology, assembly fit, insertion paths, bore, and 3MF checks.
 - `../scripts/`: reconstruction, profile generation, Blender construction/cleanup, export and validation scripts.
 
