@@ -120,7 +120,7 @@ def main():
     active(inserts[0])
     for o in inserts:o.select_set(True)
     bpy.ops.object.join();lights=bpy.context.object;lights.name='RoanokeStar_Lights';lights.data.materials.clear();lights.data.materials.append(white)
-    lights['intentional_shells']=6;lights['minimum_rail_width_mm']=1.8;lights['insert_height_mm']=2.6;lights['geometry_basis']='Six independently measured paths; city aerial projectively rectified and checked against drone views';lights['assembly']='Six outline inserts in three pairs, one white color group; glue after dry fitting.'
+    lights['intentional_shells']=6;lights['minimum_rail_width_mm']=1.8;lights['insert_height_mm']=2.6;lights['geometry_basis']='Unverified photographic reconstruction; six traced paths, assumed rectification; see ACCURACY_AUDIT.md';lights['assembly']='Six outline inserts in three pairs, one white color group; glue after dry fitting.'
     mount=cone_socket()
     boolean(mount,box('Rear relief slot',(0,8,-39),(3,82,15)))
     # Central support web: 45 degree underside from tube into flange.

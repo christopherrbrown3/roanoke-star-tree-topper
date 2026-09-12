@@ -24,13 +24,13 @@
       197.3917999267578,
       2.6000001430511475
     ],
-    "volume_mm3": 13695.845968582304,
+    "volume_mm3": 13696.719269406041,
     "nonmanifold_edges": 0,
     "boundary_edges": 0,
     "wire_edges": 0,
     "degenerate_faces": 0,
-    "vertices": 4604,
-    "faces": 9208,
+    "vertices": 1380,
+    "faces": 2760,
     "scale": [
       1.0,
       1.0,

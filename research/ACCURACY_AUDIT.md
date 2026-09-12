@@ -18,6 +18,7 @@ These examples are a mathematical counterexample, **not a confidence interval an
 
 - The [City of Roanoke](https://www.roanokeva.gov/1329/Roanoke-Star) gives the star height as 88.5 feet and describes three nested frames carrying multiple neon tube sets.
 - The [Smithsonian inventory](https://siris-artinventories.si.edu/ipac20/ipac.jsp?booklistformat=&profile=ariall&session=1761P49582NO9.272492&uri=full%3D3100001~%21334963~%210) gives **approximate**, not survey-certified, dimensions of 88.5 × 84.5 feet.
+- The [city art catalog](https://www.artworkarchive.com/profile/roanoke-arts/artwork/roanoke-star) records 1062 × 1200 inches, or 88.5 × 100 feet, without a dimensioned elevation explaining the axes. The width-related discrepancy is unresolved. The current 84.5/88.5 aspect ratio is an assumption supported by one approximate inventory, not an independently verified measurement.
 - The city aerial visibly contains six illuminated contours grouped in three pairs in its all-white configuration. This does not establish the total number or exact layout of all physical neon tubes in every color mode.
 - Low-angle and oblique photographs require perspective treatment. Copying their apparent proportions directly would also be wrong.
 
@@ -34,3 +35,9 @@ The best next source is a dimensioned front elevation or fabrication drawing fro
 A calibrated survey or a sufficiently controlled photograph set can also constrain the geometry, but should report camera calibration, perspective model, measurement residuals, and uncertainty. A drone gimbal-angle tag by itself is insufficient.
 
 The repository retains the current candidate and full provenance. No further shape has been selected merely because it looks more plausible, and no outside organization has been contacted.
+
+## Update — 12 September 2026
+
+The [new user research review](USER_RESEARCH_REVIEW.md) retains the three-pair topology and identifies the supplied 60° apex as an unverified photo hypothesis. It corrects the proposed 1.8× **clear-gap** rule: the supplied pixels describe centerline intervals, so that number is not a clear-gap ratio. The [angle worksheet](ANGLE_WORKSHEET.md) exposes all candidate angles with explicit conventions. The [plan search](PLAN_SEARCH.md) identifies specific incomplete archival records and unsent requests; no dimensioned Star elevation was found.
+
+The continuous-insert candidate's pending Blender repair has now passed the existing digital mesh and assembly checks, including zero self-intersection candidates. The user subsequently requested individually visible tube sections, so a segmented-tube revision is in progress. The repair does not resolve landmark geometry.
