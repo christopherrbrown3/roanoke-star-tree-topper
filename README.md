@@ -1,76 +1,107 @@
-# Roanoke Star tree topper
+# Roanoke Star Tree Topper
 
-A miniature of Roanoke's Mill Mountain Star, designed for one two-color print on a **Bambu Lab A1 with AMS lite**. The 200 mm topper carries **130 individual white tube sections**, arranged along six paths in three pairs, on a dark body with an integral rear tree socket. The colors are separate solid volumes that fuse during printing; no assembly is required.
+Roanoke’s Mill Mountain Star, in miniature. This 200 mm Christmas tree topper brings the landmark’s distinctive neon pattern to a single two-color print: **130 individual white tube sections**, six outlines in three pairs, and a dark body with an integrated tree mount.
 
-![Orthographic front render of the current two-color topper](print_in_place/previews/front.png)
+**One print · Two colors · No assembly**
 
-**Current status — 13 September 2026:** the parallel tube-path correction has been rebuilt in Blender, checked, and exported to STL and 3MF. The linked model files and previews show the corrected version. Bambu Studio validation is deferred at the owner's request, and no physical test print has been made. The landmark's exact angles and tube-joint schedule remain unverified; this is a documented photographic reconstruction, not a certified scale replica.
+![Front render of the Roanoke Star tree topper, showing individual white tube sections on a navy backing](print_in_place/previews/front.png)
 
-## Start here
+Designed for the **Bambu Lab A1 with AMS lite**, with editable Blender source, material-separated 3MF geometry, and a documented research and validation process.
 
-| File | Purpose |
+## Download
+
+| File | Use |
 |---|---|
-| [Two-color 3MF](print_in_place/roanoke_star_A1.3mf) | Current model: one build object with two material volumes, positioned face-down. Standard 3MF; no saved Bambu slicing profile or toolpath. |
-| [Editable Blender scene](print_in_place/roanoke_star_A1.blend) | Millimeter-scale model, material assignments, cameras, and embedded project notes. |
-| [Design report](print_in_place/DESIGN_REPORT.md) | Dimensions, integral mount, printing assumptions, validation, and limitations. |
-| [Rebuild guide](scripts/REBUILD.md) | Profile preparation, Blender GUI construction, and independent checks. |
+| **[Download the two-color 3MF](print_in_place/roanoke_star_A1.3mf)** | Primary print model. One object with dark and white material volumes, already oriented face-down. |
+| [Editable Blender scene](print_in_place/roanoke_star_A1.blend) | Model, materials, cameras, reference curves, and embedded construction notes. |
+| [Dark body STL](print_in_place/body_material.stl) + [white tube STL](print_in_place/white_tube_material.stl) | Alternative material meshes with a shared origin. Import together as parts of one object. |
+| [Design report](print_in_place/DESIGN_REPORT.md) | Detailed dimensions, mount geometry, material layout, and validation results. |
 
-The current files are in **`print_in_place/`**. The older `final/` folder contains an assembly-based candidate retained as design history; its name does not indicate the current release.
+The 3MF contains model geometry and material assignments; it does not contain a printer profile or sliced toolpath. All print files and renders for this design are in [`print_in_place/`](print_in_place/).
 
-## From a Christmas promotion to a city landmark
+## Designed around the tubes
 
-The connection to a Christmas tree topper is part of the Star's history. The Roanoke Merchants Association commissioned it for the 1949 Christmas season, and it was first illuminated on **November 23, 1949**. What began as a seasonal attraction became a lasting landmark above the city. The City of Roanoke records the Star's height as **88.5 feet**. [City history](https://www.roanokeva.gov/1329/Roanoke-Star)
+The individual white sections give the face its character. Rounded ends and small dark breaks suggest separate lengths of neon, while continuous bends carry the light around the star’s points and recesses. Each nested outline uses a constant inward offset from the outer path, keeping corresponding tube runs parallel through every corner—including the two lower side notches.
 
-Roy C. Kinsey Sign Company built the sign, working with Roanoke Iron & Bridge Works on the steel structure. Historical accounts name Robert Little as its designer, although they disagree on his middle initial. An anniversary interview describes the full-scale Star being assembled flat on the ground at Roanoke's airport, then taken apart, transported up Mill Mountain, and erected on its tower. That fabrication history helped guide the search for shop and erection drawings. [1982 historical account, pp. 88–90](https://www.virginiaroom.org/digital/files/original/67/6354/JHSWV_11_02_1982.pdf), [WDBJ interview preserved by Virginia Tech](https://scholar.lib.vt.edu/VA-news/WDBJ-7/script_archives/99/1199/112899/112899.m.htm)
+The tubes are **flush inlays**, 1.8 mm wide and 1.0 mm deep. Both colors meet the build plate, giving the decorated face a consistent finish. A continuous 4 mm backing joins the inlays and rear socket into one finished part. Color changes are confined to the first five layers at a 0.20 mm layer height.
 
-The landmark is more complex than a single star outline. The City describes **three nested structural stars** carrying multiple neon sets. In the all-white views used for this project, six dominant illuminated contours appear as three close pairs. That arrangement, including the smaller central star, is the feature the topper aims to preserve. Six paths describe the visible pattern; they are not a count of all glass pieces or electrical circuits. [City description](https://www.roanokeva.gov/1329/Roanoke-Star)
+![Three-quarter render of the two-color topper and its integrated rear mount](print_in_place/previews/three_quarter.png)
 
-## How the star was researched
+The tapered socket sits behind the star’s silhouette. Its sloped roof and diamond-shaped tie holes are designed around face-down FDM printing. The topper slides over the tree leader; the holes provide attachment points for optional retaining ties.
 
-The project combines official records, historical accounts, more than fifteen reviewed photographs and views, the user's additional research, and a reference photograph of another printed interpretation. Research notes preserve the source links and the reasoning behind each design choice.
+## Print specifications
 
-**Proportions and perspective.** City photographs, aerial views, Wikimedia images, and Ben Schumin's ground-level photographs were compared. Views from the observation deck look upward; they compress vertical distances and can make the apex appear wider. Oblique views also change spacing across the face. Early tracing and perspective-corrected overlays were therefore audited rather than accepted as proof of the physical angles. The [accuracy audit](research/ACCURACY_AUDIT.md) demonstrates why different symmetric shapes can fit the same photograph under different perspective transforms.
+| Specification | Value |
+|---|---|
+| Target printer | Bambu Lab A1 with AMS lite |
+| Overall size, height × width × depth | 200.00 × 190.96 × 50.84 mm |
+| Materials | Two compatible PLA colors; navy or black body, white inlays |
+| Nozzle / layer height | 0.4 mm / 0.20 mm |
+| Orientation | Decorated face flat against the build plate |
+| Tube layout | 130 sections along six outlines in three pairs |
+| Tube width / inlay depth | 1.8 mm / 1.0 mm |
+| Minimum clear gap between sections | 1.20 mm |
+| Backing thickness | 4.0 mm |
+| Integrated socket | 80 mm long; nominal circular clearance tapers from Ø34 to Ø22 mm |
+| Socket wall thickness | 2.4 mm minimum |
 
-**Dimensions and angles.** The documented 88.5-foot height is the scale reference. Width remains disputed: the Smithsonian inventory gives approximately **88.5 × 84.5 feet**, while the City's art catalog lists **1062 × 1200 inches**, equivalent to 88.5 × 100 feet, without a dimensioned elevation clarifying the axes. The current candidate retains the 84.5/88.5 proportion as an explicit assumption. Neither a regular pentagram nor the supplied 60°-apex hypothesis has been established as the landmark's actual geometry. [Smithsonian inventory](https://siris-artinventories.si.edu/ipac20/ipac.jsp?booklistformat=&profile=ariall&session=1761P49582NO9.272492&uri=full%3D3100001~%21334963~%210), [City art catalog](https://www.artworkarchive.com/profile/roanoke-arts/artwork/roanoke-star)
+1. Open the 3MF as one object and assign the dark body and white inlays to their respective AMS lite filaments. If using the STLs, preserve their shared position when importing them as parts of one object.
+2. Keep the decorated face on the build plate. Use the A1 0.4 mm nozzle configuration and a 0.20 mm layer height.
+3. Use four walls, five top and bottom layers, and 15% gyroid infill as starting settings. Enable the prime tower; the model’s sloped socket roof is designed for printing with supports disabled.
+4. Check the sliced preview for all white sections, clear gaps, and the socket roof before printing. Size the tree leader to the socket and use the rear tie holes where additional retention is useful.
 
-The [parallel-path correction](research/PARALLEL_PATH_CORRECTION.md) records the 13 September repair of converging tube rows, including a [before/after detail](research/parallel_path_comparison.png). All corresponding edges in the model now share exact directions; nested offsets are fitted to the previous traces.
+These are recommended starting settings. The included validation covers digital geometry; printer-specific slicing and physical print performance are not certified.
 
-The [angle worksheet](research/ANGLE_WORKSHEET.md) separates polygon interior angles, signed exterior turns, and outside sectors. Its [coordinate-derived CSV](research/candidate_angles.csv) records all six candidate paths. Those are measurements of this model, not recovered original specifications.
+## A Christmas landmark since 1949
 
-**Individual tubes.** Close photographs show shorter neon sections, interruptions along straight runs, and illuminated bends around corners. A high-resolution Commons image provides candidate interruptions near the quarter points of one long run. The model carries that observation into a rounded, segmented appearance, with lit corners and dark gaps along straight portions. Mirroring and repeating that schedule elsewhere is a modeling inference: the photos do not reveal every joint, and a dark mark can also be a support or occlusion. The 130-section count belongs to this print. [Tube-layout research](research/tube_layout_research_luna.md), [pixel observations](research/tube_joint_observations.json), [Schumin close-up series](https://www.schuminweb.com/photography/roanoke-star-night/), [Commons photograph](https://commons.wikimedia.org/wiki/File:Mill_Mountain_Star_Neon_Lights.JPG)
+The Star’s connection to Christmas is original to its story. The Roanoke Merchants Association commissioned it for the **1949 Christmas season**, and it was first illuminated on **November 23, 1949**. The seasonal attraction became a lasting landmark above the city. The City of Roanoke records its height as **88.5 feet**. [City of Roanoke history](https://www.roanokeva.gov/1329/Roanoke-Star)
 
-**Original plans.** The search covered the Virginia DHR National Register nomination, NPS asset records, the City's public Engineering plan repository, Virginia Room finding aids, and modern restoration-report leads. No dimensioned Star elevation or original shop drawing was located in the material examined. The online DHR file omits Exhibits B–F, whose contents are unknown; the Virginia Room index identifies relevant Kinsey, Iron & Bridge Works, and Mill Mountain files whose contents remain uninspected. The [plan-search log](research/PLAN_SEARCH.md) records the actual coverage and promising next leads. [Archive inquiry drafts](research/ARCHIVE_REQUEST_DRAFTS.md) are preserved but have not been sent.
+Roy C. Kinsey Sign Company built the sign, working with Roanoke Iron & Bridge Works on its steel structure. Historical accounts credit Robert Little with the design. An anniversary interview describes the full-scale Star being assembled flat on the ground at Roanoke’s airport, taken apart, transported up Mill Mountain, and erected on its tower. [1982 historical account, pp. 88–90](https://www.virginiaroom.org/digital/files/original/67/6354/JHSWV_11_02_1982.pdf), [WDBJ interview preserved by Virginia Tech](https://scholar.lib.vt.edu/VA-news/WDBJ-7/script_archives/99/1199/112899/112899.m.htm)
 
-The [review of the user's research](research/USER_RESEARCH_REVIEW.md) explains which findings were retained, which remain hypotheses, and why centerline spacing must be distinguished from clear gaps. The supplied desk-print photograph guided the individual-tube appearance; it was not treated as a measured elevation or imported as a source mesh.
+The landmark contains **three nested structural stars** carrying multiple neon sets. In the all-white views studied for this project, six prominent illuminated contours form three close pairs. That layered pattern is the basis of the topper’s face. [City description](https://www.roanokeva.gov/1329/Roanoke-Star)
 
-## Designed for one A1 print
+## Research behind the model
 
-![Three-quarter render showing the tube pattern and integral mount](print_in_place/previews/three_quarter.png)
+The design draws on municipal records, historical accounts, archival finding aids, and **more than fifteen photographs and views**. A reference photograph of another printed interpretation helped establish the desired individual-tube appearance. The geometry and print construction were developed for this project.
 
-| Feature | Current model |
-|---|---:|
-| Height × width × total depth | 200.00 × 190.96 × 50.84 mm |
-| Structural backing | 4.0 mm |
-| White tube sections | 130; 1.8 mm wide; 1.0 mm deep |
-| Closest clear separation between white sections | 1.200 mm |
-| Integral socket length | 80 mm |
-| Nominal circular clearance, lower → upper | Ø34 → Ø22 mm |
-| Minimum socket wall | 2.4 mm |
+**Photographs and perspective.** City images, aerial photographs, Wikimedia sources, and Ben Schumin’s close-up series were compared across viewpoints and lighting modes. Observation-deck photographs look upward, which compresses vertical spacing and changes apparent angles. Oblique views also distort the spacing from one side to the other. The project’s [perspective audit](research/ACCURACY_AUDIT.md) examines those effects and explains why matching one photograph cannot establish the landmark’s physical dimensions.
 
-The white sections are **flush inlays** with rounded ends. Printing the decorated face against the bed gives both colors the same surface finish, keeps the small sections supported, and confines color changes to the first five 0.20 mm layers. The continuous dark backing then carries the integral socket. Its house-shaped bore and diamond tie holes use sloped roofs to avoid broad unsupported ceilings.
+**Proportions and angles.** The documented 88.5-foot height anchors the research. Published widths differ: the Smithsonian inventory records approximately **88.5 × 84.5 feet**, while the City’s art catalog lists **1062 × 1200 inches**, equivalent to 88.5 × 100 feet, without a dimensioned elevation clarifying the axes. The model uses the 84.5/88.5 proportion as its photographic reconstruction basis. Its [angle worksheet](research/ANGLE_WORKSHEET.md) and [coordinate table](research/candidate_angles.csv) make the resulting geometry inspectable. [Smithsonian inventory](https://siris-artinventories.si.edu/ipac20/ipac.jsp?booklistformat=&profile=ariall&session=1761P49582NO9.272492&uri=full%3D3100001~%21334963~%210), [City art catalog](https://www.artworkarchive.com/profile/roanoke-arts/artwork/roanoke-star)
 
-Use two compatible PLA spools, a 0.4 mm nozzle, and a 0.20 mm layer height. The proposed starting process is four walls, five top and bottom layers, and 15% gyroid infill, with supports disabled and the prime tower enabled. Keep the model face-down and map both color volumes as parts of **one object**. Inspect the first five layers, the transition to dark-only material, socket roof, and tie holes before printing. Slicer confirmation is still pending; these are starting settings rather than a tested print profile.
+**Parallel tube paths.** A shared set of edge directions governs all six outlines. Constant inward offsets preserve parallel spacing along straight runs and through the interior corners. The [construction notes](research/PARALLEL_PATH_CORRECTION.md) document the offset distances and include a [before-and-after corner detail](research/parallel_path_comparison.png).
 
-The socket slides over the tree leader. Optional ties through the rear holes provide retention; no model parts need to be joined. Real branch fit and balance require a physical test. The solid-volume PLA estimate is approximately 107 g before accounting for infill or purge; it is not a slicer weight estimate.
+**Individual neon sections.** Close photographs show interruptions along straight runs and illuminated bends around corners. A high-resolution Commons photograph provided observations of breaks near the quarter points of one long run. Those observations informed the rounded sections and dark gaps; symmetry and repetition complete the model’s pattern. The **130-section count describes this print**, rather than an inventory of the landmark’s glass tubes or electrical circuits. [Tube-layout study](research/tube_layout_research_luna.md), [recorded image observations](research/tube_joint_observations.json), [Schumin close-up series](https://www.schuminweb.com/photography/roanoke-star-night/), [Commons photograph](https://commons.wikimedia.org/wiki/File:Mill_Mountain_Star_Neon_Lights.JPG)
 
-## Validation and project history
+**Archival research.** The original-plan search examined the Virginia DHR National Register nomination, NPS asset records, the City’s public Engineering plan repository, Virginia Room finding aids, and restoration-report references. No original dimensioned Star elevation or shop drawing was located in the material reviewed. The [archive search record](research/PLAN_SEARCH.md) identifies the collections examined and distinguishes document contents from catalog listings.
 
-The [mesh report](print_in_place/mesh_validation.json) records watertight, consistently wound material meshes, no duplicate or zero-area triangles, and one connected fused outer solid. The [intersection check](print_in_place/self_intersections.json) found zero non-adjacent triangle-intersection candidates. Material volumes fill the outer solid within export precision, the nominal tapered mandrel clears the socket, and the mesh has no above-bed surface beyond the chosen 45° overhang limit. The standard 3MF also passes a geometry round-trip check.
+This is a **photo-informed interpretation of the Roanoke Star**. Exact landmark angles and the complete neon-joint schedule are not established by the available sources; the documented coordinates and section counts specify the model itself.
 
-These checks establish digital geometry quality. Printer-specific slicing, physical strength, tree fit, and fidelity to a measured landmark elevation are separate checks and remain open.
+## Geometry validation
 
-`research/` contains the evidence and attribution; `scripts/` contains the construction and validation code; `print_in_place/` contains the current model and previews. Earlier studies in `final/`, `design/`, `models/`, `review/`, and the root `Roanoke_Star_*` files preserve the progression from generic-star studies to photographic reconstruction, continuous inserts, and the current segmented, integral design.
+The exported files are checked against the construction profiles and the saved Blender scene. The included reports record:
 
-## Reference rights
+- Watertight material meshes with consistent winding and no duplicate or zero-area triangles.
+- One connected dark body and 130 white inlay solids that together form a single connected print.
+- Zero non-adjacent triangle-intersection candidates in either material mesh.
+- Material coverage matching the complete outer solid within export precision.
+- Clearance for the nominal tapered socket mandrel and geometry within the chosen 45° overhang limit.
+- A standard 3MF geometry round trip and exact agreement between the saved scene’s STL exports and the validated files.
 
-Third-party photographs and archival documents retain their original rights. Source attribution is recorded in [SOURCES.md](research/SOURCES.md), [GEOMETRY_REVIEW.md](research/GEOMETRY_REVIEW.md), and the individual research notes. Supplied files are preserved with [provenance hashes](research/user_provided/PROVENANCE.json). This private repository does not grant permission to republish reference material or imply a public license.
+See the [mesh report](print_in_place/mesh_validation.json), [intersection results](print_in_place/self_intersections.json), and [scene/export verification](print_in_place/scene_export_validation.json) for the measurements. The [rebuild guide](scripts/REBUILD.md) documents profile generation, Blender construction, export, and validation.
+
+## Explore the project
+
+| Directory | Contents |
+|---|---|
+| [`print_in_place/`](print_in_place/) | A1 model, material meshes, Blender scene, four rendered views, and validation reports |
+| [`scripts/`](scripts/) | Reproducible geometry construction, packaging, and checks |
+| [`research/`](research/) | Sources, photograph analysis, angle measurements, and archival research |
+| [`design/`](design/), [`models/`](models/), [`review/`](review/), [`final/`](final/) | Earlier design studies and the archived assembly-based model |
+
+The root `Roanoke_Star_*` files also belong to the early design studies. Use `print_in_place/` for the integrated, single-print topper shown above.
+
+## Credits and reference material
+
+Project by [christopherrbrown3](https://github.com/christopherrbrown3). Historical and visual references include the City of Roanoke, Virginia DHR, Roanoke Public Libraries’ Virginia Room, the Smithsonian inventory, Virginia Tech’s WDBJ archive, Ben Schumin, and Wikimedia Commons contributors.
+
+Third-party photographs and archival documents retain their respective copyrights and license terms. Crops, grids, and overlays are identified as research adaptations. See the [source credits](research/SOURCES.md), [photograph inventory](research/GEOMETRY_REVIEW.md), and [supplied-reference provenance](research/user_provided/PROVENANCE.json) for attribution. Public access to this repository does not grant additional rights to those materials.
