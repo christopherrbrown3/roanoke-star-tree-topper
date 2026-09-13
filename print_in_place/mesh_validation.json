@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-12",
+  "date": "2026-09-13",
   "material_meshes": {
     "dark_body": {
       "watertight": true,
@@ -8,7 +8,7 @@
       "triangles": 26228,
       "zero_area_triangles": 0,
       "duplicate_triangles": 0,
-      "volume_cm3": 81.32061388547984,
+      "volume_cm3": 81.32001948918331,
       "bounds_mm": [
         [
           -95.48021697998047,
@@ -26,10 +26,10 @@
       "watertight": true,
       "consistent_winding": true,
       "connected_solids": 130,
-      "triangles": 24684,
+      "triangles": 24704,
       "zero_area_triangles": 0,
       "duplicate_triangles": 0,
-      "volume_cm3": 4.895532141546619,
+      "volume_cm3": 4.896126538896735,
       "bounds_mm": [
         [
           -94.1797103881836,
@@ -44,6 +44,7 @@
       ]
     }
   },
+  "white_stl_front_difference_from_current_profiles_mm2": 0.0034566034724371223,
   "fused_print": {
     "watertight": true,
     "consistent_winding": true,
@@ -65,7 +66,7 @@
       ]
     ]
   },
-  "material_overlap_mm3": 7.981679553403787e-15,
+  "material_overlap_mm3": 1.8139786547854975e-15,
   "material_coverage_difference_from_outer_solid_mm3": 9.313172768088407e-05,
   "dimensions_mm": [
     190.96043395996094,
@@ -92,6 +93,6 @@
     "one_build_object": true,
     "material_volumes": 2,
     "roundtrip_mesh_validation": true,
-    "sha256": "5ef35401292dbbc3b6a123e4a58454fb7bbef13c8f616c1bc1e2e9df3f5a57c7"
+    "sha256": "a4ab3b4ca6947affe07e0abcd4de9f2b4314d531e918cc74e2e11de05b7fa7b1"
   }
 }

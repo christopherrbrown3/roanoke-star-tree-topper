@@ -43,4 +43,4 @@ The construction and measurements are reproducible with [prepare_a1_print_in_pla
 
 Parallelism is established for the model. The absolute outline angles, frame positions, and joint schedule remain provisional because no dimensioned elevation or original tube-layout drawing has been located. The fit does not turn a photographic reconstruction into a surveyed replica.
 
-The Blender/STL/3MF rebuild and rendered inspection are pending access to the unlocked Mac. Existing binary exports and renders still show the 12 September geometry until that rebuild is completed.
+The correction has now been rebuilt through Blender's GUI and exported to STL and standard 3MF. Front, three-quarter, rear, and side renders were inspected. Both actual color meshes report zero non-adjacent triangle-intersection candidates. The exported white front matches the prepared profiles within 0.00346 mm² of float-precision difference; the final scene-to-STL check records exact binary equality. Slicer validation remains deferred at the owner's request, and no physical print has been made.
