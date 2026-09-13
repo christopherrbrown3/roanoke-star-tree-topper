@@ -142,16 +142,13 @@ def main():
     for o in [base,lights,mount]:
         active(o);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True)
         for face in o.data.polygons:face.material_index=0
-    # Preserve editable 2D paths and reference photo without adding export geometry.
+    # Preserve editable 2D paths without packing third-party reference photos.
     ref=bpy.data.collections.new('Reference_Geometry');scene.collection.children.link(ref);ref.hide_render=True;ref.hide_viewport=True
     measure=json.loads((OUT/'profile_measurements.json').read_text())
     for i,coords in enumerate(measure['six_paths_mm']):
         c=bpy.data.curves.new(f'Measured light path {i+1}','CURVE');c.dimensions='2D';sp=c.splines.new('POLY');sp.points.add(len(coords)-1)
         for pt,(x,y) in zip(sp.points,coords):pt.co=(x,y,0,1)
         sp.use_cyclic_u=True;o=bpy.data.objects.new(c.name,c);ref.objects.link(o)
-    photo=ROOT/'research/references/city_aerial_original.jpg'
-    if photo.exists():
-        img=bpy.data.images.load(str(photo));img.pack();o=bpy.data.objects.new('City photo | near frontal aerial',None);o.empty_display_type='IMAGE';o.data=img;o.empty_display_size=240;ref.objects.link(o)
     txt=bpy.data.texts.new('BUILD_SOURCE.py');txt.write(Path(__file__).read_text())
     txt=bpy.data.texts.new('MEASURED_PATHS.json');txt.write((OUT/'profile_measurements.json').read_text())
     txt=bpy.data.texts.new('TOPPER_PROFILES.json');txt.write((ROOT/'scripts/topper_profiles.json').read_text())

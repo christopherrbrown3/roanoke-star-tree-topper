@@ -1,6 +1,6 @@
 # Rebuilding and validating the A1 model
 
-The current deliverables are in `print_in_place/`. The A1 revision uses two solid material regions in one fused print and an integral mount. Bambu Studio validation is deferred at the owner's request.
+The current deliverables are in `print_in_place/`. The A1 rebuild uses the included numerical profiles and does not require reference photographs. The A1 revision uses two solid material regions in one fused print and an integral mount. Bambu Studio validation is deferred at the owner's request.
 
 Use Python 3 with numpy, scipy, Pillow, shapely, trimesh, mapbox-earcut, and manifold3d installed. The GUI build was performed in Blender 5.2.1 LTS. The new scripts resolve the repository location from `__file__`.
 
@@ -30,6 +30,8 @@ The geometry-reference STL is the complete outer solid before color partitioning
 Mesh validity and landmark accuracy are separate criteria. Changes to inferred paths require additional evidence; see [the accuracy audit](../research/ACCURACY_AUDIT.md). A physical print is still needed to evaluate surface quality, strength, branch fit, and retention.
 
 # Earlier assembly candidate — historical workflow
+
+The archived Blender file that contained a packed reference photograph is excluded from the public repository. The historical meshes, numerical profiles, and build scripts remain available. The build script preserves editable path curves without packing photographs.
 
 The GUI build scripts currently contain the original workspace path in `ROOT`. Adjust it when cloning to a different location. The model is built in Blender's GUI Python console as requested; shell Python prepares 2D profiles and performs independent checks.
 

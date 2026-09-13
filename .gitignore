@@ -9,3 +9,16 @@ __pycache__/
 venv/
 tmp/
 *.log
+
+# Reference originals and photographic analysis remain outside the public repository.
+research/references/
+output/playwright/
+research/*_overlay.jpg
+research/*_overlay.png
+research/plan_search/*.pdf
+research/user_provided/*.jpeg
+review/ref_*.png
+review/corner_compare/ref_*.png
+review/corner_compare/contact.png
+# Superseded scene originally contained a packed reference photograph.
+final/roanoke_star_tree_topper.blend

@@ -72,6 +72,8 @@ These manufacturing figures were carried into the final Blender model. Some digi
 
 ## Review artifacts
 
+The following filenames record the analysis workflow. Photo-based overlays are not distributed; the original publisher links above identify their reference images. Geometry-only diagrams and coordinate data remain included.
+
 - `city_trace_overlay.png`: six measured paths over the primary photograph.
 - `rectified_six_paths.png`: corrected face-on centerline diagram.
 - `independent_aerial_overlay.jpg`: independent drone-photo projection check.

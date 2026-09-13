@@ -1,6 +1,6 @@
 # Review of supplied research and print reference — 12 September 2026
 
-The user's two-color Christmas tree topper remains the target. The new desk-print photograph is an appearance reference. Its lighting enclosure and electrical design are outside the chosen design. The original Markdown and photograph are preserved without alteration in [user_provided](user_provided/PROVENANCE.json).
+The user's two-color Christmas tree topper remains the target. The new desk-print photograph is an appearance reference. Its lighting enclosure and electrical design are outside the chosen design. The original Markdown is preserved without alteration. The photograph is represented by its source hash and provenance in [user_provided](user_provided/PROVENANCE.json); the image itself is excluded from the public repository.
 
 ## Findings to retain
 
