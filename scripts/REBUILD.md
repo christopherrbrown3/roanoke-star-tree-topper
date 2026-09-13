@@ -12,7 +12,7 @@ Use Python 3 with numpy, scipy, Pillow, shapely, trimesh, mapbox-earcut, and man
    exec(compile(open(__file__).read(), __file__, 'exec'))
    ```
 
-3. In the same console, set `__file__` to `scripts/check_a1_blender.py` and execute it with the same pattern. It checks the actual Blender color meshes for non-adjacent triangle intersections.
+3. Run `python3 scripts/canonicalize_a1_body.py` in the shell to repair coplanar Boolean triangulation. Then execute `scripts/apply_a1_canonical_body_blender.py` in the same Blender GUI console using the `__file__` pattern. It returns the repaired backing to Blender and re-exports it. Finally execute `scripts/check_a1_blender.py` there; it checks both actual color meshes for non-adjacent triangle intersections without adding an exclusion tolerance.
 4. Run `python3 scripts/validate_package_a1.py` in the shell. It validates the exported material meshes, their coverage of the unpartitioned outer solid, overhangs, tapered mandrel clearance, and standard 3MF round-trip geometry. Inspect the reports; successful execution is required.
 5. Render the previews in the same Blender console:
 

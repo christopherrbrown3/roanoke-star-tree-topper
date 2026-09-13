@@ -42,9 +42,11 @@ for text in list(bpy.data.texts):
 for filename in ['README.md', 'scripts/build_a1_print_in_place_blender.py',
                  'scripts/prepare_a1_print_in_place.py', 'scripts/a1_topper_profiles.json',
                  'scripts/check_a1_blender.py', 'scripts/validate_package_a1.py',
+                 'scripts/canonicalize_a1_body.py', 'scripts/apply_a1_canonical_body_blender.py',
                  'scripts/finalize_a1_blender.py', 'print_in_place/profile_measurements.json',
                  'print_in_place/DESIGN_REPORT.md', 'print_in_place/RELEASE_STATUS.json',
                  'print_in_place/mesh_validation.json', 'print_in_place/self_intersections.json',
+                 'print_in_place/canonicalization_report.json', 'research/PARALLEL_PATH_CORRECTION.md',
                  'print_in_place/scene_export_validation.json', 'research/ACCURACY_AUDIT.md',
                  'research/ANGLE_WORKSHEET.md', 'research/tube_joint_observations.json']:
     text = bpy.data.texts.new(Path(filename).name)
