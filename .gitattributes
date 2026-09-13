@@ -1,0 +1,7 @@
+*.pdf binary
+*.blend binary
+*.stl binary
+*.3mf binary
+*.csv text eol=lf
+# Source snapshots retain the user's original Markdown hard breaks.
+research/user_provided/*.md -whitespace

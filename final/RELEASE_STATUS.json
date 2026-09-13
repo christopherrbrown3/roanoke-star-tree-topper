@@ -7,10 +7,11 @@
   "source_change_pending_blender_rebuild": false,
   "physical_print_tested": false,
   "blockers": [
+    "superseded assembly architecture",
     "unverified photographic metric reconstruction",
-    "individual tube section revision in progress",
-    "no physical print test or successful printer-specific slicing"
+    "no physical print test or printer-specific slicing"
   ],
   "digital_mesh_checks_passed": true,
-  "segmented_tube_revision_pending": true
+  "segmented_tube_revision_pending": false,
+  "superseded_by": "print_in_place/"
 }

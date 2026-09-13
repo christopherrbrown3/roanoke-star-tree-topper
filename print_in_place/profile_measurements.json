@@ -1,0 +1,959 @@
+{
+  "date": "2026-09-13",
+  "target_printer": "Bambu Lab A1",
+  "ams_lite": true,
+  "nozzle_mm": 0.4,
+  "layer_height_mm": 0.2,
+  "assembly_required": false,
+  "orientation": "front face on the bed; integral mount grows upward",
+  "tube_width_mm": 1.8,
+  "tube_inlay_depth_mm": 1.0,
+  "straight_run_dark_gap_mm": 1.2,
+  "visible_tube_sections": 130,
+  "sections_per_path": [
+    30,
+    30,
+    30,
+    20,
+    10,
+    10
+  ],
+  "body_thickness_mm": 4.0,
+  "outline_bounds_mm": [
+    -95.48021637066756,
+    -99.99997886578174,
+    95.48021637066756,
+    99.99724533188017
+  ],
+  "minimum_tube_to_outline_mm": 1.2972453318801627,
+  "minimum_segment_to_segment_mm": 1.1999999999999489,
+  "white_front_area_mm2": 4896.126567484647,
+  "outline_area_mm2": 14149.595866533547,
+  "mount": {
+    "length_mm": 80,
+    "lower_circular_clearance_diameter_mm": 34,
+    "upper_circular_clearance_diameter_mm": 22,
+    "minimum_wall_mm": 2.4,
+    "axis_depth_mm": 23.4,
+    "roof_angle_deg": 45,
+    "tie_hole_diagonal_mm": 5,
+    "y_openings_mm": [
+      -32,
+      48
+    ],
+    "front_projection_outside_star_mm2": 0
+  },
+  "source_paths": "final/profile_measurements.json",
+  "source_sha256": "2cc877476454abf9148046a94a253d0d0728c704f1e4c654229472e2098f2552",
+  "six_paths_mm": [
+    [
+      [
+        0.0,
+        97.8
+      ],
+      [
+        22.065825977757704,
+        31.12607885546557
+      ],
+      [
+        93.28022598870056,
+        31.12607885546557
+      ],
+      [
+        36.89525926349784,
+        -14.713538262989648
+      ],
+      [
+        64.07305169187742,
+        -97.8
+      ],
+      [
+        0.0,
+        -45.005807742189496
+      ],
+      [
+        -64.07305169187742,
+        -97.8
+      ],
+      [
+        -36.89525926349784,
+        -14.713538262989648
+      ],
+      [
+        -93.28022598870056,
+        31.12607885546557
+      ],
+      [
+        -22.065825977757704,
+        31.12607885546557
+      ]
+    ],
+    [
+      [
+        0.0,
+        85.90548837139382
+      ],
+      [
+        19.366138722808493,
+        27.388920381589536
+      ],
+      [
+        82.75900518845336,
+        27.388920381589536
+      ],
+      [
+        32.54473285651219,
+        -13.43407112244148
+      ],
+      [
+        56.5218868175268,
+        -86.73571585293756
+      ],
+      [
+        0.0,
+        -40.16344747139266
+      ],
+      [
+        -56.5218868175268,
+        -86.73571585293756
+      ],
+      [
+        -32.54473285651219,
+        -13.43407112244148
+      ],
+      [
+        -82.75900518845336,
+        27.388920381589536
+      ],
+      [
+        -19.366138722808493,
+        27.388920381589536
+      ]
+    ],
+    [
+      [
+        0.0,
+        66.8254731007513
+      ],
+      [
+        15.035563777090779,
+        21.394135309550272
+      ],
+      [
+        65.8818891031045,
+        21.394135309550272
+      ],
+      [
+        25.56604277889808,
+        -11.381674744835435
+      ],
+      [
+        44.40904472594844,
+        -68.98747052128647
+      ],
+      [
+        0.0,
+        -32.395805486785775
+      ],
+      [
+        -44.40904472594844,
+        -68.98747052128647
+      ],
+      [
+        -25.56604277889808,
+        -11.381674744835435
+      ],
+      [
+        -65.8818891031045,
+        21.394135309550272
+      ],
+      [
+        -15.035563777090779,
+        21.394135309550272
+      ]
+    ],
+    [
+      [
+        0.0,
+        54.7574247915917
+      ],
+      [
+        12.296489048373456,
+        17.602453027004465
+      ],
+      [
+        55.2071674454826,
+        17.602453027004465
+      ],
+      [
+        21.152043743955808,
+        -10.083540635236275
+      ],
+      [
+        36.74771105042949,
+        -57.76176241639099
+      ],
+      [
+        0.0,
+        -27.48279690745168
+      ],
+      [
+        -36.74771105042949,
+        -57.76176241639099
+      ],
+      [
+        -21.152043743955808,
+        -10.083540635236275
+      ],
+      [
+        -55.2071674454826,
+        17.602453027004465
+      ],
+      [
+        -12.296489048373456,
+        17.602453027004465
+      ]
+    ],
+    [
+      [
+        0.0,
+        35.4489440436377
+      ],
+      [
+        7.914059486295509,
+        11.535885966668236
+      ],
+      [
+        38.1279635563565,
+        11.535885966668236
+      ],
+      [
+        14.08979032863073,
+        -8.006568715556966
+      ],
+      [
+        24.48982891507773,
+        -39.80099831661418
+      ],
+      [
+        0.0,
+        -19.622144618166026
+      ],
+      [
+        -24.48982891507773,
+        -39.80099831661418
+      ],
+      [
+        -14.08979032863073,
+        -8.006568715556966
+      ],
+      [
+        -38.1279635563565,
+        11.535885966668236
+      ],
+      [
+        -7.914059486295509,
+        11.535885966668236
+      ]
+    ],
+    [
+      [
+        0.0,
+        23.78481474698961
+      ],
+      [
+        5.266661914586166,
+        7.871111741174278
+      ],
+      [
+        27.810526102470263,
+        7.871111741174278
+      ],
+      [
+        9.823528366473244,
+        -6.751883309030931
+      ],
+      [
+        17.084920989063612,
+        -28.951015997389447
+      ],
+      [
+        0.0,
+        -14.873575020429229
+      ],
+      [
+        -17.084920989063612,
+        -28.951015997389447
+      ],
+      [
+        -9.823528366473244,
+        -6.751883309030931
+      ],
+      [
+        -27.810526102470263,
+        7.871111741174278
+      ],
+      [
+        -5.266661914586166,
+        7.871111741174278
+      ]
+    ]
+  ],
+  "parallel_path_correction": {
+    "method": "Exact inward offsets of the outer candidate edge lines; corner vertices are adjacent line intersections. Each distance minimizes squared displacement from the previous ten path vertices.",
+    "offsets_from_outer_path_mm": [
+      0.0,
+      3.737158473876034,
+      9.731943545915298,
+      13.523625828461102,
+      19.590192888797333,
+      23.25496711429129
+    ],
+    "adjacent_centerline_normal_spacing_mm": [
+      3.737158473876034,
+      5.994785072039264,
+      3.7916822825458034,
+      6.066567060336231,
+      3.6647742254939573
+    ],
+    "adjacent_clear_tube_spacing_mm": [
+      1.937158473876034,
+      4.194785072039264,
+      1.9916822825458034,
+      4.266567060336231,
+      1.8647742254939572
+    ],
+    "maximum_corresponding_edge_angle_error_deg": 2.842170943040401e-14,
+    "maximum_normal_offset_error_mm": 1.4210854715202004e-14,
+    "previous_pair_max_edge_angle_errors_deg": [
+      0.44758977044969583,
+      2.64866908665212,
+      2.4762974401816678
+    ],
+    "maximum_vertex_displacement_per_path_mm": [
+      0.0,
+      1.5399682111981008,
+      3.6072889236680936,
+      4.107781137114451,
+      4.023797970090634,
+      4.094882755434654
+    ],
+    "scope": "Parallelism is verified for this model. Outer candidate angles, nested offsets and landmark fidelity remain unverified against a measured elevation."
+  },
+  "outline_verified_against_survey": false,
+  "tube_joint_schedule_verified": false,
+  "joint_evidence": "research/tube_joint_observations.json and research/tube_layout_research_luna.md",
+  "joint_limitations": "Visible interruptions may include supports. Image-space positions and mirrored/repeated transfer are approximate. No exact fabrication schedule was found.",
+  "joint_schedule": [
+    {
+      "path": 1,
+      "edge_clockwise": 1,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 70.23042386934799,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 2,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 71.21440001094285,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 3,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 72.66728954742148,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 4,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 87.4184907514181,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 5,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 83.02157966013809,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 6,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 83.02157966013809,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 7,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 87.4184907514181,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 8,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 72.66728954742148,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 9,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 71.21440001094285,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 1,
+      "edge_clockwise": 10,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 70.23042386934799,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 1,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 61.63794333311625,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 2,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 63.392866465644865,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 3,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 64.71467979650784,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 4,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 77.12350505692841,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 5,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 73.23728470946992,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 6,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 73.23728470946992,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 7,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 77.12350505692841,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 8,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 64.71467979650784,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 9,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 63.392866465644865,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 2,
+      "edge_clockwise": 10,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 61.63794333311625,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 1,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 47.85472423484618,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 2,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 50.84632532601372,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 3,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 51.95787899402938,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 4,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 60.60929325948891,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 5,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 57.54227318648777,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 6,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 57.54227318648777,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 7,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 60.60929325948891,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 8,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 51.95787899402938,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 9,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 50.84632532601372,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 3,
+      "edge_clockwise": 10,
+      "fractions": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "length_mm": 47.85472423484618,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 1,
+      "fractions": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "length_mm": 39.13688247349351,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 2,
+      "fractions": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "length_mm": 42.91067839710914,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 3,
+      "fractions": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "length_mm": 43.88924350443883,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 4,
+      "fractions": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "length_mm": 50.164107397094064,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 5,
+      "fractions": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "length_mm": 47.615228863646074,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 6,
+      "fractions": [
+        0.33333333333333337,
+        0.6666666666666667
+      ],
+      "length_mm": 47.615228863646074,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 7,
+      "fractions": [
+        0.33333333333333337,
+        0.6666666666666667
+      ],
+      "length_mm": 50.164107397094064,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 8,
+      "fractions": [
+        0.33333333333333337,
+        0.6666666666666667
+      ],
+      "length_mm": 43.88924350443883,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 9,
+      "fractions": [
+        0.33333333333333337,
+        0.6666666666666667
+      ],
+      "length_mm": 42.91067839710914,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 4,
+      "edge_clockwise": 10,
+      "fractions": [
+        0.33333333333333337,
+        0.6666666666666667
+      ],
+      "length_mm": 39.13688247349351,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 1,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 25.18862211684352,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 2,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 30.21390407006099,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 3,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 30.979691850194016,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 4,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 33.45215323796317,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 5,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 31.732284142071336,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 6,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 31.732284142071336,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 7,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 33.45215323796317,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 8,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 30.979691850194016,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 9,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 30.21390407006099,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 5,
+      "edge_clockwise": 10,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 25.18862211684352,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 1,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 16.762567556309754,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 2,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 22.543864187884097,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 3,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 23.181114550277513,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 4,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 23.356568988932374,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 5,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 22.1374991736272,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 6,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 22.1374991736272,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 7,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 23.356568988932374,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 8,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 23.181114550277513,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 9,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 22.543864187884097,
+      "status": "photo-informed approximation; not archival coordinates"
+    },
+    {
+      "path": 6,
+      "edge_clockwise": 10,
+      "fractions": [
+        0.5
+      ],
+      "length_mm": 16.762567556309754,
+      "status": "photo-informed approximation; not archival coordinates"
+    }
+  ]
+}
