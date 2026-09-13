@@ -6,7 +6,7 @@ import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'research/accurate_light_paths.json'
+SOURCE = ROOT / 'print_in_place/profile_measurements.json'
 OUT = ROOT / 'research'
 NAMES = ['Top tip', 'Upper-right notch', 'Right tip', 'Lower-right notch',
          'Lower-right tip', 'Bottom notch', 'Lower-left tip', 'Lower-left notch',
@@ -33,11 +33,11 @@ def angle_rows(points, path_number):
 data = json.loads(SOURCE.read_text())
 rows = [row for i,points in enumerate(data['six_paths_mm']) for row in angle_rows(points,i+1)]
 with (OUT/'candidate_angles.csv').open('w',newline='') as f:
-    w = csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+    w = csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 
-lines = ['# Angle worksheet — unverified candidate, 12 September 2026', '',
-         '**These are calculated angles of the existing photographic reconstruction, not measured angles of the landmark.** No 1949 or modern dimensioned elevation has been located. This worksheet does not select a new geometry.', '',
-         'The source is `accurate_light_paths.json`, before the manufacturing border allowance. Full values for all six paths are in `candidate_angles.csv`. Left/right pairs are mirrored, but the shape is not constrained to five-fold rotational symmetry.', '',
+lines = ['# Angle worksheet — current parallel-path candidate, 13 September 2026', '',
+         '**These are calculated angles of the current model, not measured angles of the landmark.** No 1949 or modern dimensioned elevation has been located.', '',
+         'The source is `../print_in_place/profile_measurements.json`. Full values for all six paths are in `candidate_angles.csv`. The 13 September correction derives all six paths from exact parallel offsets of the outer candidate edge lines. All corresponding angles therefore match. Left/right pairs are mirrored, but the shape is not constrained to five-fold rotational symmetry. See [the parallel-path correction](PARALLEL_PATH_CORRECTION.md) for the prior errors and chosen offsets.', '',
          '## Angle conventions', '',
          '- **Interior:** angle inside the star polygon; greater than 180° at a concave notch.',
          '- **Exterior turn:** 180° minus the interior; positive at a tip and negative at a notch. This is the conventional signed polygon turn, with outward tips positive regardless of the stored vertex order.',

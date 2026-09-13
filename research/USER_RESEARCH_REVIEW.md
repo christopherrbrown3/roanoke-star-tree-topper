@@ -28,9 +28,9 @@ A low-angle photograph can foreshorten the vertical dimension and widen the appa
 
 ## Design carried forward
 
-The candidate retains a dark backing, three pairs of white physical inserts, and a removable hidden tree socket. The user has now explicitly requested the look of individual tube sections, with placement researched against the landmark and construction optimized for printing. A segmented-tube revision is in progress. The reference desk print's individual dash lengths are not treated as original neon segment dimensions. No LED enclosure, wiring, diffuser, or electronics has been added.
+The latest model in [print_in_place](../print_in_place/DESIGN_REPORT.md) has 130 white inlay sections along six paths in three pairs, a continuous dark backing, and an integral hidden tree socket. The user chose a single print with no assembly on a Bambu A1 with AMS lite. The white solids and dark body fuse in the same print; no removable inserts or mount fasteners are needed. The reference desk print's individual dash lengths are not treated as original neon segment dimensions. No LED enclosure, wiring, diffuser, or electronics has been added.
 
-The pending manufacturing repair has been executed in Blender's GUI: white inserts now use a single extrusion with rounded planar corners, removing the problematic 3D bevel. All three part groups report zero self-intersection candidates under the existing numerical check. Mesh validity does not establish landmark fidelity. Exact geometry remains unresolved and no physical test print has been performed.
+The earlier continuous-insert candidate's bevel repair passed its digital checks. The subsequent A1 model was also built in Blender's GUI: both actual color meshes report zero non-adjacent triangle-intersection candidates, and independent checks validate the fused solid and material coverage. Mesh validity does not establish landmark fidelity. Exact geometry remains unresolved, no physical test print has been performed, and Bambu Studio validation is deferred at the user's request.
 
 ## Provenance of the secondary print
 

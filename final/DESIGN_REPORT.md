@@ -1,3 +1,5 @@
+> Superseded assembly design. The current no-assembly A1 model is in [print_in_place](../print_in_place/DESIGN_REPORT.md).
+
 # Roanoke Star Christmas tree topper
 
 **Work in progress — 12 September 2026.** The user has not accepted the landmark geometry. The continuous-insert candidate has passed its digital mesh repair and assembly checks. A new revision showing individual tube sections is in progress. These exports are review candidates, not an approved print release. See [the accuracy audit](../research/ACCURACY_AUDIT.md).
