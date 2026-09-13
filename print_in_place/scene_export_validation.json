@@ -1,14 +1,14 @@
 {
   "RoanokeStar_Body": {
     "scene_matches_validated_stl": true,
-    "sha256": "6110f3f39b7334f1c3c4c14dd79b3359a93775f1fe59b020fe1cad89a07176c2",
-    "material": "01 | Navy PLA | integral body.001",
+    "sha256": "d0d00c11a86b250d5aa66f97fe00c6ddf6b8e7be67054d331813c994562f6279",
+    "material": "01 | Navy PLA | integral body.002",
     "all_faces_use_material_slot_zero": true
   },
   "RoanokeStar_Tube_Sections": {
     "scene_matches_validated_stl": true,
-    "sha256": "149ac65d1b3cb6c56eeafe426447264ed8b086e5b0f78448fe0d08494e8d0b5e",
-    "material": "02 | White PLA | individual tube sections.001",
+    "sha256": "22935e2e67315439dcb1119b18c8916beedbe618bed6aa8248f513a2d949903e",
+    "material": "02 | White PLA | individual tube sections.002",
     "all_faces_use_material_slot_zero": true
   }
 }

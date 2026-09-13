@@ -4,7 +4,7 @@ A miniature of Roanoke's Mill Mountain Star, designed for one two-color print on
 
 ![Orthographic front render of the current two-color topper](print_in_place/previews/front.png)
 
-**Current status — 13 September 2026:** a correction for nonparallel tube paths is prepared and checked in 2D. Regenerating the Blender model and exports is pending access to the unlocked Mac; the linked binary files and renders currently show the prior version. Bambu Studio validation is deferred at the owner's request, and no physical test print has been made. The landmark's exact angles and tube-joint schedule remain unverified; this is a documented photographic reconstruction, not a certified scale replica.
+**Current status — 13 September 2026:** the parallel tube-path correction has been rebuilt in Blender, checked, and exported to STL and 3MF. The linked model files and previews show the corrected version. Bambu Studio validation is deferred at the owner's request, and no physical test print has been made. The landmark's exact angles and tube-joint schedule remain unverified; this is a documented photographic reconstruction, not a certified scale replica.
 
 ## Start here
 
@@ -33,7 +33,7 @@ The project combines official records, historical accounts, more than fifteen re
 
 **Dimensions and angles.** The documented 88.5-foot height is the scale reference. Width remains disputed: the Smithsonian inventory gives approximately **88.5 × 84.5 feet**, while the City's art catalog lists **1062 × 1200 inches**, equivalent to 88.5 × 100 feet, without a dimensioned elevation clarifying the axes. The current candidate retains the 84.5/88.5 proportion as an explicit assumption. Neither a regular pentagram nor the supplied 60°-apex hypothesis has been established as the landmark's actual geometry. [Smithsonian inventory](https://siris-artinventories.si.edu/ipac20/ipac.jsp?booklistformat=&profile=ariall&session=1761P49582NO9.272492&uri=full%3D3100001~%21334963~%210), [City art catalog](https://www.artworkarchive.com/profile/roanoke-arts/artwork/roanoke-star)
 
-The [parallel-path correction](research/PARALLEL_PATH_CORRECTION.md) records the 13 September repair of converging tube rows, including a [before/after detail](research/parallel_path_comparison.png). All corresponding edges in the prepared model now share exact directions; nested offsets are fitted to the previous traces.
+The [parallel-path correction](research/PARALLEL_PATH_CORRECTION.md) records the 13 September repair of converging tube rows, including a [before/after detail](research/parallel_path_comparison.png). All corresponding edges in the model now share exact directions; nested offsets are fitted to the previous traces.
 
 The [angle worksheet](research/ANGLE_WORKSHEET.md) separates polygon interior angles, signed exterior turns, and outside sectors. Its [coordinate-derived CSV](research/candidate_angles.csv) records all six candidate paths. Those are measurements of this model, not recovered original specifications.
 
@@ -52,7 +52,7 @@ The [review of the user's research](research/USER_RESEARCH_REVIEW.md) explains w
 | Height × width × total depth | 200.00 × 190.96 × 50.84 mm |
 | Structural backing | 4.0 mm |
 | White tube sections | 130; 1.8 mm wide; 1.0 mm deep |
-| Closest clear separation between white sections | 1.200 mm in corrected source; 0.935 mm in prior exports |
+| Closest clear separation between white sections | 1.200 mm |
 | Integral socket length | 80 mm |
 | Nominal circular clearance, lower → upper | Ø34 → Ø22 mm |
 | Minimum socket wall | 2.4 mm |

@@ -1,1 +1,1 @@
-13 September: exact parallel-path correction prepared and validated in 2D. Blender/STL/3MF rebuild pending because the Mac is locked. Existing binary exports and previews are the 12 September version.
+13 September: parallel-path model rebuilt through Blender GUI, backing triangulation repaired and returned to Blender, STL/3MF exports validated, all four previews inspected. Meshes and intersections pass. Slicer validation deferred at owner request; no physical print test; landmark angles and joint schedule remain unverified.

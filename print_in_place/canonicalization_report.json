@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-13",
+  "method": "Manifold kernel canonical triangulation; returned to Blender before final STL export and unchanged intersection check",
+  "source_sha256": "34d2cac28f43385ad3273d442811152344916c32bb87aa954b46e1d95aca4a7a",
+  "before_triangles": 26228,
+  "after_triangles": 26228,
+  "before_minimum_triangle_area_mm2": 8.735423762118444e-08,
+  "after_minimum_triangle_area_mm2": 4.1680874090843645e-05,
+  "volume_change_mm3": -7.484020898118615e-06,
+  "maximum_bounds_change_mm": 0.0,
+  "watertight": true
+}
