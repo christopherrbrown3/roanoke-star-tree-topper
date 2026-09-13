@@ -39,7 +39,7 @@ The prepared profiles have a maximum corresponding-edge direction error below 3 
 
 ## Evidence and limits
 
-The construction and measurements are reproducible with [prepare_a1_print_in_place.py](../scripts/prepare_a1_print_in_place.py). The original independently traced paths remain in [final/profile_measurements.json](../final/profile_measurements.json), and the corrected coordinates and complete fit diagnostics are in [the current profile report](../print_in_place/profile_measurements.json). The [angle worksheet](ANGLE_WORKSHEET.md) and [CSV](candidate_angles.csv) now describe the corrected model paths.
+The construction and measurements are reproducible with [prepare_a1_print_in_place.py](../scripts/prepare_a1_print_in_place.py). The original independently traced paths remain in [photographic_paths.json](photographic_paths.json), and the corrected coordinates and complete fit diagnostics are in [the current profile report](../print_in_place/profile_measurements.json). The [angle worksheet](ANGLE_WORKSHEET.md) and [CSV](candidate_angles.csv) now describe the corrected model paths.
 
 Parallelism is established for the model. The absolute outline angles, frame positions, and joint schedule remain provisional because no dimensioned elevation or original tube-layout drawing has been located. The fit does not turn a photographic reconstruction into a surveyed replica.
 

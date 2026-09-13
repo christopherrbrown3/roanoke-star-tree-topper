@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT=Path(__file__).resolve().parents[1]
-before=json.loads((ROOT/'final/profile_measurements.json').read_text())['six_paths_mm']
+before=json.loads((ROOT/'research/photographic_paths.json').read_text())['six_paths_mm']
 after=json.loads((ROOT/'print_in_place/profile_measurements.json').read_text())['six_paths_mm']
 font_path=Path('/System/Library/Fonts/Supplemental/Arial.ttf')
 def font(size):

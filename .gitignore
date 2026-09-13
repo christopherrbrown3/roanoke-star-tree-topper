@@ -20,5 +20,10 @@ research/user_provided/*.jpeg
 review/ref_*.png
 review/corner_compare/ref_*.png
 review/corner_compare/contact.png
-# Superseded scene originally contained a packed reference photograph.
-final/roanoke_star_tree_topper.blend
+# Superseded model exports belong in history, not the current project.
+final/
+models/
+review/
+design/
+previews/
+Roanoke_Star_*

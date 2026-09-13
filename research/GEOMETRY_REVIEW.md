@@ -1,12 +1,12 @@
-# Roanoke Star geometry review — corrected reconstruction
+# Photograph review and perspective reconstruction
 
-Status: superseded by `ACCURACY_AUDIT.md` on 10 September 2026. The following records the photographic reconstruction method, not a verified exact geometry. The user has not accepted the result.
+This document records the photographic evidence and reconstruction method. The [accuracy audit](ACCURACY_AUDIT.md) explains the limits of inferring physical geometry from uncalibrated photographs.
 
 ## Published dimensions and structure
 
 The [City of Roanoke](https://www.roanokeva.gov/1329/Roanoke-Star) describes an 88.5-foot star with three nested frames, each carrying three to five sets of clear neon tubing. The [Smithsonian inventory](https://nmaahc.si.edu/object/siris_ari_334963) records 88.5 feet high by 84.5 feet wide. This gives a width of **190.96 mm at 200 mm height**.
 
-The [Virginia Department of Historic Resources nomination](https://www.dhr.virginia.gov/VLR_to_transfer/PDFNoms/128-0352_Roanoke_Star_1999_Final_Nomination.pdf) describes the substantial steel lattice support. This rear tower is omitted from the topper and replaced with a concealed removable tree socket.
+The [Virginia Department of Historic Resources nomination](https://www.dhr.virginia.gov/VLR_to_transfer/PDFNoms/128-0352_Roanoke_Star_1999_Final_Nomination.pdf) describes the substantial steel lattice support. This rear tower is omitted from the topper and replaced with an integrated tree socket.
 
 ## Photographs actually examined
 
@@ -42,42 +42,8 @@ The city screenshots and the original city aerial are the same view and are not 
 
 This is a measured photographic reconstruction, not a surveyed replica. No engineering drawing establishing every vertex was located. Numerical fit results must not be interpreted as a guaranteed millimeter accuracy of the real landmark.
 
-## Corrected geometry
+## Relationship to the print model
 
-Before the small manufacturing perimeter allowance:
+The [photographic path record](photographic_paths.json) preserves the centerline coordinates used as input to the current design. The [parallel-path construction](PARALLEL_PATH_CORRECTION.md) derives consistent inward offsets from those coordinates. Current manufacturing dimensions, the integrated mount, and validation are documented in the [A1 design report](../print_in_place/DESIGN_REPORT.md).
 
-| Feature | Reconstructed value |
-|---|---:|
-| Outer-frame apex angle | 36.66° |
-| Three frame outer heights | 200.00 / 140.68 / 79.09 mm |
-| Three frame outer widths | 190.96 / 136.28 / 77.89 mm |
-| Outer shoulder height (origin at height midpoint) | +31.83 mm |
-| Outer bottom valley | −46.02 mm |
-| Outer lower point x coordinates | ±65.58 mm |
-| Six apex angles | 34.78–36.66° |
-
-The center star and each paired path have independently measured coordinates. They are not generic five-point star primitives, constant radial scale copies, or a direct trace of a low-angle photograph.
-
-## Manufacturing translation
-
-- Preserve the 200 × 190.96 mm backing envelope, with a 2.2 mm rounded perimeter allowance around slightly reduced light paths.
-- Use 1.8 mm nominal white rails, six separate closed-loop inserts arranged in three pairs. Earlier connecting webs were removed after render review to preserve the gaps at the tips.
-- Preserve varying gaps. The minimum visible within-pair gaps are 1.45, 0.93, and 1.52 mm; the minimum gaps between the pairs are 3.47 and 4.06 mm. These are minima over the entire outlines, not uniform spacing values.
-- Seat the inserts in 1.2 mm deep channels with approximately 0.30 mm clearance per side. The triangulated 2D profiles measure 0.299 mm minimum clearance due to rounded polygon discretization.
-- Keep a 3.2 mm rear plate, 5.0 mm raised channel tops, and 6.4 mm assembled front thickness. Inserts are 2.6 mm thick overall.
-- Use a removable 80 mm deep socket with 34/22 mm nominal bore and 2.4 mm radial wall. Shift the attachment flange down 3 mm to conceal it behind the revised silhouette. The full socket-and-flange front projection has zero area outside the backing outline.
-- Use four 2.5 × 6 mm plastic-thread pan-head screws, 2.9 mm flange holes, 2.0 mm blind pilots, and two locating keys with 0.30 mm side clearance. The revised support web meets the sleeve wall without intentionally intruding into its bore.
-
-These manufacturing figures were carried into the final Blender model. Some digital checks passed, but the light self-intersection check remains unresolved; see the current design report.
-
-## Review artifacts
-
-The following filenames record the analysis workflow. Photo-based overlays are not distributed; the original publisher links above identify their reference images. Geometry-only diagrams and coordinate data remain included.
-
-- `city_trace_overlay.png`: six measured paths over the primary photograph.
-- `rectified_six_paths.png`: corrected face-on centerline diagram.
-- `independent_aerial_overlay.jpg`: independent drone-photo projection check.
-- `accurate_light_paths.json`: complete six-path reconstruction and fit parameters.
-- `../final/profile_measurements.json`: prepared manufacturing path coordinates and measured 2D gaps/clearances.
-
-Photo attribution: city aerial credited to its City of Roanoke source; Schumin photographs credited to Ben Schumin; Wikimedia Neon Lights photograph credited to TampAGS for AGS Media, CC BY-SA 3.0, 17 November 2008. Overlays are cropped/annotated research comparisons, not original photographs. See linked source pages for applicable photo rights.
+The [original reconstruction data](accurate_light_paths.json) supports the perspective audit. Reference photographs and annotated photo comparisons are linked through the [source inventory](SOURCES.md); they are not redistributed in the repository.

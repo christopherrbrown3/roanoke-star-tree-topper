@@ -70,7 +70,7 @@ The design draws on municipal records, historical accounts, archival finding aid
 
 **Parallel tube paths.** A shared set of edge directions governs all six outlines. Constant inward offsets preserve parallel spacing along straight runs and through the interior corners. The [construction notes](research/PARALLEL_PATH_CORRECTION.md) document the offset distances and include a [before-and-after corner detail](research/parallel_path_comparison.png).
 
-**Individual neon sections.** Close photographs show interruptions along straight runs and illuminated bends around corners. A high-resolution Commons photograph provided observations of breaks near the quarter points of one long run. Those observations informed the rounded sections and dark gaps; symmetry and repetition complete the model’s pattern. The **130-section count describes this print**, rather than an inventory of the landmark’s glass tubes or electrical circuits. [Tube-layout study](research/tube_layout_research_luna.md), [recorded image observations](research/tube_joint_observations.json), [Schumin close-up series](https://www.schuminweb.com/photography/roanoke-star-night/), [Commons photograph](https://commons.wikimedia.org/wiki/File:Mill_Mountain_Star_Neon_Lights.JPG)
+**Individual neon sections.** Close photographs show interruptions along straight runs and illuminated bends around corners. A high-resolution Commons photograph provided observations of breaks near the quarter points of one long run. Those observations informed the rounded sections and dark gaps; symmetry and repetition complete the model’s pattern. The **130-section count describes this print**, rather than an inventory of the landmark’s glass tubes or electrical circuits. [Tube-layout study](research/TUBE_LAYOUT.md), [recorded image observations](research/tube_joint_observations.json), [Schumin close-up series](https://www.schuminweb.com/photography/roanoke-star-night/), [Commons photograph](https://commons.wikimedia.org/wiki/File:Mill_Mountain_Star_Neon_Lights.JPG)
 
 **Archival research.** The original-plan search examined the Virginia DHR National Register nomination, NPS asset records, the City’s public Engineering plan repository, Virginia Room finding aids, and restoration-report references. No original dimensioned Star elevation or shop drawing was located in the material reviewed. The [archive search record](research/PLAN_SEARCH.md) identifies the collections examined and distinguishes document contents from catalog listings.
 
@@ -96,9 +96,8 @@ See the [mesh report](print_in_place/mesh_validation.json), [intersection result
 | [`print_in_place/`](print_in_place/) | A1 model, material meshes, Blender scene, four rendered views, and validation reports |
 | [`scripts/`](scripts/) | Reproducible geometry construction, packaging, and checks |
 | [`research/`](research/) | Sources, photograph analysis, angle measurements, and archival research |
-| [`design/`](design/), [`models/`](models/), [`review/`](review/), [`final/`](final/) | Earlier design studies and the archived assembly-based model |
 
-The root `Roanoke_Star_*` files also belong to the early design studies. Use `print_in_place/` for the integrated, single-print topper shown above.
+`main` contains the integrated, single-print design shown above. Superseded models and development drafts are retained in Git history.
 
 ## Credits and reference material
 

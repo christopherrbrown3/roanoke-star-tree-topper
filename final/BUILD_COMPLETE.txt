@@ -1,1 +1,0 @@
-Blender model created, validated numerically, saved and STL files exported.

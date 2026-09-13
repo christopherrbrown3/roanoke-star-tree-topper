@@ -1,6 +1,6 @@
 # Accuracy audit — 10 September 2026
 
-**Finding: the present reconstruction cannot be called a perfect representation.** The user has not accepted its proportions. Earlier statements that the geometry was final or that the independent overlay established accuracy were too strong.
+**Finding: photographic fit does not establish exact landmark geometry.** This audit documents the constraints and limitations of the reconstruction used as the model’s starting point.
 
 ## The main methodological weakness
 
@@ -28,9 +28,9 @@ Searches covered original 1949 plans/blueprints, Kinsey drawings, CAD, engineeri
 
 The [DHR nomination](https://www.dhr.virginia.gov/VLR_to_transfer/PDFNoms/128-0352_Roanoke_Star_1999_Final_Nomination.pdf) supplies history and overall dimensions, but its available exhibits are location/site maps, not a dimensioned star elevation. The [1982 first-person account by Edward C. Moomaw](https://www.virginiaroom.org/digital/files/original/67/6354/JHSWV_11_02_1982.pdf) identifies the construction participants but did not provide a usable coordinate drawing in the material examined. No public dimensioned star elevation was located in these searches; this is not a claim that no drawings exist.
 
-## Evidence needed to finish an exact reconstruction
+## Measurement limits
 
-The best next source is a dimensioned front elevation or fabrication drawing from the City, Kinsey archive, or restoration/inspection records. Useful measurements include the heights and horizontal offsets of each frame's ten vertices, tube offsets within each frame, and the distinction between the steel/aluminum silhouette and tube centerlines.
+A dimensioned front elevation or fabrication drawing establishes constraints that the photographs alone cannot. Relevant measurements include the heights and horizontal offsets of each frame's ten vertices, tube offsets within each frame, and the distinction between the steel/aluminum silhouette and tube centerlines.
 
 A calibrated survey or a sufficiently controlled photograph set can also constrain the geometry, but should report camera calibration, perspective model, measurement residuals, and uncertainty. A drone gimbal-angle tag by itself is insufficient.
 
@@ -38,6 +38,6 @@ The repository retains the current candidate and full provenance. No further sha
 
 ## Update — 12 September 2026
 
-The [new user research review](USER_RESEARCH_REVIEW.md) retains the three-pair topology and identifies the supplied 60° apex as an unverified photo hypothesis. It corrects the proposed 1.8× **clear-gap** rule: the supplied pixels describe centerline intervals, so that number is not a clear-gap ratio. The [angle worksheet](ANGLE_WORKSHEET.md) exposes all candidate angles with explicit conventions. The [plan search](PLAN_SEARCH.md) identifies specific incomplete archival records and unsent requests; no dimensioned Star elevation was found.
+The [new user research review](USER_RESEARCH_REVIEW.md) retains the three-pair topology and identifies the supplied 60° apex as an unverified photo hypothesis. It corrects the proposed 1.8× **clear-gap** rule: the supplied pixels describe centerline intervals, so that number is not a clear-gap ratio. The [angle worksheet](ANGLE_WORKSHEET.md) exposes all candidate angles with explicit conventions. The [plan search](PLAN_SEARCH.md) records the examined archival sources and their coverage; no dimensioned Star elevation was found.
 
 The continuous-insert candidate's pending Blender repair has now passed the existing digital mesh and assembly checks, including zero self-intersection candidates. The user subsequently requested individually visible tube sections, so a segmented-tube revision is in progress. The repair does not resolve landmark geometry.

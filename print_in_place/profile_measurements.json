@@ -43,8 +43,8 @@
     ],
     "front_projection_outside_star_mm2": 0
   },
-  "source_paths": "final/profile_measurements.json",
-  "source_sha256": "2cc877476454abf9148046a94a253d0d0728c704f1e4c654229472e2098f2552",
+  "source_paths": "research/photographic_paths.json",
+  "source_sha256": "4c9b95f5e6e0fc91d32f02d4a9a6b5e75c5ef3c2cd6ebf1090c890b95b236b38",
   "six_paths_mm": [
     [
       [
@@ -342,7 +342,7 @@
   },
   "outline_verified_against_survey": false,
   "tube_joint_schedule_verified": false,
-  "joint_evidence": "research/tube_joint_observations.json and research/tube_layout_research_luna.md",
+  "joint_evidence": "research/tube_joint_observations.json and research/TUBE_LAYOUT.md",
   "joint_limitations": "Visible interruptions may include supports. Image-space positions and mirrored/repeated transfer are approximate. No exact fabrication schedule was found.",
   "joint_schedule": [
     {

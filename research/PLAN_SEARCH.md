@@ -46,4 +46,4 @@ The [WDBJ interview transcript preserved by Virginia Tech](https://scholar.lib.v
 
 Priority is a dimensioned front elevation for all three frames, or a reliable set of surveyed vertex coordinates. Ask which dimensions refer to frame edges, tube centerlines, or the overall visual envelope. The Smithsonian's original **IAS VA000441** measurement worksheet is particularly useful for resolving the approximate 84.5-foot width against the city art catalog's 100-foot second dimension.
 
-Specific, reviewable requests are prepared in [ARCHIVE_REQUEST_DRAFTS.md](ARCHIVE_REQUEST_DRAFTS.md). They have not been sent.
+The search coverage above records the publicly examined material. No archive correspondence is represented as completed research.

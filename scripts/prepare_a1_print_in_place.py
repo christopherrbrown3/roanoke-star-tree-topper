@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT/'print_in_place'
 OUT.mkdir(exist_ok=True)
 (OUT/'previews').mkdir(exist_ok=True)
-source = ROOT/'final/profile_measurements.json'
+source = ROOT/'research/photographic_paths.json'
 raw_paths = np.asarray(json.loads(source.read_text())['six_paths_mm'], dtype=float)
 
 # A separate photo trace for each contour allowed the paired rows to converge,
@@ -138,13 +138,13 @@ report = {
              'upper_circular_clearance_diameter_mm':22,'minimum_wall_mm':2.4,
              'axis_depth_mm':23.4,'roof_angle_deg':45,'tie_hole_diagonal_mm':5,
              'y_openings_mm':[-32,48],'front_projection_outside_star_mm2':0},
-    'source_paths':'final/profile_measurements.json',
+    'source_paths':'research/photographic_paths.json',
     'source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),
     'six_paths_mm':paths,
     'parallel_path_correction':parallel_report,
     'outline_verified_against_survey':False,
     'tube_joint_schedule_verified':False,
-    'joint_evidence':'research/tube_joint_observations.json and research/tube_layout_research_luna.md',
+    'joint_evidence':'research/tube_joint_observations.json and research/TUBE_LAYOUT.md',
     'joint_limitations':'Visible interruptions may include supports. Image-space positions and mirrored/repeated transfer are approximate. No exact fabrication schedule was found.',
     'joint_schedule':schedule,
 }

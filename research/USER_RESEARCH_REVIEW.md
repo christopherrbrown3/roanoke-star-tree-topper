@@ -36,4 +36,4 @@ The earlier continuous-insert candidate's bevel repair passed its digital checks
 
 The supplied kitchen-counter photograph has no verified model page or creator attribution in the task. The separately linked [MakerWorld model by Higgins](https://makerworld.com/en/models/380234-roanoke-star) calls itself a recreation and supplies no engineering provenance. It was not used as a dimension source or imported into the CAD. The page was publicly viewable; a failed automated fetch was not evidence of a paid model.
 
-See [PLAN_SEARCH.md](PLAN_SEARCH.md) for archive findings and [ARCHIVE_REQUEST_DRAFTS.md](ARCHIVE_REQUEST_DRAFTS.md) for unsent requests targeting the missing geometry.
+See [PLAN_SEARCH.md](PLAN_SEARCH.md) for archive findings and the scope of the material examined.

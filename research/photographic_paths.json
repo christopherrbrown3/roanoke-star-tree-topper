@@ -1,9 +1,8 @@
 {
-  "landmark_ft": {
-    "height": 88.5,
-    "width": 84.5
-  },
-  "source": "research/accurate_light_paths.json",
+  "description": "Photo-derived centerline coordinates used to fit the current parallel tube paths. These are model measurements, not surveyed landmark coordinates.",
+  "units": "mm",
+  "source_url": "https://www.roanokeva.gov/ImageRepository/Document?documentID=13604",
+  "original_measurement_record_sha256": "2cc877476454abf9148046a94a253d0d0728c704f1e4c654229472e2098f2552",
   "six_paths_mm": [
     [
       [
@@ -257,36 +256,5 @@
         7.8817589974101665
       ]
     ]
-  ],
-  "base_bounds": [
-    -95.48021637066756,
-    -99.99997886578174,
-    95.48021637066756,
-    99.99724533188017
-  ],
-  "mount_outside_silhouette_mm2": 0.0,
-  "rail_width_mm": 1.8,
-  "clearance_per_side_mm": 0.3,
-  "rail_pair_min_visible_gaps_mm": [
-    1.4533228927081348,
-    0.9348440277671378,
-    1.5228256790478076
-  ],
-  "inter_pair_min_visible_gaps_mm": [
-    3.469643278341537,
-    4.062189572586751
-  ],
-  "pair_channel_min_separation_mm": [
-    2.8696639230359766,
-    3.46243469643081
-  ],
-  "foot_to_pocket_min_clearance_mm": [
-    0.2985286375064995,
-    0.29854528681802295,
-    0.29855789419964796
-  ],
-  "manufacturing_path_scale_xy": [
-    0.9769585798816568,
-    0.978
   ]
 }
