@@ -1,8 +1,8 @@
-# Angle worksheet — unverified candidate, 12 September 2026
+# Angle worksheet — current parallel-path candidate, 13 September 2026
 
-**These are calculated angles of the existing photographic reconstruction, not measured angles of the landmark.** No 1949 or modern dimensioned elevation has been located. This worksheet does not select a new geometry.
+**These are calculated angles of the current model, not measured angles of the landmark.** No 1949 or modern dimensioned elevation has been located.
 
-The source is `accurate_light_paths.json`, before the manufacturing border allowance. Full values for all six paths are in `candidate_angles.csv`. Left/right pairs are mirrored, but the shape is not constrained to five-fold rotational symmetry.
+The source is `../print_in_place/profile_measurements.json`. Full values for all six paths are in `candidate_angles.csv`. The 13 September correction derives all six paths from exact parallel offsets of the outer candidate edge lines. All corresponding angles therefore match. Left/right pairs are mirrored, but the shape is not constrained to five-fold rotational symmetry. See [the parallel-path correction](PARALLEL_PATH_CORRECTION.md) for the prior errors and chosen offsets.
 
 ## Angle conventions
 
@@ -16,16 +16,16 @@ For a regular pentagram-derived star only, the interior tip is 36°, the interio
 
 | Vertex (clockwise from top) | Interior | Exterior turn | Outside sector |
 |---|---:|---:|---:|
-| 1. Top tip | 36.66° | +143.34° | 323.34° |
-| 2. Upper-right notch | 251.67° | -71.67° | 108.33° |
-| 3. Right tip | 39.08° | +140.92° | 320.92° |
-| 4. Lower-right notch | 249.05° | -69.05° | 110.95° |
-| 5. Lower-right tip | 32.41° | +147.59° | 327.59° |
-| 6. Bottom notch | 258.92° | -78.92° | 101.08° |
-| 7. Lower-left tip | 32.41° | +147.59° | 327.59° |
-| 8. Lower-left notch | 249.05° | -69.05° | 110.95° |
-| 9. Left tip | 39.08° | +140.92° | 320.92° |
-| 10. Upper-left notch | 251.67° | -71.67° | 108.33° |
+| 1. Top tip | 36.62° | +143.38° | 323.38° |
+| 2. Upper-right notch | 251.69° | -71.69° | 108.31° |
+| 3. Right tip | 39.11° | +140.89° | 320.89° |
+| 4. Lower-right notch | 249.00° | -69.00° | 111.00° |
+| 5. Lower-right tip | 32.40° | +147.60° | 327.60° |
+| 6. Bottom notch | 258.97° | -78.97° | 101.03° |
+| 7. Lower-left tip | 32.40° | +147.60° | 327.60° |
+| 8. Lower-left notch | 249.00° | -69.00° | 111.00° |
+| 9. Left tip | 39.11° | +140.89° | 320.89° |
+| 10. Upper-left notch | 251.69° | -71.69° | 108.31° |
 
 The interior angles sum to 1440° and the signed exterior turns to 360° for each ten-vertex path. These identities check the calculation; they do not validate the reconstructed shape.
 
@@ -35,4 +35,4 @@ A perspective projection generally changes angles. Bilateral symmetry and an ove
 
 The supplied research proposes edge directions 0°, ±30°, ±60° and a 60° top apex. It supplies no rectification calibration, source pixel coordinates for the edge fits, residuals, or uncertainty for these angles. Treat this as unverified. Edge directions alone also do not fix shoulder lengths, leg lengths or nested offsets.
 
-Source SHA-256: `62a33bdb01c18d3dc716f849486a6992bf850d4dcaea613d3e7e009a365d114d`
+Source SHA-256: `01011ab9585d2f56a1e46e2991aa97cc0026d3547e0e660f842bbcb75297f356`

@@ -1,0 +1,34 @@
+{
+  "RoanokeStar_Body": {
+    "dimensions_mm": [
+      190.96043395996094,
+      199.99722290039062,
+      50.83574295043945
+    ],
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "volume_mm3": 81320.61388671532,
+    "degenerate_faces": 0,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "RoanokeStar_Tube_Sections": {
+    "dimensions_mm": [
+      188.3594207763672,
+      197.39907836914062,
+      1.0
+    ],
+    "nonmanifold_edges": 0,
+    "boundary_edges": 0,
+    "volume_mm3": 4895.53214154662,
+    "degenerate_faces": 0,
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  }
+}

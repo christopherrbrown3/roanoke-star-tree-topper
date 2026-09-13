@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-13",
+  "status": "parallel_path_correction_prepared_rebuild_pending",
+  "assembly_required": false,
+  "target_printer": "Bambu Lab A1 with AMS lite",
+  "visible_tube_sections": 130,
+  "digital_mesh_checks_passed": true,
+  "landmark_geometry_verified": false,
+  "tube_joint_schedule_verified": false,
+  "physical_print_tested": false,
+  "slicer_validation_complete": false,
+  "slicer_validation_status": "deferred at owner request",
+  "standard_3mf_only": true,
+  "limitations": [
+    "No original dimensioned elevation located; proportions and angles remain provisional",
+    "Photo-informed joint schedule includes mirrored and repeated inference",
+    "No physical strength, branch-fit or retention test",
+    "No saved Bambu profile or toolpath"
+  ],
+  "source_change_pending_blender_rebuild": true,
+  "parallel_profiles_verified": true
+}

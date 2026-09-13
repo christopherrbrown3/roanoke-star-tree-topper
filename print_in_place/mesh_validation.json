@@ -1,0 +1,97 @@
+{
+  "date": "2026-09-12",
+  "material_meshes": {
+    "dark_body": {
+      "watertight": true,
+      "consistent_winding": true,
+      "connected_solids": 1,
+      "triangles": 26228,
+      "zero_area_triangles": 0,
+      "duplicate_triangles": 0,
+      "volume_cm3": 81.32061388547984,
+      "bounds_mm": [
+        [
+          -95.48021697998047,
+          -99.9999771118164,
+          0.0
+        ],
+        [
+          95.48021697998047,
+          99.99724578857422,
+          50.83574295043945
+        ]
+      ]
+    },
+    "white_tube_sections": {
+      "watertight": true,
+      "consistent_winding": true,
+      "connected_solids": 130,
+      "triangles": 24684,
+      "zero_area_triangles": 0,
+      "duplicate_triangles": 0,
+      "volume_cm3": 4.895532141546619,
+      "bounds_mm": [
+        [
+          -94.1797103881836,
+          -98.69908142089844,
+          0.0
+        ],
+        [
+          94.1797103881836,
+          98.69999694824219,
+          1.0
+        ]
+      ]
+    }
+  },
+  "fused_print": {
+    "watertight": true,
+    "consistent_winding": true,
+    "connected_solids": 1,
+    "triangles": 696,
+    "zero_area_triangles": 0,
+    "duplicate_triangles": 0,
+    "volume_cm3": 86.21614600873303,
+    "bounds_mm": [
+      [
+        -95.48021697998047,
+        -99.9999771118164,
+        0.0
+      ],
+      [
+        95.48021697998047,
+        99.99724578857422,
+        50.83574295043945
+      ]
+    ]
+  },
+  "material_overlap_mm3": 7.981679553403787e-15,
+  "material_coverage_difference_from_outer_solid_mm3": 9.313172768088407e-05,
+  "dimensions_mm": [
+    190.96043395996094,
+    199.99722290039062,
+    50.83574295043945
+  ],
+  "solid_PLA_estimate_g": 106.90802105082896,
+  "center_of_mass_mm": [
+    -1.9017555624589724e-07,
+    -1.5856290407613116,
+    7.727392453193104
+  ],
+  "socket_axis_depth_mm": 23.4,
+  "center_of_mass_forward_of_socket_axis_mm": 15.672607546806894,
+  "gravity_moment_Nm_solid_PLA": 0.016431311341439648,
+  "surface_area_over_45deg_overhang_above_bed_mm2": 0.0,
+  "mandrel_radial_allowance_mm": 0.05,
+  "mandrel_overlap_mm3": 0.0,
+  "physical_print_tested": false,
+  "slicer_validation_complete": false,
+  "landmark_geometry_verified": false,
+  "tube_joint_schedule_verified": false,
+  "standard_3mf": {
+    "one_build_object": true,
+    "material_volumes": 2,
+    "roundtrip_mesh_validation": true,
+    "sha256": "5ef35401292dbbc3b6a123e4a58454fb7bbef13c8f616c1bc1e2e9df3f5a57c7"
+  }
+}

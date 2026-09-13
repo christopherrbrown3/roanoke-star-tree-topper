@@ -1,0 +1,1 @@
+13 September: exact parallel-path correction prepared and validated in 2D. Blender/STL/3MF rebuild pending because the Mac is locked. Existing binary exports and previews are the 12 September version.

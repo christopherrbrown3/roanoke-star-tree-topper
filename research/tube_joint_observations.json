@@ -1,0 +1,60 @@
+{
+  "purpose": "Reproducible photo observations for physical neon section placement; not a fabrication drawing or wiring schedule.",
+  "source": {
+    "page_url": "https://commons.wikimedia.org/wiki/File:Mill_Mountain_Star_Neon_Lights.JPG",
+    "image_description": "Mill Mountain Star Neon Lights, red/white/blue close photograph by TampAGS for AGS Media, 17 November 2008.",
+    "local_file": "research/references/commons_neon_lights.jpg",
+    "pixel_dimensions": {
+      "width": 2592,
+      "height": 1944
+    },
+    "view_region": "Outer star, upper right horizontal arm and adjoining outer-point leg; near-frontal crop but still oblique enough that coordinates are approximate."
+  },
+  "observations": [
+    {
+      "id": "outer_upper_right_horizontal_lower_row",
+      "track": "outer red pair, lower/inner-looking row of the two parallel red tubes on the upper right horizontal arm",
+      "path_endpoints_px": {
+        "left_corner": {
+          "x": 1545,
+          "y": 603,
+          "uncertainty_px": 12,
+          "meaning": "bright lower row leaves the concave shoulder/notch"
+        },
+        "right_tip": {
+          "x": 2285,
+          "y": 608,
+          "uncertainty_px": 15,
+          "meaning": "bright lower row reaches the outer lateral point before turning down"
+        }
+      },
+      "joint_candidates_px": [
+        {
+          "x": 1736,
+          "y": 603,
+          "uncertainty_px": 10,
+          "fraction_along_x_span": 0.258108,
+          "appearance": "dark transverse interruption across the bright core"
+        },
+        {
+          "x": 1915,
+          "y": 604,
+          "uncertainty_px": 10,
+          "fraction_along_x_span": 0.5,
+          "appearance": "dark transverse interruption across the bright core"
+        },
+        {
+          "x": 2092,
+          "y": 605,
+          "uncertainty_px": 10,
+          "fraction_along_x_span": 0.739189,
+          "appearance": "dark transverse interruption across the bright core"
+        }
+      ],
+      "interpretation": "Observed as a four-piece-looking straight run with three interior interruptions, approximately 0.258 / 0.500 / 0.739 across the horizontal x-span. The interruptions are consistent with tube ends or connector/terminal assemblies, but the photograph cannot prove an electrical gap versus a dark support or occlusion.",
+      "confidence": "moderate for the image positions; low for the exact physical cause"
+    }
+  ],
+  "paired_phase_note": "This record deliberately does not claim that the neighboring red row shares or staggers these three breaks. In this horizontal example several interruptions appear approximately vertically aligned between rows, while other oblique close-ups (Schumin images 098, 102, and 103) suggest phase differences. Perspective and supports prevent a reliable general rule.",
+  "modeling_use": "For this observed long horizontal run, a four-section visual treatment with joints near 25.8%, 50.0%, and 73.9% of the x-span is better supported than a universal two-joint 30%/65% pattern. Mirror or transfer to other tracks only as an inference, not as measured historical placement."
+}

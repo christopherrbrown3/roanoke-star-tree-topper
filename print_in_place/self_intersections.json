@@ -1,0 +1,12 @@
+{
+  "RoanokeStar_Body": {
+    "nonadjacent_triangle_intersection_candidates": 0,
+    "examples": [],
+    "extra_distance_exclusion_mm": 0
+  },
+  "RoanokeStar_Tube_Sections": {
+    "nonadjacent_triangle_intersection_candidates": 0,
+    "examples": [],
+    "extra_distance_exclusion_mm": 0
+  }
+}
