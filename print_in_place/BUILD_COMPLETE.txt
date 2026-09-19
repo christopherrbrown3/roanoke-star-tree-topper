@@ -1,1 +1,1 @@
-13 September: parallel-path model rebuilt through Blender GUI, backing triangulation repaired and returned to Blender, STL/3MF exports validated, all four previews inspected. Meshes and intersections pass. Slicer validation deferred at owner request; no physical print test; landmark angles and joint schedule remain unverified.
+A1 model built through Blender GUI; material geometry, lettering, and 3MF package checks passed. Final scene/export synchronization and native sliced-layer inspection are incomplete. See RELEASE_STATUS.json.

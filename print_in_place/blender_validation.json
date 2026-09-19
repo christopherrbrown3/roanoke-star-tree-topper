@@ -7,7 +7,7 @@
     ],
     "nonmanifold_edges": 0,
     "boundary_edges": 0,
-    "volume_mm3": 81320.01948918318,
+    "volume_mm3": 77872.19329036564,
     "degenerate_faces": 0,
     "scale": [
       1.0,
@@ -17,13 +17,13 @@
   },
   "RoanokeStar_Tube_Sections": {
     "dimensions_mm": [
-      188.3594207763672,
-      197.39907836914062,
+      190.96043395996094,
+      199.99722290039062,
       1.0
     ],
     "nonmanifold_edges": 0,
     "boundary_edges": 0,
-    "volume_mm3": 4896.12653889676,
+    "volume_mm3": 8303.842655553779,
     "degenerate_faces": 0,
     "scale": [
       1.0,

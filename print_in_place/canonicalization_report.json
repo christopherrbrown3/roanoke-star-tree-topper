@@ -1,12 +1,28 @@
 {
   "date": "2026-09-13",
-  "method": "Manifold kernel canonical triangulation; returned to Blender before final STL export and unchanged intersection check",
-  "source_sha256": "34d2cac28f43385ad3273d442811152344916c32bb87aa954b46e1d95aca4a7a",
-  "before_triangles": 26228,
-  "after_triangles": 26228,
-  "before_minimum_triangle_area_mm2": 8.735423762118444e-08,
-  "after_minimum_triangle_area_mm2": 4.1680874090843645e-05,
-  "volume_change_mm3": -7.484020898118615e-06,
-  "maximum_bounds_change_mm": 0.0,
-  "watertight": true
+  "method": "Manifold canonical triangulation; both materials returned to Blender and rechecked without changing intersection tolerances",
+  "materials": {
+    "body": {
+      "source_sha256": "8e0be83382e9613e34085e18980b1bc38a497867a774a2101c3340d3ee4b83cd",
+      "before_triangles": 87528,
+      "after_triangles": 87528,
+      "before_minimum_triangle_area_mm2": 3.994216967839748e-06,
+      "after_minimum_triangle_area_mm2": 3.994216967839748e-06,
+      "volume_change_mm3": 0.0,
+      "maximum_bounds_change_mm": 0.0,
+      "watertight": true,
+      "connected_solids": 1
+    },
+    "white": {
+      "source_sha256": "8009307a4f4fa24bf61032df23386679da8a85b260b44c8932424ab1d1abccb5",
+      "before_triangles": 77964,
+      "after_triangles": 77964,
+      "before_minimum_triangle_area_mm2": 0.0,
+      "after_minimum_triangle_area_mm2": 3.345427649037447e-05,
+      "volume_change_mm3": 0.0,
+      "maximum_bounds_change_mm": 0.0,
+      "watertight": true,
+      "connected_solids": 133
+    }
+  }
 }

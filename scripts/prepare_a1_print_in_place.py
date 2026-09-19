@@ -121,6 +121,23 @@ white = unary_union(segments)
 assert white.geom_type == 'MultiPolygon' and len(white.geoms) == len(segments)
 assert white.difference(outline).area < 1e-8
 put('white_tube_sections',white)
+# Three pale backing bands echo the daylight structure. A printable dark keyline
+# separates every white tube from the white band. All colors still meet Z=0;
+# the visual relief does not require supports or small first-layer bridges.
+band_margin=2.2  # from each outside centerline; outer band meets the silhouette
+keyline=.6
+bands=unary_union([
+    Polygon(paths[i]).buffer(band_margin,quad_segs=16).difference(
+        Polygon(paths[i+1]).buffer(-band_margin,quad_segs=16))
+    for i in [0,2,4]
+])
+assert bands.geom_type=='MultiPolygon' and len(bands.geoms)==3
+backings=bands.difference(white.buffer(keyline,quad_segs=10)).intersection(outline)
+white_material=unary_union([white,backings])
+assert white_material.difference(outline).area<1e-8
+assert abs(white_material.area-white.area-backings.area)<1e-7
+put('white_backing_bands',backings)
+put('white_material',white_material)
 mount_foot = Polygon([(-19.4,-32),(19.4,-32),(13.4,48),(-13.4,48)])
 assert mount_foot.difference(outline).area < 1e-8
 report = {
@@ -129,6 +146,14 @@ report = {
     'orientation':'front face on the bed; integral mount grows upward',
     'tube_width_mm':tube_width,'tube_inlay_depth_mm':1.0,'straight_run_dark_gap_mm':dark_gap,
     'visible_tube_sections':len(segments),
+    'backing_bands':3,'tube_dark_outline_width_mm':keyline,
+    'backing_outer_margin_from_centerline_mm':band_margin,
+    'clear_gap_between_backing_bands_mm':[
+        offsets[2]-offsets[1]-2*band_margin,
+        offsets[4]-offsets[3]-2*band_margin],
+    'white_material_connected_solids':len(white_material.geoms),
+    'white_backing_front_area_mm2':backings.area,
+    'white_material_front_area_mm2':white_material.area,
     'sections_per_path':[10*len(x) for x in fractions_by_path],
     'body_thickness_mm':4.0,'outline_bounds_mm':list(outline.bounds),
     'minimum_tube_to_outline_mm':white.distance(outline.boundary),

@@ -1,33 +1,41 @@
 # Roanoke Star Tree Topper
 
-Roanoke’s Mill Mountain Star, in miniature. This 200 mm Christmas tree topper brings the landmark’s distinctive neon pattern to a single two-color print: **130 individual white tube sections**, six outlines in three pairs, and a dark body with an integrated tree mount.
+Roanoke’s Mill Mountain Star, in miniature. This 200 mm Christmas tree topper brings the landmark’s distinctive neon pattern to a single two-color print: **130 individual tube sections on three white star-shaped bands**, a dark body, and an integrated tree mount.
 
 **One print · Two colors · No assembly**
 
-![Front render of the Roanoke Star tree topper, showing individual white tube sections on a navy backing](print_in_place/previews/front.png)
+![Front render showing three white backing bands and individually outlined white tubes](print_in_place/previews/front.png)
 
-Designed for the **Bambu Lab A1 with AMS lite**, with editable Blender source, material-separated 3MF geometry, and a documented research and validation process.
+Designed for the **Bambu Lab A1 with AMS lite**, with editable Blender source, a two-filament 3MF project, and a documented research and validation process.
 
 ## Download
 
 | File | Use |
 |---|---|
-| **[Download the two-color 3MF](print_in_place/roanoke_star_A1.3mf)** | Primary print model. One object with dark and white material volumes, already oriented face-down. |
-| [Editable Blender scene](print_in_place/roanoke_star_A1.blend) | Model, materials, cameras, reference curves, and embedded construction notes. |
-| [Dark body STL](print_in_place/body_material.stl) + [white tube STL](print_in_place/white_tube_material.stl) | Alternative material meshes with a shared origin. Import together as parts of one object. |
+| **[Download the two-color 3MF](print_in_place/roanoke_star_A1.3mf)** | One object, face-down, with filament 1 assigned to the dark body and filament 2 to the white face details. |
+| [Blender construction scene](print_in_place/roanoke_star_A1.blend) | Editable construction checkpoint; predates the final mesh cleanup in the STL and 3MF exports. |
+| [Dark body STL](print_in_place/body_material.stl) + [white face STL](print_in_place/white_tube_material.stl) | Alternative material meshes with a shared origin. Import together as parts of one object. |
 | [Design report](print_in_place/DESIGN_REPORT.md) | Detailed dimensions, mount geometry, material layout, and validation results. |
 
-The 3MF contains model geometry and material assignments; it does not contain a printer profile or sliced toolpath. All print files and renders for this design are in [`print_in_place/`](print_in_place/).
+The 3MF includes the A1 0.4 mm printer configuration, two Generic PLA filaments, and 0.20 mm process settings. It contains editable geometry rather than a pre-sliced toolpath. All print files and renders are in [`print_in_place/`](print_in_place/).
+
+**Validation scope:** the current STL and 3MF meshes pass the documented geometry checks. Bambu Studio has displayed the two-filament setup on import; sliced-layer verification is incomplete. Use the STL or 3MF files for printing—the Blender download is a construction checkpoint whose final scene/export synchronization is incomplete. See the [release status](print_in_place/RELEASE_STATUS.json).
 
 ## Designed around the tubes
 
-The individual white sections give the face its character. Rounded ends and small dark breaks suggest separate lengths of neon, while continuous bends carry the light around the star’s points and recesses. Each nested outline uses a constant inward offset from the outer path, keeping corresponding tube runs parallel through every corner—including the two lower side notches.
+The individual white sections give the face its character. Rounded ends and small dark breaks suggest separate lengths of neon, while continuous bends carry the light around the star’s points and recesses. Three white bands echo the pale backing frames visible in daylight photographs. A **0.6 mm dark outline** separates each tube from its backing, preserving the individual-tube appearance with only two filaments.
 
-The tubes are **flush inlays**, 1.8 mm wide and 1.0 mm deep. Both colors meet the build plate, giving the decorated face a consistent finish. A continuous 4 mm backing joins the inlays and rear socket into one finished part. Color changes are confined to the first five layers at a 0.20 mm layer height.
+Each nested tube outline uses a constant inward offset from the outer path, keeping corresponding runs parallel through every corner—including the two lower side notches. The [spacing review](research/SPACING_REVIEW.md) compares the model with the primary aerial reference and explains why the existing tube positions were retained. The broader white backing bands leave approximately **1.6 mm of dark space** between the three star groups.
+
+The tubes and backing bands are **flush inlays**, 1.0 mm deep; each tube is 1.8 mm wide. Both colors meet the build plate, giving the decorated face a consistent finish. The dark outlines provide visual definition without raised details or small unsupported bridges. A continuous 4 mm body joins the inlays and rear socket into one finished part. Color changes are confined to the first five layers at a 0.20 mm layer height.
 
 ![Three-quarter render of the two-color topper and its integrated rear mount](print_in_place/previews/three_quarter.png)
 
 The tapered socket sits behind the star’s silhouette. Its sloped roof and diamond-shaped tie holes are designed around face-down FDM printing. The topper slides over the tree leader; the holes provide attachment points for optional retaining ties.
+
+The back carries **`christopherbrown.io` recessed 0.6 mm** into the upper shoulder, clear of the socket. The lettering leaves 2.4 mm of material above the front inlays.
+
+![Rear detail of the recessed christopherbrown.io attribution](print_in_place/previews/rear_detail.png)
 
 ## Print specifications
 
@@ -35,22 +43,24 @@ The tapered socket sits behind the star’s silhouette. Its sloped roof and diam
 |---|---|
 | Target printer | Bambu Lab A1 with AMS lite |
 | Overall size, height × width × depth | 200.00 × 190.96 × 50.84 mm |
-| Materials | Two compatible PLA colors; navy or black body, white inlays |
+| Materials | Two compatible PLA colors; navy or black body and tube outlines, white tubes and bands |
 | Nozzle / layer height | 0.4 mm / 0.20 mm |
 | Orientation | Decorated face flat against the build plate |
-| Tube layout | 130 sections along six outlines in three pairs |
+| Tube layout | 130 sections along six outlines in three pairs, on three white bands |
 | Tube width / inlay depth | 1.8 mm / 1.0 mm |
-| Minimum clear gap between sections | 1.20 mm |
+| Break between consecutive tube sections | 1.20 mm |
+| Dark outline around each tube | 0.60 mm |
+| Clear space between white backing bands | 1.595 / 1.667 mm |
 | Backing thickness | 4.0 mm |
 | Integrated socket | 80 mm long; nominal circular clearance tapers from Ø34 to Ø22 mm |
 | Socket wall thickness | 2.4 mm minimum |
 
-1. Open the 3MF as one object and assign the dark body and white inlays to their respective AMS lite filaments. If using the STLs, preserve their shared position when importing them as parts of one object.
+1. Open the 3MF **as a project** in Bambu Studio. Its two parts are already assigned: filament 1 is dark, filament 2 is white. Map those project filaments to the appropriate AMS lite spools. If using the STLs, import both as parts of one object, preserve their shared position, and assign the colors.
 2. Keep the decorated face on the build plate. Use the A1 0.4 mm nozzle configuration and a 0.20 mm layer height.
-3. Use four walls, five top and bottom layers, and 15% gyroid infill as starting settings. Enable the prime tower; the model’s sloped socket roof is designed for printing with supports disabled.
+3. The project uses four walls, five top and bottom layers, 15% gyroid infill, Arachne walls, and a prime tower, with supports disabled. Select your actual build plate; the included setting is Textured PEI.
 4. Check the sliced preview for all white sections, clear gaps, and the socket roof before printing. Size the tree leader to the socket and use the rear tie holes where additional retention is useful.
 
-These are recommended starting settings. The included validation covers digital geometry; printer-specific slicing and physical print performance are not certified.
+The owner successfully printed the earlier tube-only face from the two material STLs. The white backing bands and recessed signature are newer changes; that earlier print does not establish the revised face's physical performance. The included validation records the geometry and the scope of the slicer checks.
 
 ## A Christmas landmark since 1949
 
@@ -78,22 +88,23 @@ This is a **photo-informed interpretation of the Roanoke Star**. Exact landmark 
 
 ## Geometry validation
 
-The exported files are checked against the construction profiles and the saved Blender scene. The included reports record:
+The current material meshes are checked against the construction profiles and complete outer solid. The included reports record:
 
 - Watertight material meshes with consistent winding and no duplicate or zero-area triangles.
-- One connected dark body and 130 white inlay solids that together form a single connected print.
+- One connected dark body and 133 white solids—130 tube sections and three backing bands—that together form a single connected print.
 - Zero non-adjacent triangle-intersection candidates in either material mesh.
 - Material coverage matching the complete outer solid within export precision.
 - Clearance for the nominal tapered socket mandrel and geometry within the chosen 45° overhang limit.
-- A standard 3MF geometry round trip and exact agreement between the saved scene’s STL exports and the validated files.
+- The engraved lettering's actual floor, depth, and clearance from the socket, checked against its construction footprint.
+- A standard 3MF geometry round trip, two filament definitions, and explicit part-to-filament assignments.
 
-See the [mesh report](print_in_place/mesh_validation.json), [intersection results](print_in_place/self_intersections.json), and [scene/export verification](print_in_place/scene_export_validation.json) for the measurements. The [rebuild guide](scripts/REBUILD.md) documents profile generation, Blender construction, export, and validation.
+See the [mesh report](print_in_place/mesh_validation.json) and [intersection results](print_in_place/self_intersections.json) for the measurements. The [scene/export status](print_in_place/scene_export_validation.json) distinguishes the current exports from the saved Blender checkpoint. The [rebuild guide](scripts/REBUILD.md) documents profile generation, Blender construction, export, and validation.
 
 ## Explore the project
 
 | Directory | Contents |
 |---|---|
-| [`print_in_place/`](print_in_place/) | A1 model, material meshes, Blender scene, four rendered views, and validation reports |
+| [`print_in_place/`](print_in_place/) | A1 model, material meshes, Blender scene, rendered views, and validation reports |
 | [`scripts/`](scripts/) | Reproducible geometry construction, packaging, and checks |
 | [`research/`](research/) | Sources, photograph analysis, angle measurements, and archival research |
 
@@ -103,4 +114,12 @@ See the [mesh report](print_in_place/mesh_validation.json), [intersection result
 
 Project by [christopherrbrown3](https://github.com/christopherrbrown3). Historical and visual references include the City of Roanoke, Virginia DHR, Roanoke Public Libraries’ Virginia Room, the Smithsonian inventory, Virginia Tech’s WDBJ archive, Ben Schumin, and Wikimedia Commons contributors.
 
-Reference photographs and archival documents are linked from their original publishers. This repository includes the project’s model renders, geometry diagrams, research notes, and source attribution; it does not redistribute reference photos or photo-based crops and overlays. See the [source credits](research/SOURCES.md), [photograph inventory](research/GEOMETRY_REVIEW.md), and [supplied-reference provenance](research/user_provided/PROVENANCE.json). Third-party materials retain their respective copyrights and license terms.
+Reference photographs and archival documents are linked from their original publishers. This repository includes the project's model renders, geometry diagrams, research notes, and source attribution; it does not redistribute reference photos or photo-based crops and overlays. See the [source credits](research/SOURCES.md), [photograph inventory](research/GEOMETRY_REVIEW.md), and [supplied-reference provenance](research/user_provided/PROVENANCE.json). Third-party materials retain their respective copyrights and license terms.
+
+## Model license
+
+The original model design, geometry data, and downloadable Blender, STL, and 3MF files are licensed under **[Creative Commons Attribution–NonCommercial–ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)**. You may share and adapt the model for noncommercial purposes with attribution; adaptations must use the same license. See [LICENSE](LICENSE) for the complete terms.
+
+Suggested attribution: **Roanoke Star Tree Topper by [christopherrbrown3](https://github.com/christopherrbrown3) · [christopherbrown.io](https://christopherbrown.io) · CC BY-NC-SA 4.0**. Identify any changes when sharing an adaptation.
+
+This model license does not relicense third-party reference materials or the historical landmark itself. The back of the model carries recessed `christopherbrown.io` lettering.

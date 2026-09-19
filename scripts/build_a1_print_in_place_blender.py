@@ -67,6 +67,55 @@ def material(name,rgb):
     node.inputs['Base Color'].default_value=(*rgb,1);node.inputs['Roughness'].default_value=.38
     return m
 
+def engrave_back(body):
+    """Deboss the attribution in the exposed upper-right rear shoulder."""
+    curve=bpy.data.curves.new('Attribution cutter','FONT')
+    curve.body='christopherbrown.io'
+    # Convert the system font to mesh; no font file is embedded or distributed.
+    font_path=Path('/System/Library/Fonts/Supplemental/Arial Bold.ttf')
+    assert font_path.exists(), 'Install Arial Bold or set font_path to its local TTF'
+    font=bpy.data.fonts.load(str(font_path));curve.font=font
+    curve.size=5;curve.extrude=.5;curve.resolution_u=10;curve.fill_mode='BOTH'
+    cutter=bpy.data.objects.new('Recessed christopherbrown.io',curve)
+    bpy.context.collection.objects.link(cutter);active(cutter)
+    bpy.ops.object.convert(target='MESH')
+    cutter=bpy.context.object
+    coords=[v.co.copy() for v in cutter.data.vertices]
+    low=Vector(tuple(min(p[i] for p in coords) for i in range(3)))
+    high=Vector(tuple(max(p[i] for p in coords) for i in range(3)))
+    factor=47.5/(high.x-low.x)
+    center=(low+high)/2
+    for v in cutter.data.vertices:
+        v.co.x=(v.co.x-center.x)*factor+47
+        v.co.y=(v.co.y-center.y)*factor+23
+        v.co.z=3.4+(v.co.z-low.z)/(high.z-low.z)*.8
+    bm=bmesh.new();bm.from_mesh(cutter.data)
+    bmesh.ops.remove_doubles(bm,verts=list(bm.verts),dist=1e-5)
+    bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces))
+    bm.to_mesh(cutter.data);bm.free()
+    cutter.data.update();bpy.context.view_layer.update()
+    cutter_stats=stats(cutter)
+    assert cutter_stats['nonmanifold_edges']==0, cutter_stats
+    # Public footprint permits an independent clearance and tool-width check.
+    cutter.data.calc_loop_triangles()
+    top=[[[*cutter.data.vertices[i].co] for i in t.vertices]
+         for t in cutter.data.loop_triangles
+         if all(abs(cutter.data.vertices[i].co.z-4.2)<1e-5 for i in t.vertices)]
+    (OUT/'engraving_measurements.json').write_text(json.dumps({
+        'text':'christopherbrown.io',
+        'font':'Arial Bold; converted to mesh, font not distributed',
+        'width_mm':47.5,'height_mm':(high.y-low.y)*factor,
+        'center_xy_mm':[47,23],'back_surface_z_mm':4,
+        'floor_z_mm':3.4,'depth_mm':.6,
+        'remaining_thickness_above_front_inlays_mm':2.4,
+        'cutter_mesh':cutter_stats,
+        'top_triangles_mm':top,
+    },indent=2)+'\n')
+    boolean(body,cutter)
+    unused=bpy.data.curves.get('Attribution cutter')
+    if unused is not None and unused.users==0:bpy.data.curves.remove(unused)
+    if font.users==0:bpy.data.fonts.remove(font)
+
 def stl(path,objects):
     ts=[]
     for o in objects:
@@ -100,15 +149,16 @@ def main():
     scene=bpy.context.scene;scene.unit_settings.system='METRIC'
     scene.unit_settings.scale_length=.001;scene.unit_settings.length_unit='MILLIMETERS'
     dark=material('01 | Navy PLA | integral body',(.018,.028,.05))
-    white=material('02 | White PLA | individual tube sections',(.93,.94,.92))
+    white=material('02 | White PLA | tubes and backing bands',(.93,.94,.92))
     body=extrude('RoanokeStar_Body','outline',0,4)
     boolean(body,socket(),'UNION')
+    engrave_back(body)
     # Save the exact outer solid before partitioning it by filament. This avoids
     # unnecessary coincident-interface triangulation in the geometry reference.
     # This unpartitioned STL loses the contrasting tube pattern in one color.
     stl(OUT/'roanoke_star_A1_geometry_reference.stl',[body])
-    boolean(body,extrude('Matching fused white inlay cavities','white_tube_sections',0,1.0))
-    lights=extrude('RoanokeStar_Tube_Sections','white_tube_sections',0,1.0)
+    boolean(body,extrude('Matching fused white inlay cavities','white_material',0,1.0))
+    lights=extrude('RoanokeStar_Tube_Sections','white_material',0,1.0)
     # Boolean operations can leave an empty material slot at index zero.
     # Explicitly reset the slots so every face uses its intended filament color.
     for obj, mat in [(body, dark), (lights, white)]:
@@ -117,8 +167,14 @@ def main():
     body['assembly_required']=False;body['printer']='Bambu Lab A1 + AMS lite'
     body['print_orientation']='Front face on bed, Z >= 0; integral roofed socket'
     body['accuracy']='Outline and tube schedule are photo-based approximations; not a surveyed replica'
+    for obj in [body,lights]:
+        obj['license']='CC BY-NC-SA 4.0'
+        obj['license_url']='https://creativecommons.org/licenses/by-nc-sa/4.0/'
+        obj['creator']='christopherrbrown3 | christopherbrown.io'
+    body['rear_attribution']='christopherbrown.io | recessed 0.6 mm'
     lights['construction']='Actual separate material volumes fused in the same print; no loose inserts or post-print assembly'
     lights['tube_width_mm']=1.8;lights['inlay_depth_mm']=1.0
+    lights['backing_bands']=3;lights['tube_dark_outline_mm']=.6
     for o in [body,lights]:
         active(o);bpy.ops.object.transform_apply(location=False,rotation=False,scale=True)
     bpy.context.view_layer.update()

@@ -30,7 +30,7 @@ A low-angle photograph can foreshorten the vertical dimension and widen the appa
 
 The latest model in [print_in_place](../print_in_place/DESIGN_REPORT.md) has 130 white inlay sections along six paths in three pairs, a continuous dark backing, and an integral hidden tree socket. The user chose a single print with no assembly on a Bambu A1 with AMS lite. The white solids and dark body fuse in the same print; no removable inserts or mount fasteners are needed. The reference desk print's individual dash lengths are not treated as original neon segment dimensions. No LED enclosure, wiring, diffuser, or electronics has been added.
 
-The earlier continuous-insert candidate's bevel repair passed its digital checks. The subsequent A1 model was also built in Blender's GUI: both actual color meshes report zero non-adjacent triangle-intersection candidates, and independent checks validate the fused solid and material coverage. Mesh validity does not establish landmark fidelity. Exact geometry remains unresolved, no physical test print has been performed, and Bambu Studio validation is deferred at the user's request.
+Both actual color meshes in the A1 model report zero non-adjacent triangle-intersection candidates, and independent checks validate the fused solid and material coverage. The owner subsequently reported a successful two-color STL print of the tube-only face. The current face adds three white backing bands and dark tube outlines, with recessed attribution on the back. The [spacing review](SPACING_REVIEW.md) documents that change and distinguishes it from the earlier physical print. Mesh validity does not establish landmark fidelity; the exact historical geometry remains unresolved.
 
 ## Provenance of the secondary print
 

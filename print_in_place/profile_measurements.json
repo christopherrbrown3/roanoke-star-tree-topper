@@ -10,6 +10,16 @@
   "tube_inlay_depth_mm": 1.0,
   "straight_run_dark_gap_mm": 1.2,
   "visible_tube_sections": 130,
+  "backing_bands": 3,
+  "tube_dark_outline_width_mm": 0.6,
+  "backing_outer_margin_from_centerline_mm": 2.2,
+  "clear_gap_between_backing_bands_mm": [
+    1.5947850720392633,
+    1.6665670603362308
+  ],
+  "white_material_connected_solids": 133,
+  "white_backing_front_area_mm2": 3407.7167334961177,
+  "white_material_front_area_mm2": 8303.843300980774,
   "sections_per_path": [
     30,
     30,
