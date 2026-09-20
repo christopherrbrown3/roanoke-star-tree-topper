@@ -1,0 +1,90 @@
+{
+  "date": "2026-09-20",
+  "status": "passed",
+  "slicer": "Bambu Studio",
+  "version": "02.05.00.66",
+  "platform": "macOS",
+  "method": "Opened the generated 3MF as a project in Bambu Studio GUI, sliced without process or filament edits, inspected layers, and audited the exported G-code.",
+  "source_3mf_sha256": "5216815f12e3af9e6aca25a8f2e3016c136f16d5244af924f3fe7e00d6f9ff2e",
+  "native_gui_checks": {
+    "opened_current_generated_package": true,
+    "two_project_filaments_present": true,
+    "four_walls_and_five_top_bottom_layers_retained_on_import": true,
+    "slice_completed_without_error": true,
+    "layers_1_through_5_individually_inspected": true,
+    "three_white_bands_and_individual_tube_keylines_visible": true,
+    "both_lower_interior_corners_preserve_separation": true,
+    "layer_6_dark_body_transition_inspected": true,
+    "full_height_socket_roof_inspected": true,
+    "printing_started": false
+  },
+  "gcode_audit": {
+    "gcode_sha256": "065eee6ec1ad7750a0505d45498a9bffab8f359c71e560eeba8104e1c6d4fe4c",
+    "source_3mf_sha256": "5216815f12e3af9e6aca25a8f2e3016c136f16d5244af924f3fe7e00d6f9ff2e",
+    "gcode_file": "roanoke_star_A1_final_validation.gcode",
+    "source_3mf_file": "roanoke_star_A1.3mf",
+    "header": {
+      "model_printing_time": "2h 40m 13s",
+      "total_estimated_time": "2h 47m 24s",
+      "total_layers": 254,
+      "filament_weight_g": [
+        58.63,
+        11.89
+      ]
+    },
+    "model_extrusion": {
+      "white_z": [
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "dark_z_min": 1.2,
+      "dark_z_max": 50.8,
+      "model_z_min": 0.2,
+      "model_z_max": 50.8,
+      "profile_body_height_mm": 50.83574295043945,
+      "expected_top_layer_z": 50.800000000000004,
+      "model_layers_with_positive_extrusion": 254
+    },
+    "parsed_settings": {
+      "printer_model": "Bambu Lab A1",
+      "printer_settings_id": "Bambu Lab A1 0.4 nozzle",
+      "print_settings_id": "0.20mm Standard @BBL A1",
+      "nozzle_diameter": "0.4",
+      "layer_height": "0.2",
+      "initial_layer_print_height": "0.2",
+      "wall_loops": "4",
+      "top_shell_layers": "5",
+      "bottom_shell_layers": "5",
+      "sparse_infill_density": "15%",
+      "sparse_infill_pattern": "gyroid",
+      "wall_generator": "arachne",
+      "enable_support": "0",
+      "enable_prime_tower": "1",
+      "brim_type": "no_brim",
+      "curr_bed_type": "Textured PEI Plate",
+      "filament_colour": [
+        "#142338",
+        "#F0F2EC"
+      ],
+      "filament_settings_id": [
+        "Generic PLA @BBL A1",
+        "Generic PLA @BBL A1"
+      ]
+    },
+    "checks": {
+      "settings_header": "pass",
+      "model_tool_extrusion": "pass",
+      "white_bands_confined_to_first_five_layers": "pass",
+      "dark_persists_through_socket": "pass"
+    }
+  },
+  "physical_print_tested": false,
+  "limitations": [
+    "Digital slicing and visual inspection do not establish physical print quality, socket fit, strength, or tree retention.",
+    "Time and filament use are slicer estimates, including purge and prime-tower material.",
+    "The G-code is retained locally for validation; the public 3MF contains editable geometry and settings, not a pre-sliced toolpath."
+  ]
+}

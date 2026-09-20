@@ -176,6 +176,14 @@ ET.SubElement(assemble,'assemble_item',{'object_id':'4','instance_id':'0',
 project_settings=json.loads((ROOT/'scripts/a1_bambu_settings.json').read_text())
 assert project_settings['filament_settings_id']==['Generic PLA @BBL A1']*2
 assert project_settings['printer_settings_id']=='Bambu Lab A1 0.4 nozzle'
+# Bambu merges project settings into installed system presets. Values omitted
+# from this native dirty-key list are reset to the system preset on import.
+# Entries are ordered: print process, each project filament, printer.
+overrides=project_settings['different_settings_to_system']
+assert len(overrides)==len(project_settings['filament_settings_id'])+2
+required_overrides={'wall_loops','wall_generator','bottom_shell_layers',
+                    'sparse_infill_pattern','brim_type','enable_support'}
+assert required_overrides <= set(overrides[0].split(';'))
 archive=OUT/'roanoke_star_A1.3mf'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
     # Stable ZIP metadata lets native-slicer evidence identify the exact package
@@ -209,6 +217,7 @@ with zipfile.ZipFile(archive) as z:
     assert [int(c.get('objectid')) for c in r.findall('.//{'+NS+'}component')]==list(assignments)
     loaded_settings=json.loads(z.read('Metadata/project_settings.config'))
     assert len(loaded_settings['filament_colour'])==len(assignments)==2
+    assert loaded_settings['different_settings_to_system']==overrides
     assert native.find("plate/metadata[@key='bed_type']").get('value')=='Textured PEI Plate'
 report['standard_3mf']={'one_build_object':True,'material_volumes':2,'roundtrip_mesh_validation':True,
                         'sha256':hashlib.sha256(archive.read_bytes()).hexdigest()}
@@ -216,6 +225,7 @@ report['bambu_project']={'format_version':1,'compatibility_version':'02.05.00.66
     'explicit_part_filaments':assignments,'project_filaments':2,
     'printer':'Bambu Lab A1 0.4 nozzle','layer_height_mm':.2,
     'plate':'Textured PEI Plate','supports':False,'prime_tower':True,
+    'explicit_process_overrides':overrides[0].split(';'),
     'license_embedded':True,'contains_sliced_toolpath':False}
 slicer_report=OUT/'slicer_validation.json'
 if slicer_report.exists():

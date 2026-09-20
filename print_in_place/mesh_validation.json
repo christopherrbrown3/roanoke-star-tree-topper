@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-19",
+  "date": "2026-09-20",
   "material_meshes": {
     "dark_body": {
       "watertight": true,
@@ -96,14 +96,14 @@
   "mandrel_overlap_mm3": 0.0,
   "physical_print_tested": false,
   "prior_revision_print_evidence": "Owner reports a successful two-color STL print of the unengraved tube-only face; current backing-band revision has not been physically printed.",
-  "slicer_validation_complete": false,
+  "slicer_validation_complete": true,
   "landmark_geometry_verified": false,
   "tube_joint_schedule_verified": false,
   "standard_3mf": {
     "one_build_object": true,
     "material_volumes": 2,
     "roundtrip_mesh_validation": true,
-    "sha256": "4618c72b16351148c2d3b4ea954c88a16c81dc91c3f7e0a2cf82b1c2ce4305bf"
+    "sha256": "5216815f12e3af9e6aca25a8f2e3016c136f16d5244af924f3fe7e00d6f9ff2e"
   },
   "bambu_project": {
     "format_version": 1,
@@ -118,7 +118,25 @@
     "plate": "Textured PEI Plate",
     "supports": false,
     "prime_tower": true,
+    "explicit_process_overrides": [
+      "bottom_shell_layers",
+      "brim_type",
+      "enable_prime_tower",
+      "enable_support",
+      "flush_into_support",
+      "initial_layer_print_height",
+      "layer_height",
+      "prime_tower_brim_width",
+      "prime_tower_width",
+      "process_notes",
+      "sparse_infill_density",
+      "sparse_infill_pattern",
+      "top_shell_layers",
+      "wall_generator",
+      "wall_loops"
+    ],
     "license_embedded": true,
     "contains_sliced_toolpath": false
-  }
+  },
+  "slicer_validation_report": "slicer_validation.json"
 }

@@ -1207,6 +1207,12 @@
   "z_hop": [
     "0.4"
   ],
+  "different_settings_to_system": [
+    "bottom_shell_layers;brim_type;enable_prime_tower;enable_support;flush_into_support;initial_layer_print_height;layer_height;prime_tower_brim_width;prime_tower_width;process_notes;sparse_infill_density;sparse_infill_pattern;top_shell_layers;wall_generator;wall_loops",
+    "",
+    "",
+    ""
+  ],
   "z_hop_types": [
     "Auto Lift"
   ]
