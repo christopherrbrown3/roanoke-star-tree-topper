@@ -12,7 +12,8 @@
   "digital_mesh_checks_passed": true,
   "landmark_geometry_verified": false,
   "tube_joint_schedule_verified": false,
-  "physical_print_tested": false,
+  "physical_print_tested": true,
+  "physical_print_scope": "Owner-supplied photographs document a successful physical two-color print of the revised face with three white backing bands. The exact slicer profile used for those photographs, socket fit, strength, and tree retention were not recorded.",
   "slicer_validation_complete": true,
   "slicer_validation_status": "Bambu Studio 02.05.00.66 GUI slice completed; first five colored layers, dark-body transition, and socket roof inspected. Exported G-code confirms both filaments and intended A1 process settings.",
   "standard_3mf_only": false,
@@ -24,7 +25,6 @@
   "blender_finalization_complete": true,
   "saved_blender_stage": "Finalized material meshes matching the validated STLs, with current research, license, scripts, and reports embedded.",
   "current_3mf_sha256": "5216815f12e3af9e6aca25a8f2e3016c136f16d5244af924f3fe7e00d6f9ff2e",
-  "prior_revision_print_evidence": "Owner reports a successful two-color STL print of the earlier tube-only face. The backing-band and engraving revision has not been physically printed.",
   "limitations": [
     "No original dimensioned elevation located; proportions and angles remain provisional",
     "Photo-informed joint schedule includes mirrored and repeated inference",

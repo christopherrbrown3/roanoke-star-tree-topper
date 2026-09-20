@@ -19,7 +19,9 @@ Designed for the **Bambu Lab A1 with AMS lite**, with editable Blender source, a
 
 The 3MF includes the A1 0.4 mm printer configuration, two Generic PLA filaments, and 0.20 mm process settings. It contains editable geometry rather than a pre-sliced toolpath. All print files and renders are in [`print_in_place/`](print_in_place/).
 
-**Validated in Bambu Studio 02.05.00.66:** the project opens with both filaments, preserves its A1 process settings, and slices successfully. The first five colored layers, lower interior corners, and socket roof were inspected. The Blender material meshes match the validated STL exports. This revision has passed digital checks; its white backing bands and recessed signature have not yet been physically printed. See the [release status](print_in_place/RELEASE_STATUS.json).
+The finalized [MakerWorld listing copy](publishing/makerworld/LISTING.md) and its AI-generated [cover illustration](publishing/makerworld/cover.png) are kept with the release assets. The listing uses the supplied print photographs as its gallery evidence; those personal photos are not stored in this public repository.
+
+**Validated in Bambu Studio 02.05.00.66:** the project opens with both filaments, preserves its A1 process settings, and slices successfully. The first five colored layers, lower interior corners, and socket roof were inspected. The Blender material meshes match the validated STL exports. The owner has now supplied four photographs of a successful physical two-color print of this revised face, including the three white backing bands. Those photographs establish the face's appearance; they do not establish the exact profile used for the photographs, socket fit, strength, or tree retention. See the [release status](print_in_place/RELEASE_STATUS.json).
 
 ## Designed around the tubes
 
@@ -62,7 +64,7 @@ The back carries **`christopherbrown.io` recessed 0.6 mm** into the upper should
 
 The validated slice estimates **2 h 47 min and 70.5 g of PLA**, including purge and prime-tower material: 58.6 g dark and 11.9 g white. Your filament profiles and printer settings can change these estimates. The [slicer report](print_in_place/slicer_validation.json) records the exact package checked and the settings read from its exported toolpath.
 
-The owner successfully printed the earlier tube-only face from the two material STLs. The white backing bands and recessed signature are newer changes; that earlier print does not establish the revised face's physical performance. The included validation records the geometry and the scope of the slicer checks.
+The owner has supplied four photographs of a successful physical print of this revised two-color face. They show the dark body, three white backing bands, and individual white tube sections. Because the exact slicer profile used for those photographs and post-print mechanical tests were not recorded, socket fit, strength, and tree retention remain unverified. The included validation records the geometry and the scope of the slicer checks.
 
 ## A Christmas landmark since 1949
 
