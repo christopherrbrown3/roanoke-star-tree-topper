@@ -21,6 +21,8 @@ The 3MF includes the A1 0.4 mm printer configuration, two Generic PLA filaments,
 
 The finalized [MakerWorld listing copy](publishing/makerworld/LISTING.md) and its AI-generated [cover illustration](publishing/makerworld/cover.png) are kept with the release assets. The listing uses the supplied print photographs as its gallery evidence; those personal photos are not stored in this public repository.
 
+**Published on MakerWorld:** [model page](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color) · [A1 two-color print profile](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color#profileId-3789238)
+
 **Validated in Bambu Studio 02.05.00.66:** the project opens with both filaments, preserves its A1 process settings, and slices successfully. The first five colored layers, lower interior corners, and socket roof were inspected. The Blender material meshes match the validated STL exports. The owner has now supplied four photographs of a successful physical two-color print of this revised face, including the three white backing bands. Those photographs establish the face's appearance; they do not establish the exact profile used for the photographs, socket fit, strength, or tree retention. See the [release status](print_in_place/RELEASE_STATUS.json).
 
 ## Designed around the tubes
