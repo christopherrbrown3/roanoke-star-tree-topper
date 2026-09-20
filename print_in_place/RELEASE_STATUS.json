@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-19",
-  "status": "geometry_validated_before_final_native_checks",
+  "date": "2026-09-20",
+  "status": "digital_and_native_slicer_validation_passed",
   "assembly_required": false,
   "target_printer": "Bambu Lab A1 with AMS lite",
   "visible_tube_sections": 130,
@@ -13,20 +13,22 @@
   "landmark_geometry_verified": false,
   "tube_joint_schedule_verified": false,
   "physical_print_tested": false,
-  "slicer_validation_complete": false,
-  "slicer_validation_status": "Two project filaments observed during native import. No completed sliced-layer inspection; installed Bambu Studio CLI crashes before slicing.",
+  "slicer_validation_complete": true,
+  "slicer_validation_status": "Bambu Studio 02.05.00.66 GUI slice completed; first five colored layers, dark-body transition, and socket roof inspected. Exported G-code confirms both filaments and intended A1 process settings.",
   "standard_3mf_only": false,
-  "bambu_part_filament_assignments": {"2": 1, "3": 2},
+  "bambu_part_filament_assignments": {
+    "2": 1,
+    "3": 2
+  },
   "project_filaments": 2,
-  "blender_finalization_complete": false,
-  "saved_blender_stage": "Construction checkpoint before final material triangulation cleanup and report embedding",
-  "current_3mf_sha256": "4618c72b16351148c2d3b4ea954c88a16c81dc91c3f7e0a2cf82b1c2ce4305bf",
+  "blender_finalization_complete": true,
+  "saved_blender_stage": "Finalized material meshes matching the validated STLs, with current research, license, scripts, and reports embedded.",
+  "current_3mf_sha256": "5216815f12e3af9e6aca25a8f2e3016c136f16d5244af924f3fe7e00d6f9ff2e",
   "prior_revision_print_evidence": "Owner reports a successful two-color STL print of the earlier tube-only face. The backing-band and engraving revision has not been physically printed.",
   "limitations": [
     "No original dimensioned elevation located; proportions and angles remain provisional",
     "Photo-informed joint schedule includes mirrored and repeated inference",
-    "No physical strength, branch-fit or retention test",
-    "Final scene/export synchronization and native sliced-layer validation are incomplete"
+    "No physical strength, branch-fit or retention test"
   ],
   "source_change_pending_blender_rebuild": false,
   "parallel_profiles_verified": true,

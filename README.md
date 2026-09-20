@@ -13,13 +13,13 @@ Designed for the **Bambu Lab A1 with AMS lite**, with editable Blender source, a
 | File | Use |
 |---|---|
 | **[Download the two-color 3MF](print_in_place/roanoke_star_A1.3mf)** | One object, face-down, with filament 1 assigned to the dark body and filament 2 to the white face details. |
-| [Blender construction scene](print_in_place/roanoke_star_A1.blend) | Editable construction checkpoint; predates the final mesh cleanup in the STL and 3MF exports. |
+| [Editable Blender source](print_in_place/roanoke_star_A1.blend) | Final material meshes, hidden reference paths, and embedded research, license, and validation reports. |
 | [Dark body STL](print_in_place/body_material.stl) + [white face STL](print_in_place/white_tube_material.stl) | Alternative material meshes with a shared origin. Import together as parts of one object. |
 | [Design report](print_in_place/DESIGN_REPORT.md) | Detailed dimensions, mount geometry, material layout, and validation results. |
 
 The 3MF includes the A1 0.4 mm printer configuration, two Generic PLA filaments, and 0.20 mm process settings. It contains editable geometry rather than a pre-sliced toolpath. All print files and renders are in [`print_in_place/`](print_in_place/).
 
-**Validation scope:** the current STL and 3MF meshes pass the documented geometry checks. Bambu Studio has displayed the two-filament setup on import; sliced-layer verification is incomplete. Use the STL or 3MF files for printing—the Blender download is a construction checkpoint whose final scene/export synchronization is incomplete. See the [release status](print_in_place/RELEASE_STATUS.json).
+**Validated in Bambu Studio 02.05.00.66:** the project opens with both filaments, preserves its A1 process settings, and slices successfully. The first five colored layers, lower interior corners, and socket roof were inspected. The Blender material meshes match the validated STL exports. This revision has passed digital checks; its white backing bands and recessed signature have not yet been physically printed. See the [release status](print_in_place/RELEASE_STATUS.json).
 
 ## Designed around the tubes
 
@@ -27,7 +27,7 @@ The individual white sections give the face its character. Rounded ends and smal
 
 Each nested tube outline uses a constant inward offset from the outer path, keeping corresponding runs parallel through every corner—including the two lower side notches. The [spacing review](research/SPACING_REVIEW.md) compares the model with the primary aerial reference and explains why the existing tube positions were retained. The broader white backing bands leave approximately **1.6 mm of dark space** between the three star groups.
 
-The tubes and backing bands are **flush inlays**, 1.0 mm deep; each tube is 1.8 mm wide. Both colors meet the build plate, giving the decorated face a consistent finish. The dark outlines provide visual definition without raised details or small unsupported bridges. A continuous 4 mm body joins the inlays and rear socket into one finished part. Color changes are confined to the first five layers at a 0.20 mm layer height.
+The tubes and backing bands are **flush inlays**, 1.0 mm deep; each tube is 1.8 mm wide. Both colors meet the build plate, giving the decorated face a consistent finish. The dark outlines provide visual definition without raised details or small unsupported bridges. A continuous 4 mm body joins the inlays and rear socket into one finished part. White model details occupy the first five layers at a 0.20 mm layer height; the remaining body and socket use the dark filament.
 
 ![Three-quarter render of the two-color topper and its integrated rear mount](print_in_place/previews/three_quarter.png)
 
@@ -58,7 +58,9 @@ The back carries **`christopherbrown.io` recessed 0.6 mm** into the upper should
 1. Open the 3MF **as a project** in Bambu Studio. Its two parts are already assigned: filament 1 is dark, filament 2 is white. Map those project filaments to the appropriate AMS lite spools. If using the STLs, import both as parts of one object, preserve their shared position, and assign the colors.
 2. Keep the decorated face on the build plate. Use the A1 0.4 mm nozzle configuration and a 0.20 mm layer height.
 3. The project uses four walls, five top and bottom layers, 15% gyroid infill, Arachne walls, and a prime tower, with supports disabled. Select your actual build plate; the included setting is Textured PEI.
-4. Check the sliced preview for all white sections, clear gaps, and the socket roof before printing. Size the tree leader to the socket and use the rear tie holes where additional retention is useful.
+4. Check the sliced preview for all white sections, clear gaps, and the socket roof before printing. **View layers 1–5 to see the two-color face**: the full-height view looks mostly dark because the decorated face is against the bed. Size the tree leader to the socket and use the rear tie holes where additional retention is useful.
+
+The validated slice estimates **2 h 47 min and 70.5 g of PLA**, including purge and prime-tower material: 58.6 g dark and 11.9 g white. Your filament profiles and printer settings can change these estimates. The [slicer report](print_in_place/slicer_validation.json) records the exact package checked and the settings read from its exported toolpath.
 
 The owner successfully printed the earlier tube-only face from the two material STLs. The white backing bands and recessed signature are newer changes; that earlier print does not establish the revised face's physical performance. The included validation records the geometry and the scope of the slicer checks.
 
@@ -97,8 +99,10 @@ The current material meshes are checked against the construction profiles and co
 - Clearance for the nominal tapered socket mandrel and geometry within the chosen 45° overhang limit.
 - The engraved lettering's actual floor, depth, and clearance from the socket, checked against its construction footprint.
 - A standard 3MF geometry round trip, two filament definitions, and explicit part-to-filament assignments.
+- Native Bambu slicing with both colors, preserved process settings, and white model extrusion confined to Z = 0.2–1.0 mm.
+- Byte-for-byte agreement between the Blender material meshes' STL exports and the downloadable material STLs.
 
-See the [mesh report](print_in_place/mesh_validation.json) and [intersection results](print_in_place/self_intersections.json) for the measurements. The [scene/export status](print_in_place/scene_export_validation.json) distinguishes the current exports from the saved Blender checkpoint. The [rebuild guide](scripts/REBUILD.md) documents profile generation, Blender construction, export, and validation.
+See the [mesh report](print_in_place/mesh_validation.json), [intersection results](print_in_place/self_intersections.json), and [scene/export check](print_in_place/scene_export_validation.json) for the measurements. The [rebuild guide](scripts/REBUILD.md) documents profile generation, Blender construction, export, and validation.
 
 ## Explore the project
 

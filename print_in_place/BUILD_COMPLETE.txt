@@ -1,1 +1,1 @@
-A1 model built through Blender GUI; material geometry, lettering, and 3MF package checks passed. Final scene/export synchronization and native sliced-layer inspection are incomplete. See RELEASE_STATUS.json.
+A1 model built and finalized through Blender GUI. Scene/STL equality, material geometry, lettering, package round trip, and native Bambu Studio two-color slicing checks passed. The backing-band and engraving revision has not been physically printed. See RELEASE_STATUS.json and slicer_validation.json.

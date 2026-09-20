@@ -1,19 +1,14 @@
 {
-  "date": "2026-09-19",
-  "status": "not_verified_for_current_exports",
-  "scene_export_validation_complete": false,
-  "saved_blender_stage": "Construction checkpoint before final material triangulation cleanup and report embedding",
-  "saved_blender_sha256": "463fba6dac72b45a367fe247d52756bf9a888b5d28f2ceade7cc0de8cadd2ba7",
-  "current_exports": {
-    "body_material.stl": {
-      "sha256": "8e0be83382e9613e34085e18980b1bc38a497867a774a2101c3340d3ee4b83cd",
-      "saved_scene_match_verified": false
-    },
-    "white_tube_material.stl": {
-      "sha256": "d6fc74ad96b4da366077bc3e4c549720f3db3558d97b5bd976b5de210d2c9710",
-      "saved_scene_match_verified": false
-    }
+  "RoanokeStar_Body": {
+    "scene_matches_validated_stl": true,
+    "sha256": "8e0be83382e9613e34085e18980b1bc38a497867a774a2101c3340d3ee4b83cd",
+    "material": "01 | Navy PLA | integral body.005",
+    "all_faces_use_material_slot_zero": true
   },
-  "export_geometry_checks": "mesh_validation.json",
-  "note": "Earlier scene/export results described the prior tube-only revision and do not establish agreement for these files. The current STL and 3MF exports include the final mesh cleanup; use those exports for printing."
+  "RoanokeStar_Tube_Sections": {
+    "scene_matches_validated_stl": true,
+    "sha256": "d6fc74ad96b4da366077bc3e4c549720f3db3558d97b5bd976b5de210d2c9710",
+    "material": "02 | White PLA | tubes and backing bands",
+    "all_faces_use_material_slot_zero": true
+  }
 }
