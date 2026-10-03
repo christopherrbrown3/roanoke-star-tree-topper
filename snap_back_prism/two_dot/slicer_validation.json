@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "verification_source": "Bambu Studio native Preview; Print plate enabled on both and Slice ok observed on the back; no exported G-code audit",
+  "verification_source": "Bambu Studio native Preview: unchanged front package retains its verified slice; marked back reloaded and sliced with Print plate enabled; no exported G-code audit.",
   "bambu_studio_version": "02.05.00.66",
   "printer": "Bambu Lab A1",
   "nozzle_mm": 0.4,
@@ -21,24 +21,34 @@
     "support_enabled": false,
     "brim_width_mm": 4,
     "prime_tower_enabled": true,
-    "print_plate_enabled": true
+    "print_plate_enabled": true,
+    "verification": "Previous native slice retained; project hash unchanged."
   },
   "back": {
     "project": "snap_back_A1.3mf",
-    "project_sha256": "5d5474378847a2ac15477cf20fd677d15f6f9548f20374294ef3f0275b21f00e",
-    "estimated_total_time_display": "56m57s",
-    "estimated_model_printing_time": "48m42s",
-    "estimated_filament_g": 29.12,
+    "project_sha256": "0e96912481a9aba9d7d46e8a1d7d7f286baacc1f83f8c491f0c0e60715c18a78",
+    "estimated_total_time_display": "59m42s",
+    "estimated_model_printing_time": "51m28s",
+    "estimated_filament_g": 28.93,
     "layer_count": 38,
     "maximum_height_mm": 7.6,
     "filament_change_times_gui": 1,
     "support_enabled": false,
     "brim_width_mm": 0,
     "prime_tower_enabled": false,
-    "print_plate_enabled": true
+    "print_plate_enabled": true,
+    "builder_mark_layers_observed": {
+      "layer_1_height_mm": 0.2,
+      "layer_1_lettering_present": true,
+      "layer_5_height_mm": 1.0,
+      "layer_5_lettering_present": true,
+      "layer_6_height_mm": 1.2,
+      "layer_6_floor_closed": true
+    },
+    "native_preview_warnings_observed": false
   },
-  "total_estimated_time_rounded": "about 4h36m including startup for both plates",
-  "total_estimated_filament_g": 121.71,
+  "total_estimated_time_rounded": "about 4h39m including startup for both plates",
+  "total_estimated_filament_g": 121.52,
   "new_full_topper_print_started": false,
   "selected_sample_physically_tested": true,
   "full_topper_physically_tested": false

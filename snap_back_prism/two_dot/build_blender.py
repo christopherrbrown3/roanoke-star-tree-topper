@@ -1,9 +1,13 @@
 """Build the full two-dot revision through live Blender MCP in a new scene."""
 import bpy
+import bmesh
 from mathutils import Vector, Matrix
 
 HERE = '/Users/chris/Codex Projects/roanoke-star-tree-topper/snap_back_prism/two_dot'
 SCENE_NAME = 'Roanoke Star | preferred two-dot back'
+BUILDER_MARK = {'text': 'christopherbrown.io', 'width_mm': 72., 'depth_mm': 1.,
+                'center_xy_mm': [0., 5.5], 'surface_z_mm': 60.,
+                'font_path': '/System/Library/Fonts/Supplemental/Arial Bold.ttf'}
 K = {}
 
 
@@ -128,8 +132,60 @@ def build_back():
     lid['selected_sample_physically_tested'] = True
     lid['full_topper_physically_tested'] = False
     K['lid'] = lid
+    export(lid, 'construction/back_unmarked_reference')
+    engrave_back(lid)
     export(lid, 'snap_back')
     print('Full two-dot back built with six copies of the tested hook.')
+
+
+def engrave_back(lid):
+    """Deboss a larger builder mark into the outside of the rear cover."""
+    assert 'builder_mark_text' not in lid, 'Rebuild from the unmarked back before engraving again.'
+    mark = BUILDER_MARK
+    curve = bpy.data.curves.new('Two-dot builder mark cutter', 'FONT')
+    curve.body = mark['text']
+    font = bpy.data.fonts.load(mark['font_path'])
+    curve.font = font
+    curve.size = 5.
+    curve.extrude = .5
+    curve.resolution_u = 10
+    # Keep the native closed-fill default; text-curve fill enums vary by version.
+    cutter = bpy.data.objects.new('Two-dot | inset christopherbrown.io cutter', curve)
+    K['lid_col'].objects.link(cutter)
+    active(cutter)
+    assert 'MESH' in [item.identifier for item in bpy.ops.object.convert.get_rna_type().properties['target'].enum_items]
+    bpy.ops.object.convert(target='MESH')
+    cutter = bpy.context.object
+    coords = [vertex.co.copy() for vertex in cutter.data.vertices]
+    low = Vector(tuple(min(point[i] for point in coords) for i in range(3)))
+    high = Vector(tuple(max(point[i] for point in coords) for i in range(3)))
+    factor = mark['width_mm'] / (high.x-low.x)
+    center = (low+high)/2
+    floor = mark['surface_z_mm']-mark['depth_mm']
+    for vertex in cutter.data.vertices:
+        vertex.co.x = (vertex.co.x-center.x)*factor + mark['center_xy_mm'][0]
+        vertex.co.y = (vertex.co.y-center.y)*factor + mark['center_xy_mm'][1]
+        vertex.co.z = floor + (vertex.co.z-low.z)/(high.z-low.z)*(mark['depth_mm']+.2)
+    mesh = bmesh.new()
+    mesh.from_mesh(cutter.data)
+    bmesh.ops.remove_doubles(mesh, verts=list(mesh.verts), dist=1e-5)
+    bmesh.ops.recalc_face_normals(mesh, faces=list(mesh.faces))
+    assert all(edge.is_manifold for edge in mesh.edges), 'Builder mark cutter must be closed.'
+    mesh.to_mesh(cutter.data)
+    mesh.free()
+    cutter.data.update()
+    export(cutter, 'construction/builder_mark_cutter')
+    boolean(lid, cutter)
+    lid['builder_mark_text'] = mark['text']
+    lid['builder_mark_width_mm'] = mark['width_mm']
+    lid['builder_mark_height_mm'] = (high.y-low.y)*factor
+    lid['builder_mark_depth_mm'] = mark['depth_mm']
+    lid['builder_mark_remaining_wall_mm'] = floor-58.4
+    if curve.users == 0:
+        bpy.data.curves.remove(curve)
+    if font.users == 0:
+        bpy.data.fonts.remove(font)
+    print('Inset builder mark: '+mark['text']+', '+str(mark['width_mm'])+' mm wide, '+str(mark['depth_mm'])+' mm deep.')
 
 
 def finish():

@@ -14,12 +14,14 @@
       "sha256": "38a8d003fb868dc3a9fc578a876e89c9726334b87b5bfc22e091cf8d4598be8c"
     },
     "snap_back": {
-      "triangles": 2294,
+      "triangles": 10872,
       "nonadjacent_intersection_candidates": 0,
-      "sha256": "23d287753f7c9b2ddd1f1e9507832b038d525594bfbb4042d25502e577ea6305"
+      "sha256": "eaf4c1bea7276a17ba845af7f98c6b51da4862c4a1eb9adb5bf4886259ac3311"
     }
   },
-  "blend_sha256": "23774ea57e99a4dde30c644a5c21b95f14d9f2a19592197d0a027d980b9a7669",
+  "blend_sha256": "a8ded5a269a0a05adb019a3bd11dd468ddd0e9339c991841d19e3fbaef2f9302",
   "selected_sample_physically_tested": true,
-  "full_topper_physically_tested": false
+  "full_topper_physically_tested": false,
+  "builder_mark_in_canonical_mesh": true,
+  "builder_mark_preview": "previews/builder_mark_detail.png"
 }

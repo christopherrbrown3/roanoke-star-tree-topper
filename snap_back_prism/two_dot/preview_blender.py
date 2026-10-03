@@ -72,3 +72,27 @@ def render_preview(name, viewpoint, back_only=False):
         K['body'].hide_render = False
         K['white'].hide_render = False
     print('Rendered '+name)
+
+
+def render_builder_mark():
+    """Show the real engraved mesh on the outside of the detachable cover."""
+    scene = K['scene']
+    camera = K['camera']
+    original_scale = camera.data.ortho_scale
+    original_resolution = (scene.render.resolution_x, scene.render.resolution_y)
+    camera.location = (0, -75, 300)
+    look_at(camera, (0, 5.5, 59.5))
+    camera.data.ortho_scale = 110
+    scene.render.resolution_x = 1200
+    scene.render.resolution_y = 600
+    K['body'].hide_render = True
+    K['white'].hide_render = True
+    scene.render.filepath = HERE+'/previews/builder_mark_detail.png'
+    try:
+        bpy.ops.render.render(write_still=True)
+    finally:
+        K['body'].hide_render = False
+        K['white'].hide_render = False
+        camera.data.ortho_scale = original_scale
+        scene.render.resolution_x, scene.render.resolution_y = original_resolution
+    print('Rendered builder_mark_detail')

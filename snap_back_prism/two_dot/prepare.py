@@ -55,6 +55,10 @@ C = {
     'test_filament': feedback['print_filament'],
     'source_profile_sha256': hashlib.sha256((ROOT / 'scripts/a1_topper_profiles.json').read_bytes()).hexdigest(),
     'tested_hook_sha256': hashlib.sha256((TRIAL / 'construction/two_dot_hook.stl').read_bytes()).hexdigest(),
+    'builder_mark': {'text': 'christopherbrown.io', 'width_mm': 72., 'depth_mm': 1.,
+                     'center_xy_mm': [0., 5.5], 'surface_z_mm': 60.,
+                     'floor_z_mm': 59., 'remaining_wall_mm': .6,
+                     'font': 'Arial Bold, converted to mesh; font not distributed'},
     'clips': json.loads((BASE / 'parameters.json').read_text())['clips'],
 }
 outline = Polygon(S['outline'][0]['loops'][0])

@@ -4,6 +4,8 @@ This is a separate two-piece experiment based on the one-piece prism checkpoint,
 
 **Use the [full two-dot revision](two_dot/README.md) for the next topper print.** Both larger connector trials worked in the user's physical test, with a slight preference for two dots. The new revision uses that connector at all six positions, with matching larger catch windows. Print its matching front and back together; the files directly in this directory retain the earlier latch for comparison.
 
+The preferred cover also carries a larger inset **christopherbrown.io** builder mark on its outside, 72 mm wide and 1 mm deep.
+
 ![Assembled snap-back prism](previews/assembled.png)
 
 The front shell prints face down with its rear open. A separate white rear cover provides the light-reflecting surface and snaps into six small windows in the side walls. A 3 mm locating rim guides it into place. Both parts slice without supports; the body has a 4 mm adhesion brim.

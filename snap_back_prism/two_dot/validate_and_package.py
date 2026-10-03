@@ -43,10 +43,12 @@ def clean(key):
 
 
 keys = ['body_navy', 'body_white_face', 'snap_back']
-meshes = {key: clean(key) for key in keys}
+meshes = {key: clean(key) if key == 'snap_back' else trimesh.load(H / (key+'.stl')) for key in keys}
 solids = {key: solid(mesh) for key, mesh in meshes.items()}
 stats = {}
 for key, mesh in meshes.items():
+    assert mesh.is_watertight and mesh.is_winding_consistent and mesh.volume > 0
+    assert mesh.area_faces.min() > 1e-10
     assert mesh.body_count == (3 if key == 'body_white_face' else 1)
     stats[key] = {'watertight': True, 'connected_solids': int(mesh.body_count),
                   'triangles': len(mesh.faces), 'volume_mm3': float(mesh.volume),
@@ -80,6 +82,49 @@ mouth = solid(trimesh.load(ROOT / 'pentagrammic_prism/construction/bottom_mouth.
 leader = solid(trimesh.load(ROOT / 'pentagrammic_prism/construction/tree_leader_clearance_reference.stl'))
 assert abs((mouth ^ (body+solids['snap_back'])).volume()) < .01
 assert abs((leader ^ (body+solids['snap_back'])).volume()) < .01
+
+# Verify the engraving in the exported solid, including the floor and exactly
+# what material was removed, rather than trusting only the text cutter.
+mark = C['builder_mark']
+cutter_mesh = trimesh.load(H / 'construction/builder_mark_cutter.stl')
+assert cutter_mesh.is_watertight and cutter_mesh.is_winding_consistent
+cutter = solid(cutter_mesh)
+unmarked_mesh = trimesh.load(H / 'construction/back_unmarked_reference.stl')
+unmarked = solid(unmarked_mesh)
+removed = unmarked-solids['snap_back']
+expected_removed = unmarked ^ cutter
+mark_difference = (removed-expected_removed).volume()+(expected_removed-removed).volume()
+added_volume = abs((solids['snap_back']-unmarked).volume())
+assert abs(mark_difference) < .01 and added_volume < .01
+top = cutter_mesh.triangles[np.all(np.abs(cutter_mesh.triangles[:, :, 2]-(mark['surface_z_mm']+.2)) < 1e-5, axis=1)]
+lettering = unary_union([Polygon(triangle[:, :2]) for triangle in top])
+floor_triangles = meshes['snap_back'].triangles[
+    np.all(np.abs(meshes['snap_back'].triangles[:, :, 2]-mark['floor_z_mm']) < 1e-5, axis=1)]
+actual_floor = unary_union([Polygon(triangle[:, :2]) for triangle in floor_triangles])
+floor_difference = actual_floor.symmetric_difference(lettering).area
+assert floor_difference < .01, floor_difference
+assert abs(cutter_mesh.extents[0]-mark['width_mm']) < 1e-4
+assert abs((mark['surface_z_mm']-mark['floor_z_mm'])-mark['depth_mm']) < 1e-6
+remaining_wall = mark['floor_z_mm']-C['body_rear_z_mm']
+assert remaining_wall >= .59
+vents = unary_union([Polygon(p['loops'][0]) for p in json.loads((ROOT / 'pentagrammic_prism/profiles.json').read_text())['rear_vents']])
+assert lettering.difference(outline).area < 1e-6
+assert lettering.distance(outline.boundary) > 12
+assert lettering.distance(vents) > 6
+glyphs = list(lettering.geoms) if lettering.geom_type == 'MultiPolygon' else [lettering]
+assert all(not glyph.buffer(-.2).is_empty for glyph in glyphs)
+builder_mark_check = {
+    'text': mark['text'], 'font': mark['font'], 'location': 'outside of detachable rear cover',
+    'width_mm': float(cutter_mesh.extents[0]), 'height_mm': float(cutter_mesh.extents[1]),
+    'depth_mm': mark['depth_mm'], 'floor_z_mm': mark['floor_z_mm'],
+    'remaining_wall_mm': remaining_wall, 'actual_floor_difference_mm2': floor_difference,
+    'removed_geometry_difference_mm3': mark_difference, 'added_material_mm3': added_volume,
+    'removed_volume_mm3': removed.volume(), 'clearance_to_outline_mm': lettering.distance(outline.boundary),
+    'clearance_to_vents_mm': lettering.distance(vents), 'glyph_components_accommodate_0_4mm_tool': True,
+    'cutter_sha256': sha(H / 'construction/builder_mark_cutter.stl'),
+    'unmarked_reference_sha256': sha(H / 'construction/back_unmarked_reference.stl'),
+}
+(H / 'builder_mark_validation.json').write_text(json.dumps(builder_mark_check, indent=2)+'\n')
 
 # Compare the actual full back, body wall, and hooks to the printed two-dot
 # coupon in each clip's local coordinate system, excluding handling features.
@@ -144,6 +189,7 @@ report = {
     'relaxed_hook_undercut_engagement_volume_mm3': engagement,
     'selected_sample_physically_tested': True, 'full_topper_physically_tested': False,
     'retention_force_measured': False, 'thermal_tested': False, 'packages': {},
+    'builder_mark': builder_mark_check,
 }
 
 # Reuse only package-writing definitions; running the baseline script would
@@ -158,20 +204,51 @@ ET.register_namespace('', NS)
 with zipfile.ZipFile(BASE / 'front_shell_A1.3mf') as archive:
     template = {name: archive.read(name) for name in archive.namelist()}
     original_settings = json.loads(archive.read('Metadata/project_settings.config'))
-package('front_shell_A1.3mf', 'Two-dot topper front shell', [
-    (print_mesh(meshes['body_navy']), 'Navy shell with tested catch windows', 1, [128, 128, 0]),
-    (print_mesh(meshes['body_white_face']), 'Original white face bands', 2, [128, 128, 0]),
-])
+def existing_front_matches():
+    """Retain a verified front package when only the rear mark changes."""
+    path = H / 'front_shell_A1.3mf'
+    if not path.exists():
+        return False
+    with zipfile.ZipFile(path) as archive:
+        model = ET.fromstring(archive.read('3D/3dmodel.model'))
+        settings = json.loads(archive.read('Metadata/project_settings.config'))
+    mesh_objects = [obj for obj in model.findall('./{'+NS+'}resources/{'+NS+'}object')
+                    if obj.find('{'+NS+'}mesh') is not None]
+    if len(mesh_objects) != 2:
+        return False
+    for obj, key in zip(mesh_objects, ['body_navy', 'body_white_face']):
+        mesh = obj.find('{'+NS+'}mesh')
+        vertices = [[float(v.attrib[axis]) for axis in 'xyz'] for v in mesh.findall('.//{'+NS+'}vertex')]
+        faces = [[int(f.attrib[axis]) for axis in ['v1', 'v2', 'v3']] for f in mesh.findall('.//{'+NS+'}triangle')]
+        actual = solid(trimesh.Trimesh(vertices, faces, process=True))
+        difference = (actual-solids[key]).volume()+(solids[key]-actual).volume()
+        if abs(difference) >= .01:
+            return False
+    return all(str(settings[key]) == value for key, value in
+               [('enable_support', '0'), ('enable_prime_tower', '1'), ('brim_width', '4.0')])
+
+
+if existing_front_matches():
+    report['packages']['front_shell_A1.3mf'] = {'sha256': sha(H / 'front_shell_A1.3mf'),
+        'roundtrip_passed': True, 'build_objects': 1, 'support_enabled': False,
+        'GUI_slice_complete': False, 'existing_matching_front_retained': True}
+else:
+    package('front_shell_A1.3mf', 'Two-dot topper front shell', [
+        (print_mesh(meshes['body_navy']), 'Navy shell with tested catch windows', 1, [128, 128, 0]),
+        (print_mesh(meshes['body_white_face']), 'Original white face bands', 2, [128, 128, 0]),
+    ])
 package('snap_back_A1.3mf', 'Two-dot topper detachable back', [
     (print_mesh(meshes['snap_back'], flip=True), 'White back with six preferred latches', 2, [128, 128, 0]),
 ], prime=False, brim=0.)
-for filename in ['front_shell_A1.3mf', 'snap_back_A1.3mf']:
+for filename in ['snap_back_A1.3mf']:
     with zipfile.ZipFile(H / filename) as archive:
         entries = {name: archive.read(name) for name in archive.namelist()}
     model = ET.fromstring(entries['3D/3dmodel.model'])
     for item in model.findall('{'+NS+'}metadata'):
         if item.attrib.get('name') == 'Description':
             item.text = 'Full topper using the user-preferred two-dot connector. Individual samples tested; assembled topper and thermal validation pending.'
+            if filename == 'snap_back_A1.3mf':
+                item.text += ' Outside rear cover includes inset christopherbrown.io builder mark, 72 mm wide and 1 mm deep.'
     entries['3D/3dmodel.model'] = ET.tostring(model, encoding='utf-8', xml_declaration=True)
     with zipfile.ZipFile(H / filename, 'w', zipfile.ZIP_DEFLATED) as archive:
         for name, value in entries.items():

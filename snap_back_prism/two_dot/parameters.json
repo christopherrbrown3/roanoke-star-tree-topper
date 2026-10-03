@@ -121,5 +121,18 @@
         0.3141918382666678
       ]
     }
-  ]
+  ],
+  "builder_mark": {
+    "text": "christopherbrown.io",
+    "width_mm": 72.0,
+    "depth_mm": 1.0,
+    "center_xy_mm": [
+      0.0,
+      5.5
+    ],
+    "surface_z_mm": 60.0,
+    "floor_z_mm": 59.0,
+    "remaining_wall_mm": 0.6,
+    "font": "Arial Bold, converted to mesh; font not distributed"
+  }
 }
