@@ -1,0 +1,55 @@
+{
+  "revision": 2,
+  "reported_baseline_result": "User reported: stops short or needs too much force; does not quite snap.",
+  "reported_handling_issue": "The small pieces were hard to get off the plate. Maybe make the bases a little bigger for the tests",
+  "baseline_sample_sha256": "b2e7f808b43110a6497d18835b03b5955a927ac2269469d47d6cfa533870babe",
+  "common": {
+    "wall_mm": 1.2,
+    "cap_mm": 1.6,
+    "guide_gap_mm": 0.55,
+    "beam_width_mm": 1.6,
+    "beam_length_mm": 30.0,
+    "beam_relief_mm": 2.0,
+    "lead_in_length_mm": 1.6,
+    "hook_width_mm": 8.0,
+    "window_width_mm": 9.2,
+    "window_z_mm": [
+      52.2,
+      55.1
+    ],
+    "wall_top_z_mm": 58.4,
+    "hook_tip_z_mm": 52.4,
+    "hook_peak_z_mm": [
+      54.0,
+      54.4
+    ],
+    "guide_depth_mm": 3.0,
+    "test_base_xy_mm": [
+      48.0,
+      20.0
+    ],
+    "grip_width_mm": 18.0,
+    "grip_height_mm": 1.2,
+    "grip_edge_bevel_mm": 1.0
+  },
+  "trials": [
+    {
+      "id": "one_dot",
+      "dots": 1,
+      "engagement_mm": 0.3,
+      "description": "Gentler catch",
+      "minimum_nominal_hook_displacement_mm": 0.3,
+      "entry_ramp_radial_travel_mm": 0.8500000000000001
+    },
+    {
+      "id": "two_dot",
+      "dots": 2,
+      "engagement_mm": 0.5,
+      "description": "Firmer catch",
+      "minimum_nominal_hook_displacement_mm": 0.5,
+      "entry_ramp_radial_travel_mm": 1.05
+    }
+  ],
+  "new_trials_physically_tested": true,
+  "physical_fit_record": "physical_fit.json"
+}

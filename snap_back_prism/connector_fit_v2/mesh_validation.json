@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "trials": {
+    "one_dot": {
+      "engagement_mm": 0.3,
+      "guide_gap_mm": 0.55,
+      "seated_overlap_mm3": 2.4868995751603507e-14,
+      "deflected_hook_sweep_max_overlap_mm3": 0.0,
+      "sweep_scope": "32 axial positions with rigid hook displaced inward by engagement + 0.10 mm; excludes elastic forces",
+      "undercut_engagement_mm3": 1.9976501229893424,
+      "catch": {
+        "watertight": true,
+        "connected_solids": 1,
+        "sha256": "f7fc7467e64317397f86b22a3ccc484332cf14a177ab0bf4af3adf5934f9066a"
+      },
+      "cap": {
+        "watertight": true,
+        "connected_solids": 1,
+        "sha256": "17840595437bfcbad45e765cfe8c19828f0e7cec020951b5520e7bf952746acb"
+      }
+    },
+    "two_dot": {
+      "engagement_mm": 0.5,
+      "guide_gap_mm": 0.55,
+      "seated_overlap_mm3": 2.4868995751603507e-14,
+      "deflected_hook_sweep_max_overlap_mm3": 0.0,
+      "sweep_scope": "32 axial positions with rigid hook displaced inward by engagement + 0.10 mm; excludes elastic forces",
+      "undercut_engagement_mm3": 4.123814211302861,
+      "catch": {
+        "watertight": true,
+        "connected_solids": 1,
+        "sha256": "988433d1cae3eec64f6c97068463742736c930cc464bb4f5bfb3feed2963aaea"
+      },
+      "cap": {
+        "watertight": true,
+        "connected_solids": 1,
+        "sha256": "7a11d98f255fe2a6cd7c17052372ac08d56d92fa56d47d4275c229cfae73c000"
+      }
+    }
+  },
+  "packages": {
+    "connector_fit_v2_A1.3mf": {
+      "sha256": "07ab7da5276fbdca3f649b856d40672663bd714667f9fa33eb00452be2dd3a89",
+      "roundtrip_passed": true,
+      "build_objects": 4,
+      "support_enabled": false,
+      "GUI_slice_complete": true
+    }
+  },
+  "physical_trial_complete": true,
+  "baseline_sample_unchanged": true,
+  "physical_fit_record": "physical_fit.json"
+}

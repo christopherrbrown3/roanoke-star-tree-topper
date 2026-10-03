@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "Blender_version": "5.2.1 LTS",
+  "method": "Live Blender MCP BVHTree overlap, epsilon 0, excluding triangle pairs sharing a vertex index",
+  "meshes": {
+    "body_navy": {
+      "triangles": 79192,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "d7e18cf8efd9f4d1a1339d946babf7f6c32eb9dcfd899d970a3e72c3c515dca0"
+    },
+    "body_white_face": {
+      "triangles": 53260,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "38a8d003fb868dc3a9fc578a876e89c9726334b87b5bfc22e091cf8d4598be8c"
+    },
+    "snap_back": {
+      "triangles": 2294,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "23d287753f7c9b2ddd1f1e9507832b038d525594bfbb4042d25502e577ea6305"
+    }
+  },
+  "blend_sha256": "23774ea57e99a4dde30c644a5c21b95f14d9f2a19592197d0a027d980b9a7669",
+  "selected_sample_physically_tested": true,
+  "full_topper_physically_tested": false
+}

@@ -2,6 +2,8 @@
 
 This is a separate two-piece experiment based on the one-piece prism checkpoint, commit `fcb757d`. The original release and the committed prism files are preserved. It retains the original 200 mm face, three white bands, and 130 light apertures. The star is 60 mm deep with the same 100 × 54.4 mm lower opening; the cavity narrows to about 78 mm at its waist.
 
+**Use the [full two-dot revision](two_dot/README.md) for the next topper print.** Both larger connector trials worked in the user's physical test, with a slight preference for two dots. The new revision uses that connector at all six positions, with matching larger catch windows. Print its matching front and back together; the files directly in this directory retain the earlier latch for comparison.
+
 ![Assembled snap-back prism](previews/assembled.png)
 
 The front shell prints face down with its rear open. A separate white rear cover provides the light-reflecting surface and snaps into six small windows in the side walls. A 3 mm locating rim guides it into place. Both parts slice without supports; the body has a 4 mm adhesion brim.
@@ -18,11 +20,13 @@ Actual Bambu Studio 02.05.00.66 estimates for the A1, 0.4 mm nozzle, Generic PLA
 | **Snap-back topper total** | **4 h 36 min** | **121.81 g** |
 | Connector sample, separate optional print | 16 min | 1.43 g |
 
-The topper uses about **82% less filament and 89% less estimated time** than the one-piece two-color slice. The front consumes 2.35 g of purge and 0.49 g of tower material. Its six tool selections include the initial load and five color switches, all within the first 1 mm of printing. The back uses white filament only. Times include each plate's startup estimate; no print has been sent.
+The topper uses about **82% less filament and 89% less estimated time** than the one-piece two-color slice. The front consumes 2.35 g of purge and 0.49 g of tower material. Its six tool selections include the initial load and five color switches, all within the first 1 mm of printing. The back uses white filament only. Times include each plate's startup estimate.
 
 **Try the small snap sample first**
 
-Open [connector_sample_A1.3mf](connector_sample_A1.3mf) and print both pieces using the intended white filament. It reproduces the same wall, window, spring, ramp, and locating rim as the full model. Press the cap onto the wall section; the nose should enter the window and the cap should seat flat. Check that it stays seated and can be released without cracking. The design has 0.30 mm radial running clearance and 0.45 mm catch engagement. Fit and holding force depend on the actual printer and filament and have not been tested physically.
+The original [connector_sample_A1.3mf](connector_sample_A1.3mf) reproduces the same wall, window, spring, ramp, and locating rim as the full model. The intended behavior is that the cap seats flat with its nose in the window, stays attached, and releases without cracking. This baseline has 0.30 mm radial running clearance and 0.45 mm catch engagement. Holding force has not been measured.
+
+The first physical sample was printed on October 3, 2026. The user reported that it stopped short of seating or required too much force, and that the small bases were difficult to remove from the plate. The [larger connector trials](connector_fit_v2/README.md) use longer spring arms, broader hooks, more guide clearance, and beveled grip edges. Both worked; the user slightly preferred the two-dot pair. The actual trial print used AMS A1's Generic PLA Silk profile, with an estimate of 32 min 49 sec and 8.85 g total. The [full two-dot revision](two_dot/README.md) applies the preferred profile to the topper. [Research and mechanism comparison](connector_fit_v2/research.md).
 
 ![Connector sample](previews/connector_sample.png)
 
