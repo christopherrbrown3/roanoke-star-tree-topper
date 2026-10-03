@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "Blender_version": "5.2.1 LTS",
+  "method": "Live Blender MCP BVHTree self-overlap, epsilon 0, excluding pairs that share a vertex index",
+  "meshes": {
+    "body_navy": {
+      "triangles": 79192,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "baef8c3ece91579b307a190c790ca4dbd27f3d1b9bbad024b70d8b955c43923c"
+    },
+    "body_white_face": {
+      "triangles": 53260,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "38a8d003fb868dc3a9fc578a876e89c9726334b87b5bfc22e091cf8d4598be8c"
+    },
+    "snap_back": {
+      "triangles": 2336,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "c2406d00ca6363f4833f736169c4c8351566d59407ea8b7bc0210fe578316bf7"
+    },
+    "coupon_catch": {
+      "triangles": 40,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "df65cc02f6928c6d77f168246577f2981f15eec8a25b846e795e06343e27ea53"
+    },
+    "coupon_back": {
+      "triangles": 200,
+      "nonadjacent_intersection_candidates": 0,
+      "sha256": "a22a87e56a77c3bd950f22a39f4fcf73add8f6ed164eba2f736d946a6105b12e"
+    }
+  },
+  "blend_sha256": "599eab6bf9e147d21d73f7edc43b61313b5145d96ad67c9bb79a0ccc41a55d48",
+  "physical_fit_tested": false
+}

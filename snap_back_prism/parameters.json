@@ -1,0 +1,118 @@
+{
+  "depth_mm": 60.0,
+  "front_wall_mm": 4.0,
+  "side_wall_mm": 1.2,
+  "back_wall_mm": 1.6,
+  "body_rear_z_mm": 58.4,
+  "bottom_opening_width_mm": 100.0,
+  "clip_count": 6,
+  "clip_beam_radial_width_mm": 1.2,
+  "clip_beam_effective_length_mm": 18.0,
+  "radial_fit_gap_mm": 0.3,
+  "retention_engagement_mm": 0.45,
+  "maximum_assembly_deflection_mm": 0.75,
+  "clip_tip_z_mm": 52.4,
+  "clip_nose_start_z_mm": 53.15,
+  "clip_nose_end_z_mm": 53.7,
+  "clip_stem_return_z_mm": 54.45,
+  "catch_window_z_mm": [
+    52.4,
+    54.85
+  ],
+  "catch_window_width_mm": 5.4,
+  "locating_rim_depth_mm": 3.0,
+  "lid_color": "white",
+  "body_print_orientation": "front face down",
+  "lid_print_orientation": "outer face down; clips up",
+  "support_enabled": false,
+  "physical_snap_tested": false,
+  "thermal_tested": false,
+  "source_profile_sha256": "8aca3911fce9250e33309002ce234faf66a2f58c10fa710bc9e2421c3beaee6a",
+  "simple_beam_strain_estimate_percent": 0.4166666666666667,
+  "clips": [
+    {
+      "center_xy": [
+        12.871837851296014,
+        65.90865044982613
+      ],
+      "tangent_xy": [
+        0.3141918382666678,
+        -0.949359515024004
+      ],
+      "outward_xy": [
+        0.949359515024004,
+        0.3141918382666678
+      ]
+    },
+    {
+      "center_xy": [
+        58.46765537911989,
+        33.32607885546557
+      ],
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "outward_xy": [
+        -0.0,
+        1.0
+      ]
+    },
+    {
+      "center_xy": [
+        52.81018440700209,
+        -56.29138687993867
+      ],
+      "tangent_xy": [
+        0.31089294947520824,
+        -0.9504449347366768
+      ],
+      "outward_xy": [
+        0.9504449347366768,
+        0.31089294947520824
+      ]
+    },
+    {
+      "center_xy": [
+        -52.81018440700209,
+        -56.29138687993867
+      ],
+      "tangent_xy": [
+        0.31089294947520824,
+        0.9504449347366768
+      ],
+      "outward_xy": [
+        -0.9504449347366768,
+        0.31089294947520824
+      ]
+    },
+    {
+      "center_xy": [
+        -58.46765537911989,
+        33.32607885546557
+      ],
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "outward_xy": [
+        -0.0,
+        1.0
+      ]
+    },
+    {
+      "center_xy": [
+        -12.871837851296014,
+        65.90865044982613
+      ],
+      "tangent_xy": [
+        0.3141918382666678,
+        0.949359515024004
+      ],
+      "outward_xy": [
+        -0.949359515024004,
+        0.3141918382666678
+      ]
+    }
+  ]
+}

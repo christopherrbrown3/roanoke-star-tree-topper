@@ -1,0 +1,132 @@
+{
+  "front": {
+    "status": "sliced_successfully",
+    "package_sha256": "3bc375a603e76ef3b72aa8563f38ff84fb0defe22ccedc8567d2a67cae64d3ef",
+    "gcode_sha256": "7557816a81cdb68d160ca7d04b9d65c1542352a9bf593c786d2d0364f28134cc",
+    "Bambu_Studio_version": "02.05.00.66",
+    "total_estimated_time": "3h 38m 48s",
+    "filament_weight_g": [
+      86.5,
+      6.22
+    ],
+    "total_filament_g": 92.72,
+    "layers": 292,
+    "max_z_mm": 58.4,
+    "settings": {
+      "curr_bed_type": "Textured PEI Plate",
+      "layer_height": "0.2",
+      "nozzle_diameter": "0.4",
+      "wall_loops": "3",
+      "wall_generator": "arachne",
+      "printer_model": "Bambu Lab A1",
+      "enable_support": "0",
+      "support_on_build_plate_only": "1",
+      "support_type": "tree(auto)",
+      "brim_type": "outer_only",
+      "brim_width": "4",
+      "enable_prime_tower": "1",
+      "filament_colour": "#142338;#F0F2EC",
+      "filament_type": "PLA;PLA"
+    },
+    "review_scope": "Completed GUI slice and full preview; exported G-code header/configuration audited.",
+    "print_sent": false,
+    "physical_print_tested": false,
+    "tool_selection_sequence_count": 6,
+    "tool_changes": 5,
+    "tool_selection_layer_z_mm": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8,
+      1.0
+    ],
+    "total_estimated_seconds": 13128
+  },
+  "back": {
+    "status": "sliced_successfully",
+    "package_sha256": "4cc288cec95b7e698122cb43611e711b987f7afa50eef2a061b0c8e22bebc30f",
+    "gcode_sha256": "fee60f6a1c184b226288d80fc50a6e8760581cbb1d536b6ff7e44307e3db7c76",
+    "Bambu_Studio_version": "02.05.00.66",
+    "total_estimated_time": "57m 25s",
+    "filament_weight_g": [
+      29.09
+    ],
+    "total_filament_g": 29.09,
+    "layers": 38,
+    "max_z_mm": 7.6,
+    "settings": {
+      "curr_bed_type": "Textured PEI Plate",
+      "layer_height": "0.2",
+      "nozzle_diameter": "0.4",
+      "wall_loops": "3",
+      "wall_generator": "arachne",
+      "printer_model": "Bambu Lab A1",
+      "enable_support": "0",
+      "support_on_build_plate_only": "1",
+      "support_type": "tree(auto)",
+      "brim_type": "outer_only",
+      "brim_width": "0",
+      "enable_prime_tower": "0",
+      "filament_colour": "#142338;#F0F2EC",
+      "filament_type": "PLA;PLA"
+    },
+    "review_scope": "Completed GUI slice and full preview; exported G-code header/configuration audited.",
+    "print_sent": false,
+    "physical_print_tested": false,
+    "tool_selection_sequence_count": 1,
+    "tool_changes": 0,
+    "tool_selection_layer_z_mm": [
+      0.0
+    ],
+    "total_estimated_seconds": 3445
+  },
+  "sample": {
+    "status": "sliced_successfully",
+    "package_sha256": "b2e7f808b43110a6497d18835b03b5955a927ac2269469d47d6cfa533870babe",
+    "gcode_sha256": "7de5c9f4ae3688e050d6fa82f5f19bb1f2b7e977e529878d446804674c8d0a90",
+    "Bambu_Studio_version": "02.05.00.66",
+    "total_estimated_time": "15m 41s",
+    "filament_weight_g": [
+      1.43
+    ],
+    "total_filament_g": 1.43,
+    "layers": 50,
+    "max_z_mm": 10.0,
+    "settings": {
+      "curr_bed_type": "Textured PEI Plate",
+      "layer_height": "0.2",
+      "nozzle_diameter": "0.4",
+      "wall_loops": "3",
+      "wall_generator": "arachne",
+      "printer_model": "Bambu Lab A1",
+      "enable_support": "0",
+      "support_on_build_plate_only": "1",
+      "support_type": "tree(auto)",
+      "brim_type": "outer_only",
+      "brim_width": "0",
+      "enable_prime_tower": "0",
+      "filament_colour": "#142338;#F0F2EC",
+      "filament_type": "PLA;PLA"
+    },
+    "review_scope": "Completed GUI slice and full preview; exported G-code header/configuration audited.",
+    "print_sent": false,
+    "physical_print_tested": false,
+    "tool_selection_sequence_count": 1,
+    "tool_changes": 0,
+    "tool_selection_layer_z_mm": [
+      0.0
+    ],
+    "total_estimated_seconds": 941
+  },
+  "comparison": {
+    "baseline_commit": "fcb757d",
+    "baseline_time": "1d 18h 32m 2s",
+    "baseline_filament_g": 661.49,
+    "snap_back_total_seconds": 16573,
+    "snap_back_total_filament_g": 121.81,
+    "time_reduction_percent": 89.2,
+    "filament_reduction_percent": 81.6,
+    "sample_excluded_from_topper_total": true
+  }
+}
