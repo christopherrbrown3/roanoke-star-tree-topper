@@ -1,0 +1,5 @@
+*.blend1
+__pycache__/
+slicer_check/
+construction/raw_exports/
+construction/validation_console.json

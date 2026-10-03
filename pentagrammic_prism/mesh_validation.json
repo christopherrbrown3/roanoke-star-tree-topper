@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "variant": "Hollow pentagrammic prism",
+  "construction": "Native booleans and STL exports through Blender MCP, then canonical meshes returned to Blender",
+  "dimensions_mm": [
+    190.96043395996094,
+    199.99722290039062,
+    60.0
+  ],
+  "print_dimensions_mm": [
+    190.96043395996094,
+    183.84579940253656,
+    183.84579940253653
+  ],
+  "dark_material": {
+    "watertight": true,
+    "winding_consistent": true,
+    "triangles": 107370,
+    "connected_solids": 1,
+    "volume_mm3": 87818.24834121791,
+    "minimum_triangle_area_mm2": 2.2009771782904863e-08
+  },
+  "white_material": {
+    "watertight": true,
+    "winding_consistent": true,
+    "triangles": 53964,
+    "connected_solids": 4,
+    "volume_mm3": 13827.340073380736,
+    "minimum_triangle_area_mm2": 3.345427649037447e-05
+  },
+  "fused_object": {
+    "watertight": true,
+    "winding_consistent": true,
+    "triangles": 53284,
+    "connected_solids": 1,
+    "volume_mm3": 101645.58580036864,
+    "minimum_triangle_area_mm2": 2.2009771782904863e-08
+  },
+  "material_overlap_mm3": 3.93579559279749e-05,
+  "material_coverage_difference_mm3": 0.005013340710619412,
+  "front_difference_from_original_except_tubes_mm2": 0.005729128475682878,
+  "white_bands_difference_from_original_mm2": 0.005115984056313641,
+  "matching_open_tube_apertures": 130,
+  "tube_aperture_area_mm2": 4896.126567484646,
+  "bottom_opening_width_mm": 100.0,
+  "bottom_opening_clear_depth_mm": 54.4,
+  "bottom_opening_shape": "100 mm wide, V-shaped mouth between the original lower points; not a 100 mm diameter circular bore",
+  "inner_waist_clear_width_mm": 78.04481608567897,
+  "tree_leader_reference": {
+    "length_mm": 100,
+    "diameters_mm": [
+      33.9,
+      13.9
+    ],
+    "material_collision_mm3": 0.0
+  },
+  "clearance_checks": {
+    "inner_cavity_material_intrusion_mm3": 0.0004297653151342672,
+    "white_tube_sections_material_intrusion_mm3": 0.0011453368989852515,
+    "bottom_mouth_material_intrusion_mm3": -1.5174899780402387e-12,
+    "rear_vents_material_intrusion_mm3": 0.0
+  },
+  "print_tilt_x_deg": 45.0,
+  "surface_area_exceeding_45_05_deg_overhang_mm2": 0.0,
+  "solid_PLA_material_estimate_g": 126.04052639245712,
+  "physical_print_tested": false,
+  "tree_fit_tested": false,
+  "thermal_tested": false,
+  "incandescent_compatibility_verified": false,
+  "illumination_uniformity_tested": false,
+  "source_profile_sha256": "8aca3911fce9250e33309002ce234faf66a2f58c10fa710bc9e2421c3beaee6a",
+  "export_hashes": {
+    "dark_shell.stl": "079257353a115b79424be42063d9a1c1d84c88c722c1eb442fbd76d74ecd27d5",
+    "white_details.stl": "72e96d866e93959bb515941fdd953e77f3a7c8b000e25d67a9d35000791f130e",
+    "roanoke_star_prism.stl": "f23e1d074d8af619fa387df17b71a1eb6b410c1adb957cf288740b3585a4ac4b"
+  },
+  "original_file_preservation": {
+    "checked_files": 50,
+    "changed_files": []
+  },
+  "package": {
+    "sha256": "c40d227dfd09fdcb78139e32b739120d207e328ae60f389b4df14b381a22f6b5",
+    "one_build_object": true,
+    "filament_assignments": {
+      "2": 1,
+      "3": 2
+    },
+    "roundtrip_passed": true,
+    "slicer_validation_complete": true
+  }
+}
