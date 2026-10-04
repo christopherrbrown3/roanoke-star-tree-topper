@@ -1,0 +1,168 @@
+{
+  "revision": "diffused face with preferred two-dot back",
+  "depth_mm": 60.0,
+  "front_wall_mm": 4.0,
+  "side_wall_mm": 1.2,
+  "back_wall_mm": 1.6,
+  "body_rear_z_mm": 58.4,
+  "bottom_opening_width_mm": 100.0,
+  "clip_count": 6,
+  "clip_beam_radial_width_mm": 1.6,
+  "clip_beam_effective_length_mm": 30.0,
+  "clip_beam_relief_mm": 2.0,
+  "radial_fit_gap_mm": 0.55,
+  "retention_engagement_mm": 0.5,
+  "nominal_clip_deflection_mm": 0.5,
+  "maximum_assembly_deflection_mm": 0.6,
+  "entry_ramp_radial_travel_mm": 1.05,
+  "clip_tip_z_mm": 52.4,
+  "clip_nose_start_z_mm": 54.0,
+  "clip_nose_end_z_mm": 54.4,
+  "clip_stem_return_z_mm": 55.449999999999996,
+  "clip_hook_width_mm": 8.0,
+  "catch_window_z_mm": [
+    52.2,
+    55.1
+  ],
+  "catch_window_width_mm": 9.2,
+  "locating_rim_depth_mm": 3.0,
+  "body_print_orientation": "front face down",
+  "lid_print_orientation": "outer face down; clips up",
+  "support_enabled": false,
+  "selected_sample_physically_tested": true,
+  "full_topper_physically_tested": false,
+  "thermal_tested": false,
+  "user_feedback": "They both work. Slight edge to two dots though.",
+  "source_profile_sha256": "8aca3911fce9250e33309002ce234faf66a2f58c10fa710bc9e2421c3beaee6a",
+  "tested_hook_sha256": "151ef73a84e7dbac31115dfe3972358ee18989ac402f0730e619959d7e58a4d8",
+  "clips": [
+    {
+      "center_xy": [
+        12.871837851296014,
+        65.90865044982613
+      ],
+      "tangent_xy": [
+        0.3141918382666678,
+        -0.949359515024004
+      ],
+      "outward_xy": [
+        0.949359515024004,
+        0.3141918382666678
+      ]
+    },
+    {
+      "center_xy": [
+        58.46765537911989,
+        33.32607885546557
+      ],
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "outward_xy": [
+        -0.0,
+        1.0
+      ]
+    },
+    {
+      "center_xy": [
+        52.81018440700209,
+        -56.29138687993867
+      ],
+      "tangent_xy": [
+        0.31089294947520824,
+        -0.9504449347366768
+      ],
+      "outward_xy": [
+        0.9504449347366768,
+        0.31089294947520824
+      ]
+    },
+    {
+      "center_xy": [
+        -52.81018440700209,
+        -56.29138687993867
+      ],
+      "tangent_xy": [
+        0.31089294947520824,
+        0.9504449347366768
+      ],
+      "outward_xy": [
+        -0.9504449347366768,
+        0.31089294947520824
+      ]
+    },
+    {
+      "center_xy": [
+        -58.46765537911989,
+        33.32607885546557
+      ],
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "outward_xy": [
+        -0.0,
+        1.0
+      ]
+    },
+    {
+      "center_xy": [
+        -12.871837851296014,
+        65.90865044982613
+      ],
+      "tangent_xy": [
+        0.3141918382666678,
+        0.949359515024004
+      ],
+      "outward_xy": [
+        -0.949359515024004,
+        0.3141918382666678
+      ]
+    }
+  ],
+  "builder_mark": {
+    "text": "christopherbrown.io",
+    "width_mm": 72.0,
+    "depth_mm": 1.0,
+    "center_xy_mm": [
+      0.0,
+      5.5
+    ],
+    "surface_z_mm": 60.0,
+    "floor_z_mm": 59.0,
+    "remaining_wall_mm": 0.6,
+    "font": "Arial Bold, converted to mesh; font not distributed"
+  },
+  "face_colours": {
+    "white": "AMS A1",
+    "black": "AMS A2"
+  },
+  "diffuser": {
+    "thickness_mm": 0.4,
+    "layer_height_mm": 0.2,
+    "printed_layers": 2,
+    "position": "flush front surface, Z 0 to 0.4 mm",
+    "window_count": 130,
+    "physical_light_transmission_tested": false
+  },
+  "print_sample": {
+    "size_mm": [
+      64,
+      44,
+      4
+    ],
+    "pattern_crop_xy_mm": [
+      -30,
+      -20,
+      30,
+      20
+    ],
+    "handling_border_mm": 2,
+    "scale": 1,
+    "complete_windows": 6
+  },
+  "source_black_mesh_sha256": "d7e18cf8efd9f4d1a1339d946babf7f6c32eb9dcfd899d970a3e72c3c515dca0",
+  "source_back_mesh_sha256": "eaf4c1bea7276a17ba845af7f98c6b51da4862c4a1eb9adb5bf4886259ac3311",
+  "connector_test_filament": "AMS A1, synced as Generic PLA Silk, magenta"
+}
