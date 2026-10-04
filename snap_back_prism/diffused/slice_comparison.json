@@ -1,0 +1,86 @@
+{
+  "slicer": "Bambu Studio 02.05.00.66",
+  "method": "Native GUI slicing and exported per-plate G-code headers",
+  "reference_commit": "8bfcef2cc592f17fceee9ca6bf1e4e423677846e",
+  "estimates": {
+    "outlined_front": {
+      "total_time": "3h 50m 58s",
+      "model_time_including_timelapse": "3h 43m 47s",
+      "total_seconds": 13858,
+      "filament_total_g": 95.32,
+      "white_g": 8.74,
+      "black_g": 86.58,
+      "layers": 292,
+      "sliced_package_sha256": "d5c0e0c20b79b99c749ec5765cef0cfbf3e4f49842c0026949eac0338ed3e9a7",
+      "gcode_sha256": "f9ff444420e638574ca3d40af702d5fd08a0c1f4f662f1c107d5a9616ec0b780"
+    },
+    "continuous_front": {
+      "total_time": "3h 55m 24s",
+      "model_time_including_timelapse": "3h 48m 13s",
+      "total_seconds": 14124,
+      "filament_total_g": 95.01,
+      "white_g": 12.71,
+      "black_g": 82.3,
+      "layers": 292,
+      "sliced_package_sha256": "90008eab4240afecf1d988ab1e71fd791e70a40f0acb48d142f6b22cc304f7bc",
+      "gcode_sha256": "8b0b9eac39a26cc92fe5a3ba6828508d5aac7a6cb080b7dcbe891e3641d09a42"
+    },
+    "continuous_test": {
+      "total_time": "51m 37s",
+      "model_time_including_timelapse": "44m 26s",
+      "total_seconds": 3097,
+      "filament_total_g": 12.9,
+      "white_g": 4.07,
+      "black_g": 8.83,
+      "layers": 20,
+      "sliced_package_sha256": "b3976492c066cd777d0313fa8e250e42b5c1d1f3c28419e99e93582f0256c5c9",
+      "gcode_sha256": "3c74ba9f5e26a25717373db4347b490d960fcd777c1fdc5ed09f7700aee81496"
+    }
+  },
+  "matching_full_front_settings": {
+    "printer_settings_id": "Bambu Lab A1 0.4 nozzle",
+    "nozzle_diameter": [
+      "0.4"
+    ],
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "wall_loops": "3",
+    "top_shell_layers": "5",
+    "bottom_shell_layers": "5",
+    "sparse_infill_density": "15%",
+    "sparse_infill_pattern": "gyroid",
+    "enable_support": "0",
+    "enable_prime_tower": "1",
+    "flush_volumes_matrix": [
+      "0",
+      "300",
+      "600",
+      "0"
+    ],
+    "filament_settings_id": [
+      "Generic PLA @BBL A1",
+      "Generic PLA @BBL A1"
+    ],
+    "filament_colour": [
+      "#FFFFFF",
+      "#000000"
+    ],
+    "nozzle_temperature": [
+      "220",
+      "220"
+    ],
+    "nozzle_temperature_initial_layer": [
+      "220",
+      "220"
+    ]
+  },
+  "continuous_full_front_difference": {
+    "seconds": 266,
+    "filament_g": -0.31
+  },
+  "print_status": {
+    "outlined_test": "Started in preceding revision; completion and optical results pending",
+    "continuous_test": "Sliced and checked; not started while prior test occupies the plate",
+    "continuous_full_front": "Sliced; not physically printed"
+  }
+}

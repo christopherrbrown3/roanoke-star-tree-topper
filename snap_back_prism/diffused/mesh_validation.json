@@ -4,40 +4,44 @@
     "body_black": {
       "watertight": true,
       "connected_solids": 1,
-      "triangles": 79192,
-      "volume_mm3": 75713.64285568852,
-      "sha256": "d7e18cf8efd9f4d1a1339d946babf7f6c32eb9dcfd899d970a3e72c3c515dca0"
+      "triangles": 29060,
+      "volume_mm3": 72134.77938189729,
+      "sha256": "8d0a2bc1ef218e822debbdc3e8d24fd2a75dc7d9a92d1d63ed01212a9dd63f94"
     },
     "body_white_diffused": {
       "watertight": true,
-      "connected_solids": 133,
-      "triangles": 77964,
-      "volume_mm3": 5366.166761398945,
-      "sha256": "96857fe7ae6cfc7cfc5725cf7ecb856200f2daee796f338b0a0dd49ef7b29507"
+      "connected_solids": 3,
+      "triangles": 27756,
+      "volume_mm3": 8945.030260886897,
+      "sha256": "39dcd4cca092befd51b7e40e8e43d594fabc1819526a8e90eec610ba2e986a71"
     },
     "test_black": {
       "watertight": true,
       "connected_solids": 1,
-      "triangles": 10752,
-      "volume_mm3": 8069.86004613356,
-      "sha256": "c5892e702c9a13aa2f4ec01d713f18c752bcdc6d9fbaa4cca421f5aeeb00253f"
+      "triangles": 4164,
+      "volume_mm3": 7574.222389756448,
+      "sha256": "d12cc1e5bec176dd3ca48abddbed356fd9065a049a5260eed9202b523d4c43c0"
     },
     "test_white": {
       "watertight": true,
-      "connected_solids": 39,
-      "triangles": 10484,
-      "volume_mm3": 730.9162215230758,
-      "sha256": "03182e3ef89896bf6112249ea962b13fd5ed38897aa5226937586687bd25ab0f"
+      "connected_solids": 6,
+      "triangles": 3976,
+      "volume_mm3": 1226.5538781608047,
+      "sha256": "a4162970d1dc4c1a3c8d325f019bc89bb295a09714a0465172afe456211cd80d"
     }
   },
-  "unchanged_black_shell_difference_mm3": 0.0,
-  "white_vs_original_bands_plus_0_4mm_windows_difference_mm3": 0.0,
+  "black_vs_original_shell_minus_continuous_white_face_difference_mm3": 5.175193154483004e-05,
+  "white_vs_three_continuous_stars_with_0_4mm_windows_difference_mm3": 3.552713678800501e-15,
+  "combined_shape_vs_previous_diffused_front_difference_mm3": 7.803350905860595e-05,
+  "continuous_white_star_count": 3,
+  "visible_bulb_outline_black_area_mm2": 0.0,
+  "former_black_outline_area_replaced_mm2": 3578.8631671629914,
   "diffused_windows": 130,
   "diffuser_thickness_mm": 0.4,
   "printed_layers_at_0_2mm": 2,
-  "front_white_profile_difference_mm2": 0.00857258752873607,
-  "membrane_inside_surface_difference_mm2": 0.0034566034724307754,
-  "filled_front_outline_difference_mm2": 0.0007159064104122409,
+  "front_white_profile_difference_mm2": 0.001626775924558578,
+  "membrane_inside_surface_difference_mm2": 0.0034566034723917034,
+  "filled_front_outline_difference_mm2": 0.0007117256219750157,
   "front_shell_connected_solids": 1,
   "test_sample_connected_solids": 1,
   "test_sample_size_mm": [
@@ -52,18 +56,7 @@
   "physical_light_transmission_tested": false,
   "packages": {
     "diffused_front_A1.3mf": {
-      "sha256": "5d2f707009792436fad0af19a8f3bb62152fe9cbe11fe845eefc8b78841c5b5d",
-      "roundtrip_passed": true,
-      "build_objects": 1,
-      "support_enabled": false,
-      "GUI_slice_complete": false,
-      "project_filaments": {
-        "1": "white / AMS A1",
-        "2": "black / AMS A2"
-      }
-    },
-    "diffuser_test_A1.3mf": {
-      "sha256": "ec57f0e7afb9013f31cafb38b0d1ed8d88d8279820104e8b7114d3f950dbd43b",
+      "sha256": "966d731eb7120fa3445441e9283f16a51690a16e909d66aeeff3bbd86255df03",
       "roundtrip_passed": true,
       "build_objects": 1,
       "support_enabled": false,
@@ -72,7 +65,41 @@
         "1": "white / AMS A1",
         "2": "black / AMS A2"
       },
-      "GUI_slice_validation": "slicer_validation.json"
+      "native_slice": {
+        "total_time": "3h 55m 24s",
+        "model_time_including_timelapse": "3h 48m 13s",
+        "total_seconds": 14124,
+        "filament_total_g": 95.01,
+        "white_g": 12.71,
+        "black_g": 82.3,
+        "layers": 292,
+        "sliced_package_sha256": "90008eab4240afecf1d988ab1e71fd791e70a40f0acb48d142f6b22cc304f7bc",
+        "gcode_sha256": "8b0b9eac39a26cc92fe5a3ba6828508d5aac7a6cb080b7dcbe891e3641d09a42"
+      },
+      "print_started": false
+    },
+    "diffuser_test_A1.3mf": {
+      "sha256": "cbffcbd7144c24c0f2c3dce4d6cf4ddb14459c0f57c6b92286ad5fa58908e67c",
+      "roundtrip_passed": true,
+      "build_objects": 1,
+      "support_enabled": false,
+      "GUI_slice_complete": true,
+      "project_filaments": {
+        "1": "white / AMS A1",
+        "2": "black / AMS A2"
+      },
+      "native_slice": {
+        "total_time": "51m 37s",
+        "model_time_including_timelapse": "44m 26s",
+        "total_seconds": 3097,
+        "filament_total_g": 12.9,
+        "white_g": 4.07,
+        "black_g": 8.83,
+        "layers": 20,
+        "sliced_package_sha256": "b3976492c066cd777d0313fa8e250e42b5c1d1f3c28419e99e93582f0256c5c9",
+        "gcode_sha256": "3c74ba9f5e26a25717373db4347b490d960fcd777c1fdc5ed09f7700aee81496"
+      },
+      "print_started": false
     }
   }
 }

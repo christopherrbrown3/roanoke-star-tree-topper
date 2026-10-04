@@ -23,15 +23,15 @@ def setup_studio():
     scene.render.resolution_percentage = 100
     assert 'PNG' in [item.identifier for item in scene.render.image_settings.bl_rna.properties['file_format'].enum_items]
     scene.render.image_settings.file_format = 'PNG'
-    collection = bpy.data.collections.new('DIFFUSED | preview studio, not printed')
+    collection = bpy.data.collections.new('CONTINUOUS | preview studio, not printed')
     scene.collection.children.link(collection)
-    world = bpy.data.worlds.new('Diffused preview world')
+    world = bpy.data.worlds.new('Continuous preview world')
     scene.world = world
     world.use_nodes = True
     shader = next(node for node in world.node_tree.nodes if node.type == 'BACKGROUND')
     shader.inputs[0].default_value = (.16, .19, .24, 1)
     shader.inputs[1].default_value = .5
-    data = bpy.data.cameras.new('Diffused preview camera')
+    data = bpy.data.cameras.new('Continuous preview camera')
     assert 'ORTHO' in [item.identifier for item in data.bl_rna.properties['type'].enum_items]
     data.type = 'ORTHO'
     data.ortho_scale = 265
@@ -47,7 +47,7 @@ def setup_studio():
         ('Fill', (180, -40, -170), 1400000, 170),
         ('Rim', (-100, 120, 240), 2300000, 180),
     ]:
-        light = bpy.data.lights.new('Diffused preview '+name, type='AREA')
+        light = bpy.data.lights.new('Continuous preview '+name, type='AREA')
         assert 'DISK' in [item.identifier for item in light.bl_rna.properties['shape'].enum_items]
         light.shape = 'DISK'
         light.energy = energy

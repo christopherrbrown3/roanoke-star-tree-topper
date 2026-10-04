@@ -1,0 +1,26 @@
+{
+  "prepared_project": "tmp/print_jobs/continuous_star_A1_A2.3mf",
+  "prepared_project_sha256": "4604e636fc21bd023d654b9ebc84cbfb8d4180113ceef86691cc84ecd6a8f4ca",
+  "canonical_project": "snap_back_prism/diffused/diffuser_test_A1.3mf",
+  "canonical_project_sha256": "cbffcbd7144c24c0f2c3dce4d6cf4ddb14459c0f57c6b92286ad5fa58908e67c",
+  "temporary_setting_changes": {
+    "filament_colour[0]": {
+      "from": "#FFFFFF",
+      "to": "#FF00FF"
+    }
+  },
+  "other_archive_entries_identical": true,
+  "purpose": "Match the saved A1 nominal magenta registration to the user-specified physical white spool without changing AMS settings",
+  "physical_slots_verified_in_send_dialog": {
+    "white": "A1",
+    "black": "A2"
+  },
+  "printer": "3DP-039-922 / Bambu Lab A1 / 0.4 mm",
+  "native_total_time": "51m37s",
+  "native_total_filament_g": 12.9,
+  "native_send_dialog_status": "The printer is busy with another print job.",
+  "prepared_project_left_open_in_Bambu_Studio": true,
+  "print_started": false,
+  "start_requires": "Current job finished and physical build plate cleared",
+  "verified_at_utc": "2026-10-04 14:53:42 UTC"
+}

@@ -1,5 +1,5 @@
 {
-  "revision": "diffused face with preferred two-dot back",
+  "revision": "three continuous white stars with hidden two-layer bulb windows",
   "depth_mm": 60.0,
   "front_wall_mm": 4.0,
   "side_wall_mm": 1.2,
@@ -134,6 +134,14 @@
     "remaining_wall_mm": 0.6,
     "font": "Arial Bold, converted to mesh; font not distributed"
   },
+  "connector_test_filament": "AMS A1, synced as Generic PLA Silk, magenta",
+  "unlit_face": {
+    "continuous_white_stars": 3,
+    "visible_bulb_outlines": 0,
+    "white_surround_thickness_mm": 1.0,
+    "black_outline_area_replaced_mm2": 3578.8631671629914,
+    "black_baffles_retained_from_z_mm": 1.0
+  },
   "face_colours": {
     "white": "AMS A1",
     "black": "AMS A2"
@@ -163,6 +171,5 @@
     "complete_windows": 6
   },
   "source_black_mesh_sha256": "d7e18cf8efd9f4d1a1339d946babf7f6c32eb9dcfd899d970a3e72c3c515dca0",
-  "source_back_mesh_sha256": "eaf4c1bea7276a17ba845af7f98c6b51da4862c4a1eb9adb5bf4886259ac3311",
-  "connector_test_filament": "AMS A1, synced as Generic PLA Silk, magenta"
+  "source_back_mesh_sha256": "eaf4c1bea7276a17ba845af7f98c6b51da4862c4a1eb9adb5bf4886259ac3311"
 }

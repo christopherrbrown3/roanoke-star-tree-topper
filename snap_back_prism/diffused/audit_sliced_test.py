@@ -1,4 +1,4 @@
-"""Check that the actual test G-code fills each intact window for two layers."""
+"""Check continuous white stars and two-layer windows in actual test G-code."""
 import hashlib
 import json
 import math
@@ -87,6 +87,23 @@ for raw in code.splitlines():
             strokes.setdefault((layer, tool), []).append(path.buffer(width/2, cap_style=2))
     xy = end
 coverage = {key: unary_union(value) for key, value in strokes.items()}
+# On the bed-facing side, the complete star bands must be white, including
+# the regions that used to form black outlines around the individual bulbs.
+continuous_bands = []
+for band in profiles['white_backing_bands']:
+    central_opening = max(band['loops'][1:], key=lambda loop: Polygon(loop).area)
+    continuous_bands.append(Polygon(band['loops'][0], [central_opening]))
+face_core = unary_union(continuous_bands).intersection(crop).buffer(-.45)
+face_checks = {}
+for number in [1, 2]:
+    white = coverage[(number, 0)].intersection(face_core).area / face_core.area
+    black = coverage[(number, 1)].intersection(face_core).area
+    # Buffered centerlines approximate bead coverage; normal solid hatching
+    # leaves small gaps in this approximation. Missing bulb-size patches or
+    # any remaining black keylines would fail these independent checks.
+    assert white > .95, (number, white)
+    assert black < .01, (number, black)
+    face_checks[str(number)] = {'white_coverage': white, 'black_area_mm2': black}
 checks = []
 for index, window in enumerate(windows, 1):
     core = window.buffer(-.45)
@@ -116,6 +133,8 @@ report = {'status': 'passed', 'slicer': 'Bambu Studio 02.05.00.66',
           'bed_temperature_c': 65, 'filament_profiles': settings['filament_settings_id'],
           'declared_preview_colors': settings['filament_colour'],
           'requested_physical_filaments': {'A1': 'white', 'A2': 'black'},
+          'continuous_white_stars': 3, 'visible_bulb_outlines': 0,
+          'continuous_white_face_toolpath_checks': face_checks,
           'diffuser_thickness_mm': .4, 'window_toolpath_checks': checks,
           'coverage_scope': 'Extruded paths buffered by actual line width, clipped to window interiors inset 0.45 mm; arcs sampled every 0.1 mm.',
           'print_started': False, 'physical_diffusion_tested': False}

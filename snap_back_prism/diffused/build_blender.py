@@ -5,10 +5,10 @@ from mathutils import Vector
 
 HERE = '/Users/chris/Codex Projects/roanoke-star-tree-topper/snap_back_prism/diffused'
 SOURCE = '/Users/chris/Codex Projects/roanoke-star-tree-topper/snap_back_prism/two_dot'
-SCENE_NAME = 'Roanoke Star | diffused two-dot face'
-NAMES = {'body': 'Diffused | black shell', 'white': 'Diffused | white bands and two-layer windows',
-         'lid': 'Diffused | marked two-dot back', 'sample_black': 'Diffuser test | black frame',
-         'sample_white': 'Diffuser test | two-layer white windows'}
+SCENE_NAME = 'Roanoke Star | continuous diffused stars'
+NAMES = {'body': 'Continuous | black shell', 'white': 'Continuous | three white stars and hidden bulbs',
+         'lid': 'Continuous | marked two-dot back', 'sample_black': 'Continuous test | black frame',
+         'sample_white': 'Continuous test | white stars and hidden bulbs'}
 K = {}
 
 
@@ -86,21 +86,23 @@ def setup():
     scene['layer_height_mm'] = .2
     scene['physical_light_transmission_tested'] = False
     scene['selected_connector'] = 'tested two-dot'
+    scene['continuous_white_stars'] = 3
+    scene['visible_bulb_outlines'] = 0
     K['scene'] = scene
-    for key, name in [('body_col', 'DIFFUSED | full topper'), ('sample_col', 'DIFFUSED | print sample')]:
+    for key, name in [('body_col', 'CONTINUOUS | full topper'), ('sample_col', 'CONTINUOUS | print sample')]:
         collection = bpy.data.collections.new(name)
         scene.collection.children.link(collection)
         K[key] = collection
-    K['black_mat'] = material('Diffused | black PLA A2', (.008, .009, .011, 1))
-    K['white_mat'] = material('Diffused | white PLA A1', (.92, .94, .92, 1))
+    K['black_mat'] = material('Continuous | black PLA A2', (.008, .009, .011, 1))
+    K['white_mat'] = material('Continuous | white PLA A1', (.92, .94, .92, 1))
 
 
 def restore():
     K.update(scene=bpy.data.scenes.get(SCENE_NAME),
-             body_col=bpy.data.collections.get('DIFFUSED | full topper'),
-             sample_col=bpy.data.collections.get('DIFFUSED | print sample'),
-             black_mat=bpy.data.materials.get('Diffused | black PLA A2'),
-             white_mat=bpy.data.materials.get('Diffused | white PLA A1'))
+             body_col=bpy.data.collections.get('CONTINUOUS | full topper'),
+             sample_col=bpy.data.collections.get('CONTINUOUS | print sample'),
+             black_mat=bpy.data.materials.get('Continuous | black PLA A2'),
+             white_mat=bpy.data.materials.get('Continuous | white PLA A1'))
     for key, name in NAMES.items():
         K[key] = bpy.data.objects.get(name)
     assert K['scene'] is not None
@@ -112,11 +114,14 @@ def build():
     body = load(SOURCE+'/body_navy.stl', NAMES['body'], collection)
     white = construction('white_skin_and_bands', NAMES['white'], collection)
     boolean(white, construction('white_upper_bands', 'Upper white bands', collection), 'UNION')
+    boolean(body, construction('continuous_white_face_region', 'Remove visible bulb outlines', collection), 'DIFFERENCE')
     lid = load(SOURCE+'/snap_back.stl', NAMES['lid'], collection)
     for obj, mat in [(body, K['black_mat']), (white, K['white_mat']), (lid, K['white_mat'])]:
         color(obj, mat)
     white['diffuser_thickness_mm'] = .4
     white['thin_window_count'] = 130
+    white['continuous_white_stars'] = 3
+    white['visible_bulb_outlines'] = 0
     lid['builder_mark_text'] = 'christopherbrown.io'
     lid['builder_mark_width_mm'] = 72.
     lid['builder_mark_depth_mm'] = 1.
