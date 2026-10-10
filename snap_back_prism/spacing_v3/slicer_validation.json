@@ -1,0 +1,1737 @@
+{
+  "status": "passed",
+  "slicer": "Bambu Studio 02.05.00.66",
+  "sliced_package_sha256": "be00a032d2370e3a519fa13e97d1c72ff1667f5bf5cbbfd2e15afbd4bb934c53",
+  "gcode_sha256": "977629849e812e792231510858bf10e0a4acd88d355b4dc48f5bc9ec93967652",
+  "printer": "Bambu Lab A1, 0.4 mm nozzle",
+  "layer_height_mm": 0.2,
+  "audited_layers": 20,
+  "audited_max_z_mm": 4.0,
+  "full_layers": 292,
+  "full_max_z_mm": 58.4,
+  "build_plate": "Textured PEI Plate",
+  "bed_temperature_c": 65,
+  "filament_profiles": [
+    "Generic PLA @BBL A1",
+    "Generic PLA @BBL A1"
+  ],
+  "declared_preview_colors": [
+    "#FFFFFF",
+    "#000000"
+  ],
+  "requested_physical_filaments": {
+    "A1": "white",
+    "A2": "black"
+  },
+  "continuous_white_stars": 3,
+  "visible_bulb_outlines": 0,
+  "continuous_white_face_toolpath_checks": {
+    "1": {
+      "white_coverage": 0.9917151550039011,
+      "black_area_mm2": 0.0
+    },
+    "2": {
+      "white_coverage": 0.9978417949768335,
+      "black_area_mm2": 0.0
+    }
+  },
+  "diffuser_thickness_mm": 0.4,
+  "window_toolpath_checks": [
+    {
+      "window": 1,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9974738696598971,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 2,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9973880967402156,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 3,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9957722739666601,
+        "2": 1.0000000000000007
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 4,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9943508541970951,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 5,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.994437983496405,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 6,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9892408967626481,
+        "2": 1.0000000000000013
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000013
+    },
+    {
+      "window": 7,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9861006042267341,
+        "2": 0.9999999999999992
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999992
+    },
+    {
+      "window": 8,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9856269249088321,
+        "2": 1.0000000000000007
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 9,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.991747555638624,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 10,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9972254358974051,
+        "2": 1.000000000000001
+      },
+      "combined_two_layer_core_coverage": 1.000000000000001
+    },
+    {
+      "window": 11,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9972714493902206,
+        "2": 1.000000000000001
+      },
+      "combined_two_layer_core_coverage": 1.000000000000001
+    },
+    {
+      "window": 12,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9934537497544651,
+        "2": 0.9999999999999996
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999996
+    },
+    {
+      "window": 13,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9991145545285763,
+        "2": 0.9999999999999966
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999966
+    },
+    {
+      "window": 14,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990615510928849,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 15,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9920587829948851,
+        "2": 0.9999999999999998
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999998
+    },
+    {
+      "window": 16,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9862750962325676,
+        "2": 1.0000000000000009
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000009
+    },
+    {
+      "window": 17,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9862438783198295,
+        "2": 0.9999999999999987
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999987
+    },
+    {
+      "window": 18,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9870038423023441,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 19,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9920229230025875,
+        "2": 1.0000000000000009
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000009
+    },
+    {
+      "window": 20,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9912044774153563,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 21,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9943836846292916,
+        "2": 1.0000000000000018
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000018
+    },
+    {
+      "window": 22,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990361279652773,
+        "2": 1.0000000000000013
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000013
+    },
+    {
+      "window": 23,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990438715491482,
+        "2": 0.9999999999999987
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999987
+    },
+    {
+      "window": 24,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.995112601813339,
+        "2": 1.000000000000001
+      },
+      "combined_two_layer_core_coverage": 1.000000000000001
+    },
+    {
+      "window": 25,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9948852087517701,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 26,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9946478306366294,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 27,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9927406737470676,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 28,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9910858371505018,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 29,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9902277914857982,
+        "2": 0.9999999999999994
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999994
+    },
+    {
+      "window": 30,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9904185927720417,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 31,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9973384670355344,
+        "2": 0.9999999999999994
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999994
+    },
+    {
+      "window": 32,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9974058661419739,
+        "2": 1.0000000000000018
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000018
+    },
+    {
+      "window": 33,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9956881375567052,
+        "2": 0.9999999999999999
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999999
+    },
+    {
+      "window": 34,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9940792533907632,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 35,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9942823468736268,
+        "2": 0.9999999999999999
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999999
+    },
+    {
+      "window": 36,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9914074151731369,
+        "2": 0.9999999999999998
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999998
+    },
+    {
+      "window": 37,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9835490779250443,
+        "2": 0.9999999999999994
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999994
+    },
+    {
+      "window": 38,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9847735078614542,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 39,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9921914436116996,
+        "2": 0.9999999999999998
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999998
+    },
+    {
+      "window": 40,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9971693299791602,
+        "2": 0.9999999999999993
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999993
+    },
+    {
+      "window": 41,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.997186492032232,
+        "2": 0.9999999999999993
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999993
+    },
+    {
+      "window": 42,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9972683870859547,
+        "2": 0.9999999999999991
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999991
+    },
+    {
+      "window": 43,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990653408680521,
+        "2": 1.000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.000000000000002
+    },
+    {
+      "window": 44,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990726020727458,
+        "2": 1.0000000000000007
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 45,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9943424338493045,
+        "2": 0.9999999999999983
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999983
+    },
+    {
+      "window": 46,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9926254208056274,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 47,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9907961479155557,
+        "2": 0.9999999999999989
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999989
+    },
+    {
+      "window": 48,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9906535614687856,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 49,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9914471690901482,
+        "2": 0.9999999999999987
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999987
+    },
+    {
+      "window": 50,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.991529987490396,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 51,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9945897566532617,
+        "2": 1.0000000000000009
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000009
+    },
+    {
+      "window": 52,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990322238736546,
+        "2": 0.9999999999999989
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999989
+    },
+    {
+      "window": 53,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990938877107508,
+        "2": 1.000000000000001
+      },
+      "combined_two_layer_core_coverage": 1.000000000000001
+    },
+    {
+      "window": 54,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9970677779885343,
+        "2": 0.9999768067460307
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 55,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9945054423053036,
+        "2": 0.9999999999999999
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999999
+    },
+    {
+      "window": 56,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9946888454656895,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 57,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.993327611084979,
+        "2": 0.9999999999999989
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999989
+    },
+    {
+      "window": 58,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9906532526196341,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 59,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9911471943771198,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 60,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9940977622095817,
+        "2": 0.9999999999999999
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999999
+    },
+    {
+      "window": 61,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9972047619543751,
+        "2": 1.0000000000000007
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 62,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9971650772098988,
+        "2": 1.0000000000000009
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000009
+    },
+    {
+      "window": 63,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9958531141354475,
+        "2": 1.0000000000000013
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000013
+    },
+    {
+      "window": 64,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9940871367537144,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 65,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9940000467280503,
+        "2": 0.9999999999999998
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999998
+    },
+    {
+      "window": 66,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9921062189314814,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 67,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9882038337884927,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 68,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9895230535817315,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 69,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9949702785069398,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 70,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.997303510270132,
+        "2": 1.0000000000000013
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000013
+    },
+    {
+      "window": 71,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9973602823803908,
+        "2": 0.9999999999999969
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999969
+    },
+    {
+      "window": 72,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9911825851011942,
+        "2": 0.9999999999999991
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999991
+    },
+    {
+      "window": 73,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990890856854897,
+        "2": 0.9999999999999993
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999993
+    },
+    {
+      "window": 74,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990730658947288,
+        "2": 1.0000000000000013
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000013
+    },
+    {
+      "window": 75,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9906973644642953,
+        "2": 0.9999999999999987
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999987
+    },
+    {
+      "window": 76,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9895175431275659,
+        "2": 1.0000000000000009
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000009
+    },
+    {
+      "window": 77,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9839504852579938,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 78,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.987059552256233,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 79,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9916312231939455,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 80,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9915012751809975,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 81,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9944458457042687,
+        "2": 0.9999999999999993
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999993
+    },
+    {
+      "window": 82,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9990914906176019,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 83,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.999083321588121,
+        "2": 0.9999999999999998
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999998
+    },
+    {
+      "window": 84,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9945386599851467,
+        "2": 0.9999999999999998
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999998
+    },
+    {
+      "window": 85,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9951436363799328,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 86,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9947551418805172,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 87,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9927686298093394,
+        "2": 1.0000000000000007
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 88,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9914055906909504,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 89,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9912565170741776,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 90,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9885269686780017,
+        "2": 0.9999999999999994
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999994
+    },
+    {
+      "window": 91,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9972151659430507,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 92,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9957704725680141,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 93,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9942021043555689,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 94,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9932437051386,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 95,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9836443013970448,
+        "2": 0.999999999999999
+      },
+      "combined_two_layer_core_coverage": 0.999999999999999
+    },
+    {
+      "window": 96,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9945865720031176,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 97,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9971077174405144,
+        "2": 0.9999999999999989
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999989
+    },
+    {
+      "window": 98,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9982211641584677,
+        "2": 0.9999999999999994
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999994
+    },
+    {
+      "window": 99,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9991197494176456,
+        "2": 1.0000000000000009
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000009
+    },
+    {
+      "window": 100,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9918894682990407,
+        "2": 0.9999999999999988
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999988
+    },
+    {
+      "window": 101,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9875230124537814,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 102,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9916543272837671,
+        "2": 0.9999999999999993
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999993
+    },
+    {
+      "window": 103,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9916439639419229,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 104,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9954630652218157,
+        "2": 0.9999999999999993
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999993
+    },
+    {
+      "window": 105,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.999054259543928,
+        "2": 0.9999999999999996
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999996
+    },
+    {
+      "window": 106,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9969698880312959,
+        "2": 0.9999999999999991
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999991
+    },
+    {
+      "window": 107,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9942205716116045,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 108,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9941247685696641,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 109,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9922559704670307,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 110,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9951479993679677,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 111,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9956396380316606,
+        "2": 0.9999999999999999
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999999
+    },
+    {
+      "window": 112,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.987715048480676,
+        "2": 0.9999999999999997
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999997
+    },
+    {
+      "window": 113,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9934559785465097,
+        "2": 0.9999999999999994
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999994
+    },
+    {
+      "window": 114,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9918705667615408,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 115,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9943120169985458,
+        "2": 1.0000000000000009
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000009
+    },
+    {
+      "window": 116,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9879631088915248,
+        "2": 0.9999999999999999
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999999
+    },
+    {
+      "window": 117,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9949076048524029,
+        "2": 0.9999999999999992
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999992
+    },
+    {
+      "window": 118,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9949191553630775,
+        "2": 1.0000000000000007
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 119,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9934934883910133,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 120,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.986845254658587,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 121,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9958136194256938,
+        "2": 1.0000000000000002
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000002
+    },
+    {
+      "window": 122,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9917934448291463,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 123,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9936499574119275,
+        "2": 1.0000000000000007
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000007
+    },
+    {
+      "window": 124,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9982906797828173,
+        "2": 0.9999999999999992
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999992
+    },
+    {
+      "window": 125,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9920284227945292,
+        "2": 0.9999999999999974
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999974
+    },
+    {
+      "window": 126,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9916761838379992,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 127,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9946901962346615,
+        "2": 1.0
+      },
+      "combined_two_layer_core_coverage": 1.0
+    },
+    {
+      "window": 128,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9971122043622398,
+        "2": 0.9999999999999992
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999992
+    },
+    {
+      "window": 129,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.994120044615406,
+        "2": 1.0000000000000004
+      },
+      "combined_two_layer_core_coverage": 1.0000000000000004
+    },
+    {
+      "window": 130,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9956080947019728,
+        "2": 0.9999999999999996
+      },
+      "combined_two_layer_core_coverage": 0.9999999999999996
+    }
+  ],
+  "coverage_scope": "Extruded paths buffered by declared line width with round bead ends, clipped to window interiors inset 0.45 mm; arcs sampled every 0.1 mm. Coverage is a bead footprint approximation, not a physical airtightness test.",
+  "source_front_sha256": "9417ee65f22cb43df969b0be5c505eaecc997c20f2ad6629158dc57b18e5527c",
+  "native_estimated_time": "3h 50m 46s",
+  "native_filament_grams": "8.41,86.42",
+  "print_started": false,
+  "revised_proportions_physically_tested": false
+}

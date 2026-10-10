@@ -1,0 +1,45 @@
+{
+  "two_color": {
+    "status": "sliced_successfully",
+    "package_sha256": "c40d227dfd09fdcb78139e32b739120d207e328ae60f389b4df14b381a22f6b5",
+    "gcode_sha256": "68b6577c209abbdd9c0ca5b7884669cd5a2c409429fefbf08936ac4f5c526487",
+    "Bambu_Studio_version": "02.05.00.66",
+    "total_estimated_time": "1d 18h 32m 2s",
+    "filament_weight_g": [
+      283.2,
+      378.29
+    ],
+    "total_filament_g": 661.49,
+    "layers": 919,
+    "max_z_mm": 183.8,
+    "settings": {
+      "curr_bed_type": "Textured PEI Plate",
+      "layer_height": "0.2",
+      "nozzle_diameter": "0.4",
+      "wall_loops": "3",
+      "wall_generator": "arachne",
+      "printer_model": "Bambu Lab A1",
+      "enable_support": "1",
+      "support_on_build_plate_only": "1",
+      "support_type": "tree(auto)",
+      "brim_type": "outer_only",
+      "brim_width": "10",
+      "enable_prime_tower": "1",
+      "filament_colour": "#142338;#F0F2EC",
+      "filament_type": "PLA;PLA"
+    },
+    "review_scope": "Completed GUI slice and full preview; exported G-code header/configuration audited.",
+    "print_sent": false,
+    "physical_print_tested": false,
+    "GUI_breakdown_g": {
+      "model": 118.95,
+      "support": 15.58,
+      "purge": 459.97,
+      "tower": 66.99
+    },
+    "GUI_filament_changes": 910
+  },
+  "single_color": {
+    "status": "geometry_and_package_validated; GUI_slice_pending"
+  }
+}

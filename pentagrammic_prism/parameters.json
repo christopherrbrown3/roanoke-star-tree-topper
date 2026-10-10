@@ -1,0 +1,26 @@
+{
+  "depth_mm": 60.0,
+  "front_thickness_mm": 4.0,
+  "side_wall_mm": 1.2,
+  "rear_thickness_mm": 1.6,
+  "front_white_depth_mm": 1.0,
+  "interior_white_depth_mm": 0.8,
+  "bottom_opening_width_mm": 100.0,
+  "print_tilt_x_deg": 45.0,
+  "assembly_required": false,
+  "tube_apertures": 130,
+  "tube_aperture_width_mm": 1.8,
+  "source_profile_sha256": "8aca3911fce9250e33309002ce234faf66a2f58c10fa710bc9e2421c3beaee6a",
+  "clear_depth_mm": 54.4,
+  "outline_bounds_mm": [
+    -95.48021637066756,
+    -99.99997886578174,
+    95.48021637066756,
+    99.99724533188017
+  ],
+  "tube_to_inside_wall_clearance_mm": 0.09724533188015981,
+  "bottom_mouth_center_y_mm": -47.85642076013411,
+  "rear_vent_count": 8,
+  "rear_vent_area_mm2": 192.0,
+  "opening_shape": "100 mm wide, V-shaped mouth between the original lower points; not a 100 mm diameter circular bore"
+}

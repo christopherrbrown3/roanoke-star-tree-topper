@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "meshes": {
+    "black": {
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "signed_volume_mm3": 75372.78041286721,
+      "triangles": 29558,
+      "nonadjacent_triangle_intersection_candidates": 0
+    },
+    "white": {
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "signed_volume_mm3": 5555.5651321623245,
+      "triangles": 27794,
+      "nonadjacent_triangle_intersection_candidates": 0
+    },
+    "back": {
+      "non_manifold_edges": 0,
+      "boundary_edges": 0,
+      "signed_volume_mm3": 23779.74944934859,
+      "triangles": 10872,
+      "nonadjacent_triangle_intersection_candidates": 0
+    }
+  }
+}

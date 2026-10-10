@@ -1,0 +1,24 @@
+{
+  "method": "Blender BVHTree, epsilon=0, excluding only triangle pairs sharing vertex indices",
+  "objects": {
+    "Prism | dark shell": {
+      "triangles": 107370,
+      "nonadjacent_intersection_candidates": 0
+    },
+    "Prism | white original backing bands": {
+      "triangles": 53260,
+      "nonadjacent_intersection_candidates": 0
+    },
+    "Prism | white interior reflector": {
+      "triangles": 704,
+      "nonadjacent_intersection_candidates": 0
+    }
+  },
+  "export_hashes": {
+    "dark_shell.stl": "079257353a115b79424be42063d9a1c1d84c88c722c1eb442fbd76d74ecd27d5",
+    "white_details.stl": "72e96d866e93959bb515941fdd953e77f3a7c8b000e25d67a9d35000791f130e",
+    "roanoke_star_prism.stl": "f23e1d074d8af619fa387df17b71a1eb6b410c1adb957cf288740b3585a4ac4b"
+  },
+  "blender_version": "5.2.1 LTS",
+  "source": "Live Blender MCP verification after canonical mesh re-import"
+}

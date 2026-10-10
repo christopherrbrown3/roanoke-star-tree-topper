@@ -1,0 +1,118 @@
+{
+  "status": "passed",
+  "geometry": {
+    "body_navy": {
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 79192,
+      "volume_mm3": 75713.64285568852,
+      "sha256": "d7e18cf8efd9f4d1a1339d946babf7f6c32eb9dcfd899d970a3e72c3c515dca0"
+    },
+    "body_white_face": {
+      "watertight": true,
+      "connected_solids": 3,
+      "triangles": 53260,
+      "volume_mm3": 3407.7161166570622,
+      "sha256": "38a8d003fb868dc3a9fc578a876e89c9726334b87b5bfc22e091cf8d4598be8c"
+    },
+    "snap_back": {
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 10872,
+      "volume_mm3": 23779.749449348747,
+      "sha256": "eaf4c1bea7276a17ba845af7f98c6b51da4862c4a1eb9adb5bf4886259ac3311"
+    }
+  },
+  "front_shell_connected_solids": 1,
+  "body_material_overlap_mm3": 1.5252962738340758e-15,
+  "seated_overlap_mm3": 2.731599668681639e-13,
+  "original_face_difference_mm2": 0.004172509882806535,
+  "original_white_bands_difference_mm2": 0.005115984056313641,
+  "matching_front_apertures": 130,
+  "bottom_mouth_clear": true,
+  "tree_leader_reference_clear": true,
+  "selected_connector": "two_dot",
+  "six_clip_profile_comparisons": [
+    {
+      "clip": 1,
+      "tested_hook_difference_mm3": 2.9700653386348383e-05,
+      "tested_back_patch_difference_mm3": 9.47303923621153e-05,
+      "tested_catch_patch_difference_mm3": 0.00023962650126226168
+    },
+    {
+      "clip": 2,
+      "tested_hook_difference_mm3": 0.00010603288399767838,
+      "tested_back_patch_difference_mm3": 0.00022756657910680018,
+      "tested_catch_patch_difference_mm3": 0.00014734271894488544
+    },
+    {
+      "clip": 3,
+      "tested_hook_difference_mm3": 0.00011380517534266587,
+      "tested_back_patch_difference_mm3": 0.00019470012621122684,
+      "tested_catch_patch_difference_mm3": 0.00028849455697893973
+    },
+    {
+      "clip": 4,
+      "tested_hook_difference_mm3": 9.200857673107445e-05,
+      "tested_back_patch_difference_mm3": 0.00018951621239706454,
+      "tested_catch_patch_difference_mm3": 0.00023273664013532177
+    },
+    {
+      "clip": 5,
+      "tested_hook_difference_mm3": 6.703375618943852e-05,
+      "tested_back_patch_difference_mm3": 0.00017374088492633796,
+      "tested_catch_patch_difference_mm3": 0.00014900211002355761
+    },
+    {
+      "clip": 6,
+      "tested_hook_difference_mm3": 6.171043294638984e-05,
+      "tested_back_patch_difference_mm3": 0.0001416702812464547,
+      "tested_catch_patch_difference_mm3": 0.00021905008993768887
+    }
+  ],
+  "clip_comparison_scope": "Local tangent -20..14 mm, inward 0..5.35 mm, Z 52..60 mm: arm, relief, root, hook, guide and wall window; excludes rear vents beyond the relief edge and coupon handling features",
+  "deflected_hook_sweep_max_overlap_mm3": 2.731599668681639e-13,
+  "hook_sweep_scope": "32 axial positions with hook heads rigidly translated 0.60 mm inward; excludes elastic forces",
+  "relaxed_hook_undercut_engagement_volume_mm3": 24.742899404893787,
+  "selected_sample_physically_tested": true,
+  "full_topper_physically_tested": false,
+  "retention_force_measured": false,
+  "thermal_tested": false,
+  "packages": {
+    "front_shell_A1.3mf": {
+      "sha256": "0ea5916c66b96b330b96b2b8be2b234d922ac77db315e85592f734e85497897c",
+      "roundtrip_passed": true,
+      "build_objects": 1,
+      "support_enabled": false,
+      "GUI_slice_complete": true,
+      "existing_matching_front_retained": true,
+      "GUI_verification": "Retained previously sliced package; SHA-256 unchanged after rear engraving."
+    },
+    "snap_back_A1.3mf": {
+      "sha256": "0e96912481a9aba9d7d46e8a1d7d7f286baacc1f83f8c491f0c0e60715c18a78",
+      "roundtrip_passed": true,
+      "build_objects": 1,
+      "support_enabled": false,
+      "GUI_slice_complete": true
+    }
+  },
+  "builder_mark": {
+    "text": "christopherbrown.io",
+    "font": "Arial Bold, converted to mesh; font not distributed",
+    "location": "outside of detachable rear cover",
+    "width_mm": 72.0,
+    "height_mm": 6.855396747589111,
+    "depth_mm": 1.0,
+    "floor_z_mm": 59.0,
+    "remaining_wall_mm": 0.6000000000000014,
+    "actual_floor_difference_mm2": 0.0,
+    "removed_geometry_difference_mm3": 0.0,
+    "added_material_mm3": 0.0,
+    "removed_volume_mm3": 153.59540798316627,
+    "clearance_to_outline_mm": 17.595131564815496,
+    "clearance_to_vents_mm": 7.7055375006894105,
+    "glyph_components_accommodate_0_4mm_tool": true,
+    "cutter_sha256": "ea786c0c7655318101dd74ca40af91ad415416e630f500bd5fce3c8c7224b3df",
+    "unmarked_reference_sha256": "237d9e3b65e2afe61be09887f4e78ec4c7ce951be7d1dd26f8b19a98c79f44bc"
+  }
+}

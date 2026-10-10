@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "blender_version": "5.2.1 LTS",
+  "built_through": "live Blender MCP",
+  "saved_scene": "Roanoke Star | continuous diffused stars",
+  "canonical_meshes_reimported": true,
+  "nonadjacent_triangle_intersection_candidates": {
+    "body_black": 0,
+    "body_white_diffused": 0,
+    "marked_two_dot_back": 0,
+    "test_black": 0,
+    "test_white": 0
+  },
+  "diffuser_thickness_mm": 0.4,
+  "diffused_window_count": 130,
+  "continuous_white_stars": 3,
+  "visible_bulb_outlines": 0,
+  "builder_mark": "Imported unchanged marked back: christopherbrown.io, 72 mm wide, 1.0 mm inset",
+  "full_topper_physically_tested": false,
+  "physical_diffusion_tested": false
+}

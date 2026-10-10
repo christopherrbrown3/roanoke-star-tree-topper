@@ -1,0 +1,126 @@
+{
+  "status": "passed",
+  "slicer": "Bambu Studio 02.05.00.66",
+  "sliced_package_sha256": "bdebf735219d8a5ac8875ea3044e435226cd8a348a7c73782290b26579d06f2a",
+  "gcode_sha256": "4bf442d7cd2092dbe9bc813246ed207e80b28f938193c528db5bb757c7d3ab4a",
+  "printer": "Bambu Lab A1, 0.4 mm nozzle",
+  "layer_height_mm": 0.2,
+  "layers": 20,
+  "max_z_mm": 4.0,
+  "build_plate": "Textured PEI Plate",
+  "bed_temperature_c": 65,
+  "filament_profiles": [
+    "Generic PLA @BBL A1",
+    "Generic PLA @BBL A1"
+  ],
+  "declared_preview_colors": [
+    "#FF00FF",
+    "#000000"
+  ],
+  "requested_physical_filaments": {
+    "A1": "white",
+    "A2": "black"
+  },
+  "diffuser_thickness_mm": 0.4,
+  "window_toolpath_checks": [
+    {
+      "window": 1,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9747183991981281,
+        "2": 0.9662319243920153
+      }
+    },
+    {
+      "window": 2,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9905328259172896,
+        "2": 0.9861910210469592
+      }
+    },
+    {
+      "window": 3,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9881438985177902,
+        "2": 0.9828787044381625
+      }
+    },
+    {
+      "window": 4,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9888234622955178,
+        "2": 0.9823755767993743
+      }
+    },
+    {
+      "window": 5,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.9908346622334722,
+        "2": 0.9853142010771805
+      }
+    },
+    {
+      "window": 6,
+      "white_extrusion_layers": [
+        1,
+        2
+      ],
+      "black_extrusion_layers": [],
+      "inner_core_coverage": {
+        "1": 0.975275676289529,
+        "2": 0.9659604606724346
+      }
+    }
+  ],
+  "coverage_scope": "Extruded paths buffered by actual line width, clipped to window interiors inset 0.45 mm; arcs sampled every 0.1 mm.",
+  "print_started": true,
+  "physical_diffusion_tested": false,
+  "printer_name": "3DP-039-922",
+  "job_name": "Star_diffuser_test_0.4mm",
+  "printer_status_on_verification": "Homing toolhead; layer 0/20; bed target 65 C",
+  "print_start_verified_at": "2026-10-04T14:24:51.394224+00:00",
+  "physical_slots_verified_in_send_dialog": {
+    "filament_1": "A1 (white per user; old registry label magenta)",
+    "filament_2": "A2 black"
+  },
+  "estimated_print_time": "50 min 59 sec",
+  "estimated_total_filament_g": 12.84,
+  "temporary_print_project_sha256": "20b41c05f01fe6559f81e5dde4f1ca2cc3885b7f448f4fc1607101750a472650",
+  "canonical_test_project_sha256": "ec57f0e7afb9013f31cafb38b0d1ed8d88d8279820104e8b7114d3f950dbd43b",
+  "nominal_color_mapping_reason": "A1 registration is stale magenta; matching only nominal preview color preselected the user-specified white A1 slot. Profiles, geometry and 600 mm3 black-to-white flushing retained; no AMS overwrite synchronization used.",
+  "source_commit": "8bfcef2cc592f17fceee9ca6bf1e4e423677846e",
+  "last_device_observation": {
+    "verified_at_utc": "2026-10-04 14:53:42 UTC",
+    "job": "Star_diffuser_test_0.4mm",
+    "status": "Printing",
+    "progress_percent": 55,
+    "layer": 5,
+    "total_layers": 20,
+    "estimated_remaining_minutes": 22,
+    "bed_target_c": 65
+  }
+}

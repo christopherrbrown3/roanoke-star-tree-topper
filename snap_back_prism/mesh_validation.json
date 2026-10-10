@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "geometry": {
+    "body_navy": {
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 79192,
+      "volume_mm3": 75810.48263376347,
+      "sha256": "baef8c3ece91579b307a190c790ca4dbd27f3d1b9bbad024b70d8b955c43923c"
+    },
+    "body_white_face": {
+      "watertight": true,
+      "connected_solids": 3,
+      "triangles": 53260,
+      "volume_mm3": 3407.7161166570622,
+      "sha256": "38a8d003fb868dc3a9fc578a876e89c9726334b87b5bfc22e091cf8d4598be8c"
+    },
+    "snap_back": {
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 2336,
+      "volume_mm3": 23935.061780841537,
+      "sha256": "c2406d00ca6363f4833f736169c4c8351566d59407ea8b7bc0210fe578316bf7"
+    },
+    "coupon_catch": {
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 40,
+      "volume_mm3": 711.0037052388243,
+      "sha256": "df65cc02f6928c6d77f168246577f2981f15eec8a25b846e795e06343e27ea53"
+    },
+    "coupon_back": {
+      "watertight": true,
+      "connected_solids": 1,
+      "triangles": 200,
+      "volume_mm3": 433.08579633493605,
+      "sha256": "a22a87e56a77c3bd950f22a39f4fcf73add8f6ed164eba2f736d946a6105b12e"
+    }
+  },
+  "front_shell_connected_solids": 1,
+  "assembled_material_overlap_mm3": 1.8789830802390384e-13,
+  "body_material_overlap_mm3": 1.5252962738340758e-15,
+  "sample_seated_overlap_mm3": -5.329070518200751e-15,
+  "original_face_difference_mm2": 0.004172509882806535,
+  "original_white_bands_difference_mm2": 0.005115984056313641,
+  "matching_front_apertures": 130,
+  "bottom_mouth_clear": true,
+  "tree_leader_reference_clear": true,
+  "fully_deflected_hook_sweep_max_collision_mm3": 3.69863861759967e-13,
+  "hook_sweep_scope": "32 axial positions with hook heads rigidly translated 0.75 mm inward; not a flexural simulation",
+  "relaxed_hook_undercut_engagement_volume_mm3": 12.419992968762626,
+  "solid_PLA_estimate_g": 127.91004305876503,
+  "sample_solid_PLA_estimate_g": 1.4186709819514622,
+  "physical_snap_fit_tested": false,
+  "retention_force_tested": false,
+  "thermal_tested": false,
+  "incandescent_compatibility_verified": false,
+  "packages": {
+    "front_shell_A1.3mf": {
+      "sha256": "3bc375a603e76ef3b72aa8563f38ff84fb0defe22ccedc8567d2a67cae64d3ef",
+      "roundtrip_passed": true,
+      "build_objects": 1,
+      "support_enabled": false,
+      "GUI_slice_complete": true
+    },
+    "snap_back_A1.3mf": {
+      "sha256": "4cc288cec95b7e698122cb43611e711b987f7afa50eef2a061b0c8e22bebc30f",
+      "roundtrip_passed": true,
+      "build_objects": 1,
+      "support_enabled": false,
+      "GUI_slice_complete": true
+    },
+    "connector_sample_A1.3mf": {
+      "sha256": "b2e7f808b43110a6497d18835b03b5955a927ac2269469d47d6cfa533870babe",
+      "roundtrip_passed": true,
+      "build_objects": 2,
+      "support_enabled": false,
+      "GUI_slice_complete": true
+    }
+  }
+}

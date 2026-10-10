@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "geometry": {
+    "body_black": {
+      "watertight": true,
+      "triangles": 29558,
+      "connected_solids": 1,
+      "volume_mm3": 75372.78041286716,
+      "sha256": "672826b88d3de6ead328125cb9964c34ed1cfe6f6addc66a3cd3dd7ed3cd66dc"
+    },
+    "body_white_diffused": {
+      "watertight": true,
+      "triangles": 27794,
+      "connected_solids": 3,
+      "volume_mm3": 5555.565132162362,
+      "sha256": "e681aaa601ed61078d2577654fcc959668db9b6a5df3b120115dd9d51c41272c"
+    }
+  },
+  "canonicalization": {
+    "body_black": {
+      "export_tolerance_mm": 0.0001,
+      "before_triangles": 29592,
+      "after_triangles": 29558
+    },
+    "body_white_diffused": {
+      "export_tolerance_mm": 0.0,
+      "before_triangles": 27794,
+      "after_triangles": 27794
+    }
+  },
+  "continuous_white_star_count": 3,
+  "diffused_windows": 130,
+  "diffuser_thickness_mm": 0.4,
+  "layers_at_0_2mm": 2,
+  "white_band_widths_at_shoulders_mm": [
+    5.737158473876033,
+    5.791682282545803,
+    5.664774225493957
+  ],
+  "shoulder_and_lower_clear_gaps_between_white_bands_mm": [
+    3.9947850720392637,
+    4.066567060336233
+  ],
+  "minimum_clear_gaps_between_white_bands_mm": [
+    2.861537973369189,
+    3.436827272291536
+  ],
+  "minimum_white_margin_beyond_hidden_windows_mm": 0.09874123627186088,
+  "white_face_difference_mm2": 0.0016352085081569952,
+  "window_floor_difference_mm2": 0.003472244496723861,
+  "fused_shell_byte_identical_to_v2": true,
+  "marked_back_byte_identical": true,
+  "seated_back_collision_mm3": 2.731599668681639e-13,
+  "originals_and_v2_unchanged": {
+    "snap_back_prism/proportions_v2/parameters.json": "29661f62ebe9c2f3ebf6bd1738084d943496c5b0d09d60afc1bf6ec92dc1ba0d",
+    "snap_back_prism/proportions_v2/profiles.json": "f7a35d5a2415167566bc79f59e2afc44010b6b47c8f4584024247f42e1b6123b",
+    "snap_back_prism/proportions_v2/body_black.stl": "d581606f4c9bc3221be4d65e3046975e1df5ebe89aaafe84cee08783122f9901",
+    "snap_back_prism/proportions_v2/body_white_diffused.stl": "ff7434cdbec6ae3955d712976d3539190b3586b47994a7a303d431effd61b27a",
+    "snap_back_prism/proportions_v2/front_shell_fused.stl": "60f6275998b8c983cea2998858b40a9cd3e92f78a3e178f6a523916e813819cd",
+    "snap_back_prism/proportions_v2/snap_back.stl": "eaf4c1bea7276a17ba845af7f98c6b51da4862c4a1eb9adb5bf4886259ac3311",
+    "snap_back_prism/proportions_v2/snap_back_A1.3mf": "0e96912481a9aba9d7d46e8a1d7d7f286baacc1f83f8c491f0c0e60715c18a78",
+    "snap_back_prism/proportions_v2/front_shell_A1.3mf": "71eb8ede949f7b5c645a189c3cf1f54c29e6835b06e7ee03ce7bd4e47ee494ca"
+  },
+  "packages": {
+    "front_shell_A1.3mf": {
+      "sha256": "9417ee65f22cb43df969b0be5c505eaecc997c20f2ad6629158dc57b18e5527c",
+      "roundtrip_passed": true,
+      "build_objects": 1,
+      "support_enabled": false,
+      "GUI_slice_complete": true,
+      "slicer_validation": "slicer_validation.json",
+      "sliced_package_sha256": "be00a032d2370e3a519fa13e97d1c72ff1667f5bf5cbbfd2e15afbd4bb934c53",
+      "native_estimated_time": "3h 50m 46s"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "body_navy": {
+    "watertight": true,
+    "solids": 1,
+    "volume_mm3": 75810.48263376347,
+    "triangles": 79192,
+    "volume_change_mm3": -0.010610196841298603,
+    "sha256": "baef8c3ece91579b307a190c790ca4dbd27f3d1b9bbad024b70d8b955c43923c"
+  },
+  "body_white_face": {
+    "watertight": true,
+    "solids": 3,
+    "volume_mm3": 3407.7161166570622,
+    "triangles": 53260,
+    "volume_change_mm3": -4.547473508864641e-13,
+    "sha256": "38a8d003fb868dc3a9fc578a876e89c9726334b87b5bfc22e091cf8d4598be8c"
+  },
+  "snap_back": {
+    "watertight": true,
+    "solids": 1,
+    "volume_mm3": 23935.061780841537,
+    "triangles": 2336,
+    "volume_change_mm3": -0.00013686383681488223,
+    "sha256": "c2406d00ca6363f4833f736169c4c8351566d59407ea8b7bc0210fe578316bf7"
+  },
+  "coupon_catch": {
+    "watertight": true,
+    "solids": 1,
+    "volume_mm3": 711.0037052388243,
+    "triangles": 40,
+    "volume_change_mm3": 0.0,
+    "sha256": "df65cc02f6928c6d77f168246577f2981f15eec8a25b846e795e06343e27ea53"
+  },
+  "coupon_back": {
+    "watertight": true,
+    "solids": 1,
+    "volume_mm3": 433.08579633493605,
+    "triangles": 200,
+    "volume_change_mm3": 0.0,
+    "sha256": "a22a87e56a77c3bd950f22a39f4fcf73add8f6ed164eba2f736d946a6105b12e"
+  }
+}

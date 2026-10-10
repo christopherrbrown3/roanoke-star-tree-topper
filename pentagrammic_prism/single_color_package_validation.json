@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "same_fused_shell": true,
+  "one_build_object": true,
+  "connected_solids": 1,
+  "filaments": 1,
+  "prime_tower": false,
+  "color_contrast_omitted": true,
+  "roundtrip_passed": true,
+  "sha256": "ab1e03debb57fb316b5254fa6c9415ab8fab90fbc8abaa7eb9571cb93f229f77"
+}

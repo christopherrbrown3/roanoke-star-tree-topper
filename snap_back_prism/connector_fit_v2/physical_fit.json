@@ -1,0 +1,9 @@
+{
+  "user_feedback": "They both work. Slight edge to two dots though.",
+  "one_dot": "Works, according to the user's physical test",
+  "two_dot": "Works and slightly preferred, according to the user's physical test",
+  "selected_trial": "two_dot",
+  "selected_engagement_mm": 0.5,
+  "print_filament": "AMS A1, synced as Generic PLA Silk, magenta",
+  "scope": "The user tested individual connector pairs. The assembled full topper and six-clip insertion force have not been physically tested."
+}

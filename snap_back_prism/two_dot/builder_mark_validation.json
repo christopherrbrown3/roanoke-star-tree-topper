@@ -1,0 +1,19 @@
+{
+  "text": "christopherbrown.io",
+  "font": "Arial Bold, converted to mesh; font not distributed",
+  "location": "outside of detachable rear cover",
+  "width_mm": 72.0,
+  "height_mm": 6.855396747589111,
+  "depth_mm": 1.0,
+  "floor_z_mm": 59.0,
+  "remaining_wall_mm": 0.6000000000000014,
+  "actual_floor_difference_mm2": 0.0,
+  "removed_geometry_difference_mm3": 0.0,
+  "added_material_mm3": 0.0,
+  "removed_volume_mm3": 153.59540798316627,
+  "clearance_to_outline_mm": 17.595131564815496,
+  "clearance_to_vents_mm": 7.7055375006894105,
+  "glyph_components_accommodate_0_4mm_tool": true,
+  "cutter_sha256": "ea786c0c7655318101dd74ca40af91ad415416e630f500bd5fce3c8c7224b3df",
+  "unmarked_reference_sha256": "237d9e3b65e2afe61be09887f4e78ec4c7ce951be7d1dd26f8b19a98c79f44bc"
+}
