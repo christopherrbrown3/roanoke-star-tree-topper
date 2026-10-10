@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "geometry_unchanged": true,
+  "preview_pixels_unchanged": true,
+  "removed_preview_metadata": [
+    "assembled.png",
+    "front.png"
+  ],
+  "blend_path_substitutions": 3,
+  "blend_changes_are_same_length_path_metadata_only": true,
+  "published_blender_sha256": "f9a60d877e1c3dab618652f83a6c18dec73478e1d3655fc6cefd9933b76588d5",
+  "front_project_sha256_unchanged": "9417ee65f22cb43df969b0be5c505eaecc997c20f2ad6629158dc57b18e5527c",
+  "protected_files_unchanged": 160
+}

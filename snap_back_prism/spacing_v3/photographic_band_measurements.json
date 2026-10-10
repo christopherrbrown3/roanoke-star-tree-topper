@@ -1,0 +1,37 @@
+{
+  "source": "user-provided daylight aerial, 900 x 550 pixels",
+  "method": "Manual horizontal shoulder cross-section; front frame faces separated from rear horizontal supports. Pixel precision and perspective limit exact dimensions.",
+  "cross_section_x_px": 440,
+  "white_frame_y_intervals_px": [
+    [
+      230,
+      240
+    ],
+    [
+      248,
+      257
+    ],
+    [
+      265,
+      274
+    ]
+  ],
+  "approximate_band_widths_px": [
+    10,
+    9,
+    9
+  ],
+  "approximate_between_band_gaps_px": [
+    8,
+    8
+  ],
+  "approximate_clear_gap_to_white_width_ratio": [
+    0.8,
+    0.8888888889
+  ],
+  "candidate_internal_white_margin_mm": 1.0,
+  "centerline_paths_changed": false,
+  "hidden_diffuser_windows_changed": false,
+  "protected_files_count": 160,
+  "comparison_render": "previews/spacing_comparison.png"
+}
