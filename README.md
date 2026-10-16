@@ -29,7 +29,7 @@ This repository contains two finished designs. **Original** and **Light-diffusin
 | Preview | <img src="print_in_place/previews/three_quarter.png" alt="Original topper with integrated tree socket" width="300"> | <img src="snap_back_prism/spacing_v3/previews/assembled.png" alt="Diffused-star topper with separate continuous-ridge rear cover" width="300"> |
 | **Construction** | One print-in-place model: the star face and tapered tree socket are integrated. No assembly. | Two prints: a two-color diffused-star front and a separate white rear cover with six fixed tabs and a continuous inset ridge. Manually flex the PLA parts to attach. |
 | **Best fit** | Choose this established single-piece design when you want the integrated mount and no assembly. | Choose this version for diffused light through the star face and a removable back. The owner confirmed that the v2 back locks onto the `spacing_v3` front. |
-| **Bambu Studio projects** | [Original A1 3MF](print_in_place/roanoke_star_A1.3mf) | [Front A1 3MF](snap_back_prism/spacing_v3/front_shell_A1.3mf) · [Rear A1 3MF](snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back_A1.3mf) |
+| **Bambu Studio projects** | [Original A1 3MF](print_in_place/roanoke_star_A1.3mf) | [Complete two-plate A1 3MF](snap_back_prism/complete_project/complete_topper_A1.3mf) · standalone [front](snap_back_prism/spacing_v3/front_shell_A1.3mf) and [replacement back](snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back_A1.3mf) projects |
 | **Other files** | [Blender source](print_in_place/roanoke_star_A1.blend) · [Design report](print_in_place/DESIGN_REPORT.md) | [Front and rear STLs, build files, and validation](snap_back_prism/continuous_ridge_back_v2/README.md) |
 | **MakerWorld** | [Published original listing](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color) | The release files and [listing draft](docs/makerworld/LISTING.md) are here; a separate MakerWorld listing has not been created. |
 
@@ -143,7 +143,7 @@ See the [mesh report](print_in_place/mesh_validation.json), [intersection result
 | Directory | Contents |
 |---|---|
 | [`print_in_place/`](print_in_place/) | Original integrated A1 model, material meshes, Blender scene, previews, and validation reports |
-| [`snap_back_prism/`](snap_back_prism/) | Light-diffusing snap-back edition, its separate front/back projects, reproducible source, previews, and validation reports |
+| [`snap_back_prism/`](snap_back_prism/) | Light-diffusing snap-back edition, a complete two-plate project plus separate front/back files, reproducible source, previews, and validation reports |
 | [`scripts/`](scripts/) | Reproducible geometry construction, packaging, and checks |
 | [`research/`](research/) | Sources, photograph analysis, angle measurements, and archival research |
 | [`publishing/makerworld/`](publishing/makerworld/) | Published listing copy and cover-art provenance |

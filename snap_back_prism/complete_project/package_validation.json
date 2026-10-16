@@ -1,0 +1,108 @@
+{
+  "status": "structural and native Bambu Studio two-plate slicing checks passed",
+  "output": "complete_topper_A1.3mf",
+  "sha256": "cffa797e8c52755ffbcdab54b3f50a362d9caa552a353f2f9101aa98f007a9df",
+  "source_projects": {
+    "spacing_v3/front_shell_A1.3mf": "9417ee65f22cb43df969b0be5c505eaecc997c20f2ad6629158dc57b18e5527c",
+    "continuous_ridge_back_v2/continuous_ridge_back_A1.3mf": "40a1bcf008b88442bcb9194a488f2a7ee721fa9fa775fc19661288fb84b112d1"
+  },
+  "plates": [
+    {
+      "plate": 1,
+      "name": "Front shell",
+      "origin_mm": [
+        0,
+        0,
+        0
+      ],
+      "assembly_id": 20,
+      "build_transform": "1 0 0 0 1 0 0 0 1 128 128 0"
+    },
+    {
+      "plate": 2,
+      "name": "Back plate - V2 doubled tabs",
+      "origin_mm": [
+        307.2,
+        0,
+        0
+      ],
+      "assembly_id": 21,
+      "build_transform": "1 0 0 0 1 0 0 0 1 435.2 128 0"
+    }
+  ],
+  "mesh_checks": [
+    {
+      "plate": 1,
+      "object_id": "2",
+      "filament": 1,
+      "vertices": 13897,
+      "triangles": 27794,
+      "exact_source_mesh_sha256": "cb912001ca4aaa9f0fe860da91710be520a1dbcce4cc72025e911bcae50e999d",
+      "source_mesh_identical": true
+    },
+    {
+      "plate": 1,
+      "object_id": "3",
+      "filament": 2,
+      "vertices": 14509,
+      "triangles": 29558,
+      "exact_source_mesh_sha256": "fa493ef802cc8a86d92e830bd8c1820deba40eca1a4ce659a38fc714c74f2c38",
+      "source_mesh_identical": true
+    },
+    {
+      "plate": 2,
+      "object_id": "4",
+      "filament": 1,
+      "vertices": 5008,
+      "triangles": 10044,
+      "exact_source_mesh_sha256": "a5648ad1515486a948e056ce1ba09e2790b30ab4caa9e7aa012736d445cc1fc2",
+      "source_mesh_identical": true
+    }
+  ],
+  "source_process_differences": [
+    "enable_prime_tower"
+  ],
+  "combined_prime_tower_setting": "enabled globally; verify native slicer omits tower on single-filament back",
+  "other_source_print_settings_preserved": true,
+  "source_projects_unchanged": true,
+  "native_GUI_validation_complete": false,
+  "printing_performed": false,
+  "native_gui_validation_complete": true,
+  "native_gui_slice_results": {
+    "application": "Bambu Studio",
+    "printer": "Bambu Lab A1, 0.4 mm nozzle",
+    "layer_height_mm": 0.2,
+    "supports_enabled": false,
+    "plate_type": "Textured PEI Plate",
+    "front_plate": {
+      "plate": 1,
+      "name": "Front shell",
+      "slice_complete": true,
+      "layers": 292,
+      "height_mm": 58.4,
+      "estimated_time": "3 h 51 min",
+      "estimated_filament_g_including_purge_and_tower": 94.84,
+      "filament_change_times": 6,
+      "filaments": [
+        "1 white PLA",
+        "2 black PLA"
+      ],
+      "purge_tower_present": true
+    },
+    "back_plate": {
+      "plate": 2,
+      "name": "Back plate - V2 doubled tabs",
+      "slice_complete": true,
+      "layers": 38,
+      "height_mm": 7.6,
+      "estimated_time": "58 min 54 sec",
+      "estimated_filament_g": 30.78,
+      "filament_change_times": 1,
+      "filaments": [
+        "1 white PLA"
+      ],
+      "purge_tower_present": false
+    },
+    "notes": "Both plates were sliced and inspected in the native Bambu Studio Preview. The front slice includes colored geometry and purge/prime-tower paths; the white-only back slice is tower-free. No printer send or physical print was initiated."
+  }
+}

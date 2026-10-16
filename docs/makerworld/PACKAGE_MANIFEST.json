@@ -5,14 +5,20 @@
   "model_scope": "Complete current snap-back topper: spacing_v3 front plus continuous_ridge_back_v2 back",
   "files": [
     {
+      "path": "snap_back_prism/complete_project/complete_topper_A1.3mf",
+      "kind": "Complete Bambu Lab A1 two-plate project (plate 1 front; plate 2 rear cover)",
+      "sha256": "cffa797e8c52755ffbcdab54b3f50a362d9caa552a353f2f9101aa98f007a9df",
+      "notes": "Primary complete-set download. Open as a project in Bambu Studio; each part remains on its own build plate with its matching filament assignment and orientation."
+    },
+    {
       "path": "snap_back_prism/spacing_v3/front_shell_A1.3mf",
-      "kind": "A1 Bambu Studio project / front print profile",
+      "kind": "Standalone front-only A1 project",
       "sha256": "9417ee65f22cb43df969b0be5c505eaecc997c20f2ad6629158dc57b18e5527c",
       "notes": "Two-color face-down front; project filament 1 white, filament 2 black; no supports or brim."
     },
     {
       "path": "snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back_A1.3mf",
-      "kind": "A1 Bambu Studio project / rear cover print profile",
+      "kind": "Standalone replacement-back-only A1 project",
       "sha256": "40a1bcf008b88442bcb9194a488f2a7ee721fa9fa775fc19661288fb84b112d1",
       "notes": "White, outside-face down; 2.10 mm fixed tabs, no supports."
     },
@@ -35,7 +41,7 @@
   "estimates": {
     "front": "3 h 50 min 46 s; 94.83 g, including purge and prime tower",
     "back": "58 min 54 s; 30.78 g",
-    "note": "Separate prints. Estimates depend on slicer profile and printer settings."
+    "note": "The complete project contains two plates and can be sliced per plate. Estimates vary with slicer profile and printer settings; native combined-project plate results are recorded in snap_back_prism/complete_project/package_validation.json."
   },
   "media": {
     "owner_print_photos": "Four genuine owner-supplied photos were recovered. They document a pre-spacing_v3 front, two early tab-fit coupons, and a failed non-locking predecessor. Use only with the historical captions in owner_photo_captions.json; none shows the final v2 back fitted to the spacing_v3 front or qualifies as final assembly/profile evidence.",

@@ -16,7 +16,7 @@ A two-piece, two-color Roanoke Star tree topper with a detachable rear cover. Th
 
 Bring Roanoke's Mill Mountain Star to your Christmas tree with this two-piece snap-back tree topper. The front shell has three white star bands, 130 diffused light windows, an open 100 mm tree-leader entrance, and six catches. The separate rear cover closes the shell with a continuous inset ridge, eight vents, and recessed `christopherbrown.io` lettering.
 
-The front prints face down as a two-color project. The separate back prints outside-face down in white PLA. Open the matching A1 3MF projects as projects in Bambu Studio to retain filament assignments and orientation. The included files are the complete current snap-back set: the `spacing_v3` front and the compatible `continuous_ridge_back_v2` rear.
+The front prints face down as a two-color project. The separate back prints outside-face down in white PLA. The complete A1 3MF project contains both parts on separate plates: plate 1 is the two-color front, and plate 2 is the white back. Open it as a project in Bambu Studio to retain each plate, filament assignments, and orientation. Single-plate A1 projects remain available for printing the front or a replacement back by itself.
 
 The back has six fixed tabs, each 8 mm wide, integral with the ridge. Its 2.10 mm tab projection is double the earlier 1.05 mm version. The owner printed v2 and confirmed that it locks onto the existing v3 front. To install it, manually flex the PLA cover and/or shell. There are no hinges, sliding catches, separate latch pieces, or spring-relief slots. No cycle-life, retention-force, or long-term durability testing is claimed.
 
@@ -24,9 +24,9 @@ If you already printed the `spacing_v3` snap-back front, print only the v2 back 
 
 **Print guidance**
 
-- Front: Bambu Lab A1, 0.4 mm nozzle, 0.20 mm layers, white PLA on project filament 1 and black PLA on project filament 2, face down, no supports or brim. The native slice estimate is 3 h 50 min 46 sec and 94.83 g including purge and prime tower.
-- Back: Bambu Lab A1, 0.4 mm nozzle, 0.20 mm layers, white PLA, outside face down on Textured PEI, no supports. The native slice estimate is 58 min 54 sec and 30.78 g.
-- These are separate prints and estimates; filament profiles and printer settings change the results. Check your own tree leader against the 100 mm opening before printing.
+- Front (plate 1): Bambu Lab A1, 0.4 mm nozzle, 0.20 mm layers, white PLA on project filament 1 and black PLA on project filament 2, face down, no supports or brim. The native combined-project slice is 292 layers / 58.4 mm, estimated at 3 h 51 min and 94.84 g including purge and prime tower.
+- Back (plate 2): Bambu Lab A1, 0.4 mm nozzle, 0.20 mm layers, white PLA, outside face down on Textured PEI, no supports. The native combined-project slice is 38 layers / 7.6 mm, estimated at 58 min 54 sec and 30.78 g. The slicer omits the prime tower for this white-only plate.
+- These are separate plate prints and estimates; filament profiles and printer settings change the results. Check your own tree leader against the 100 mm opening before printing.
 
 **License:** CC BY-NC-SA 4.0.
 
