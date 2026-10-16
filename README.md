@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![MakerWorld](https://img.shields.io/badge/MakerWorld-View%20published%20model-0ea5a8?style=for-the-badge)](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color)
+[![Original MakerWorld model](https://img.shields.io/badge/MakerWorld-Original%20print--in--place%20model-0ea5a8?style=for-the-badge)](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-4b5563?style=for-the-badge)](LICENSE)
 [![Printer](https://img.shields.io/badge/Printer-Bambu%20Lab%20A1-2563eb?style=for-the-badge)](https://bambulab.com/en-us/a1)
 [![Print in place](https://img.shields.io/badge/Print--in--place-2%20colors-7c3aed?style=for-the-badge)](print_in_place/roanoke_star_A1.3mf)
@@ -19,6 +19,21 @@
 </div>
 
 The Roanoke Star is one of Virginia’s most recognizable night-time landmarks. This tree topper translates its layered neon silhouette into a carefully documented, print-in-place object: a dark structural star, three white backing bands, 130 individually outlined tube sections, and an integrated rear mount for a Christmas-tree leader.
+
+## Choose between two complete topper versions
+
+This repository contains two finished designs. **Original** and **Light-diffusing snap-back** are the two product versions; `spacing_v3` and `continuous_ridge_back_v2` are internal revision names for parts of the second version.
+
+| | Original integrated topper | Light-diffusing topper with removable back |
+|---|---|---|
+| Preview | <img src="print_in_place/previews/three_quarter.png" alt="Original topper with integrated tree socket" width="300"> | <img src="snap_back_prism/spacing_v3/previews/assembled.png" alt="Diffused-star topper with separate continuous-ridge rear cover" width="300"> |
+| **Construction** | One print-in-place model: the star face and tapered tree socket are integrated. No assembly. | Two prints: a two-color diffused-star front and a separate white rear cover with six fixed tabs and a continuous inset ridge. Manually flex the PLA parts to attach. |
+| **Best fit** | Choose this established single-piece design when you want the integrated mount and no assembly. | Choose this version for diffused light through the star face and a removable back. The owner confirmed that the v2 back locks onto the `spacing_v3` front. |
+| **Bambu Studio projects** | [Original A1 3MF](print_in_place/roanoke_star_A1.3mf) | [Front A1 3MF](snap_back_prism/spacing_v3/front_shell_A1.3mf) · [Rear A1 3MF](snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back_A1.3mf) |
+| **Other files** | [Blender source](print_in_place/roanoke_star_A1.blend) · [Design report](print_in_place/DESIGN_REPORT.md) | [Front and rear STLs, build files, and validation](snap_back_prism/continuous_ridge_back_v2/README.md) |
+| **MakerWorld** | [Published original listing](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color) | The release files and [listing draft](docs/makerworld/LISTING.md) are here; a separate MakerWorld listing has not been created. |
+
+The cover and longer history below describe the **Original integrated topper**. For the removable-back design, start with the two project links in the comparison above.
 
 > **Cover note:** The cover is an AI-generated product illustration based on the finished model and owner-supplied print photographs. The project renders and physical-print evidence below are the model’s actual release assets.
 
@@ -93,7 +108,7 @@ The design is published on MakerWorld with a dedicated A1 profile:
 | [Dark body STL](print_in_place/body_material.stl) + [white face STL](print_in_place/white_tube_material.stl) | Alternative material meshes with a shared origin; import together as parts of one object. |
 | [Design report](print_in_place/DESIGN_REPORT.md) | Dimensions, mount geometry, material layout, and validation results. |
 
-The finalized [MakerWorld listing copy](publishing/makerworld/LISTING.md) and its [cover illustration](publishing/makerworld/cover.png) are included with the release assets. Personal print photographs used on the listing are intentionally not redistributed here.
+The finalized [MakerWorld listing copy](publishing/makerworld/LISTING.md) and its [cover illustration](publishing/makerworld/cover.png) are included with the original release assets. Personal print photographs used on that original listing are intentionally not redistributed here.
 
 ## Printing, kept practical
 
@@ -127,12 +142,14 @@ See the [mesh report](print_in_place/mesh_validation.json), [intersection result
 
 | Directory | Contents |
 |---|---|
-| [`print_in_place/`](print_in_place/) | A1 model, material meshes, Blender scene, previews, and validation reports |
+| [`print_in_place/`](print_in_place/) | Original integrated A1 model, material meshes, Blender scene, previews, and validation reports |
+| [`snap_back_prism/`](snap_back_prism/) | Light-diffusing snap-back edition, its separate front/back projects, reproducible source, previews, and validation reports |
 | [`scripts/`](scripts/) | Reproducible geometry construction, packaging, and checks |
 | [`research/`](research/) | Sources, photograph analysis, angle measurements, and archival research |
 | [`publishing/makerworld/`](publishing/makerworld/) | Published listing copy and cover-art provenance |
+| [`docs/makerworld/`](docs/makerworld/) | Listing draft and media/package notes for the snap-back edition |
 
-`main` contains the integrated single-print design shown above. Superseded models and development drafts remain available in Git history.
+Both complete topper versions are available in this repository: the integrated original and the two-piece light-diffusing snap-back edition. Internal revisions and superseded experiments are identified within their respective project folders.
 
 ## Credits and license
 
