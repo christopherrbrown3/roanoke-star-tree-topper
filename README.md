@@ -3,6 +3,7 @@
 <div align="center">
 
 [![Original MakerWorld model](https://img.shields.io/badge/MakerWorld-Original%20print--in--place%20model-0ea5a8?style=for-the-badge)](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color)
+[![Light-diffusing MakerWorld model](https://img.shields.io/badge/MakerWorld-Light--diffusing%20snap--back%20model-0ea5a8?style=for-the-badge)](https://makerworld.com/en/models/3449273-roanoke-star-christmas-tree-topper)
 [![License](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-4b5563?style=for-the-badge)](LICENSE)
 [![Printer](https://img.shields.io/badge/Printer-Bambu%20Lab%20A1-2563eb?style=for-the-badge)](https://bambulab.com/en-us/a1)
 [![Print in place](https://img.shields.io/badge/Print--in--place-2%20colors-7c3aed?style=for-the-badge)](print_in_place/roanoke_star_A1.3mf)
@@ -31,7 +32,7 @@ This repository contains two finished designs. **Original** and **Light-diffusin
 | **Best fit** | Choose this established single-piece design when you want the integrated mount and no assembly. | Choose this version for diffused light through the star face and a removable back. The owner confirmed that the v2 back locks onto the `spacing_v3` front. |
 | **Bambu Studio projects** | [Original A1 3MF](print_in_place/roanoke_star_A1.3mf) | [Complete two-plate A1 3MF](snap_back_prism/complete_project/complete_topper_A1.3mf) · standalone [front](snap_back_prism/spacing_v3/front_shell_A1.3mf) and [replacement back](snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back_A1.3mf) projects |
 | **Other files** | [Blender source](print_in_place/roanoke_star_A1.blend) · [Design report](print_in_place/DESIGN_REPORT.md) | [Front and rear STLs, build files, and validation](snap_back_prism/continuous_ridge_back_v2/README.md) |
-| **MakerWorld** | [Published original listing](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color) | The release files and [listing draft](docs/makerworld/LISTING.md) are here; a separate MakerWorld listing has not been created. |
+| **MakerWorld** | [Published original listing](https://makerworld.com/en/models/3336030-roanoke-star-christmas-tree-topper-2-color) | [Published light-diffusing listing](https://makerworld.com/en/models/3449273-roanoke-star-christmas-tree-topper) · [Complete two-plate A1 profile](https://makerworld.com/en/models/3449273-roanoke-star-christmas-tree-topper#profileId-3934659) |
 
 The cover and longer history below describe the **Original integrated topper**. For the removable-back design, start with the two project links in the comparison above.
 
