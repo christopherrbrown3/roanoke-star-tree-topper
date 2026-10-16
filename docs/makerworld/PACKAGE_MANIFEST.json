@@ -1,5 +1,5 @@
 {
-  "listing_status": "draft ready for platform entry; actual owner photos remain unavailable in this checkout",
+  "listing_status": "local listing package ready; MakerWorld entry not created because the browser provider was unavailable; recovered owner photos are historical prototypes, and final assembled print evidence is still needed for a print profile",
   "title": "Roanoke Star Snap-Back Tree Topper (Diffused Stars)",
   "license": "CC BY-NC-SA 4.0",
   "model_scope": "Complete current snap-back topper: spacing_v3 front plus continuous_ridge_back_v2 back",
@@ -38,7 +38,7 @@
     "note": "Separate prints. Estimates depend on slicer profile and printer settings."
   },
   "media": {
-    "owner_print_photos": "Requested by owner, but no attachment files were available in the current checkout when this manifest was prepared. Reattach before adding them to the gallery; use genuine photos only for actual-print evidence.",
+    "owner_print_photos": "Four genuine owner-supplied photos were recovered. They document a pre-spacing_v3 front, two early tab-fit coupons, and a failed non-locking predecessor. Use only with the historical captions in owner_photo_captions.json; none shows the final v2 back fitted to the spacing_v3 front or qualifies as final assembly/profile evidence.",
     "generated_illustrations": [
       {
         "path": "docs/makerworld/images/ai-studio-parts.png",
@@ -57,6 +57,29 @@
       "snap_back_prism/spacing_v3/previews/assembled.png",
       "snap_back_prism/continuous_ridge_back_v2/previews/back_inside_direct.png",
       "snap_back_prism/continuous_ridge_back_v2/previews/fixed_tab_detail.png"
+    ],
+    "owner_photo_captions": "docs/makerworld/images/owner_photo_captions.json",
+    "historical_owner_photos": [
+      {
+        "path": "docs/makerworld/images/owner-legacy-front-pre-v3-spacing.jpg",
+        "sha256": "d75e1e506b252ce72518140be0b8e0a8928bdce382ed8788cd68395bfd1005ec",
+        "caption": "Owner photo of the physically printed front before the spacing_v3 correction. Historical print only; it does not show final spacing_v3 geometry."
+      },
+      {
+        "path": "docs/makerworld/images/owner-early-fit-coupons-01.jpg",
+        "sha256": "a0c7b5f56620e2c3e67ea88bc4e9f64683e06e9cd9cabcb39dacf244d166cfe0",
+        "caption": "Owner photo of early printed tab-fit coupons. These precede the continuous-ridge v1/v2 design and are not proof of the final back fit."
+      },
+      {
+        "path": "docs/makerworld/images/owner-early-fit-coupons-02.jpg",
+        "sha256": "97a3950ff0c035ad30d5bd125d7a73e7f67ba35416ba9bcff1c934b3d96aef97",
+        "caption": "Owner photo of early printed tab-fit coupons. These precede the continuous-ridge v1/v2 design and are not proof of the final back fit."
+      },
+      {
+        "path": "docs/makerworld/images/owner-nonlocking-tab-prototype.jpg",
+        "sha256": "9850870905d72d775270787f55c0fb5062aba5640dc942a46c40836e3286c4a8",
+        "caption": "Owner photo of an early hand-held tab prototype attached with feedback that it did not quite snap. Failed predecessor; do not present as the final back or as final-fit evidence."
+      }
     ]
   }
 }

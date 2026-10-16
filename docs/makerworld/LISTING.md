@@ -1,6 +1,6 @@
 # MakerWorld listing draft: Roanoke Star snap-back tree topper
 
-**Status:** ready for listing entry and final media. The earlier owner-provided print photographs are not present in this checkout or the current attachment directory. Request them again before adding a print profile or claiming the images show this final two-piece assembly. Generated images are illustrative and must be labeled as AI-generated; they are not evidence of a physical print.
+**Status:** Listing entry has not been created. The browser provider was unavailable in this session. The recovered owner photographs show earlier prototypes, not the final assembled `spacing_v3` + `continuous_ridge_back_v2` set. They can be used as clearly labeled process-gallery images, but none is proof of the final back or should be submitted as its print-profile photo. A current photo of the final printed assembly is still needed for that profile evidence. Generated images are supplemental illustrations and must be labeled AI-generated; they are not print evidence.
 
 ## Listing fields
 
@@ -36,10 +36,13 @@ If you already printed the `spacing_v3` snap-back front, print only the v2 back 
 
 ## Media plan
 
-1. Actual owner photo(s) of the final printed v3 front and v2 back attached and fitted together — **requested earlier but unavailable in the current working files; add only when recovered**.
-2. Generated product illustration — supplementary image; label AI-generated.
-3. Generated assembly/feature illustration — supplementary image; label AI-generated.
-4. Actual Blender geometry renders at `snap_back_prism/spacing_v3/previews/front.png` and `assembled.png`, plus the v2 `back_inside_direct.png` and `fixed_tab_detail.png` — identify as CAD renders, not prints.
+1. Owner photo `images/owner-legacy-front-pre-v3-spacing.jpg` — historical front print before the `spacing_v3` correction; caption it as an earlier version, not the final front.
+2. Owner photos `images/owner-early-fit-coupons-01.jpg` and `images/owner-early-fit-coupons-02.jpg` — early tab-fit coupons from before the continuous-ridge design; label them as process tests, not final back evidence.
+3. `images/owner-nonlocking-tab-prototype.jpg` — optional process-history image only. It shows a failed predecessor that did not lock, so do not use it as a primary listing image or final-fit evidence.
+4. Generated product and rear-detail illustrations — supplementary images; disclose each as AI-generated and illustrative.
+5. Actual Blender geometry renders at `snap_back_prism/spacing_v3/previews/front.png` and `assembled.png`, plus the v2 `back_inside_direct.png` and `fixed_tab_detail.png` — identify as CAD renders, not prints.
+
+No recovered owner photo shows the final v2 rear cover fitted to the `spacing_v3` front. Although the owner confirmed the printed v2 locks onto that front, take a current assembly photo before adding final-assembly evidence or a print profile.
 
 Generated supplemental visuals are `images/ai-studio-parts.png` and `images/ai-rear-cover-detail.png`. Keep an AI-generated/illustrative disclosure with each image in the gallery. The prompts and SHA-256 values are recorded in `images/generation_manifest.json`.
 

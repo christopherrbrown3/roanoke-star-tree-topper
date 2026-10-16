@@ -1,0 +1,41 @@
+{
+  "note": "These are actual owner-supplied photographs of earlier front/tab prototypes. None depicts the final continuous_ridge_back_v2 assembled with the spacing_v3 front. Do not use them as proof for the final print profile.",
+  "photos": [
+    {
+      "path": "docs/makerworld/images/owner-legacy-front-pre-v3-spacing.jpg",
+      "source_attachment_image": "719a2a8a_1.jpg",
+      "photo_date": "2026-10-10",
+      "classification": "owner-supplied actual print/prototype photo",
+      "caption": "Owner photo of the physically printed front before the spacing_v3 correction. Historical print only; it does not show final spacing_v3 geometry.",
+      "sha256": "d75e1e506b252ce72518140be0b8e0a8928bdce382ed8788cd68395bfd1005ec"
+    },
+    {
+      "path": "docs/makerworld/images/owner-early-fit-coupons-01.jpg",
+      "source_attachment_image": "956b6782_1.jpg",
+      "photo_date": "2026-10-03",
+      "classification": "owner-supplied actual print/prototype photo",
+      "caption": "Owner photo of early printed tab-fit coupons. These precede the continuous-ridge v1/v2 design and are not proof of the final back fit.",
+      "sha256": "a0c7b5f56620e2c3e67ea88bc4e9f64683e06e9cd9cabcb39dacf244d166cfe0"
+    },
+    {
+      "path": "docs/makerworld/images/owner-early-fit-coupons-02.jpg",
+      "source_attachment_image": "956b6782_2.jpg",
+      "photo_date": "2026-10-03",
+      "classification": "owner-supplied actual print/prototype photo",
+      "caption": "Owner photo of early printed tab-fit coupons. These precede the continuous-ridge v1/v2 design and are not proof of the final back fit.",
+      "sha256": "97a3950ff0c035ad30d5bd125d7a73e7f67ba35416ba9bcff1c934b3d96aef97"
+    },
+    {
+      "path": "docs/makerworld/images/owner-nonlocking-tab-prototype.jpg",
+      "source_attachment_image": "ef8ba139_1.jpg",
+      "photo_date": "2026-10-03",
+      "classification": "owner-supplied actual print/prototype photo",
+      "caption": "Owner photo of an early hand-held tab prototype attached with feedback that it did not quite snap. Failed predecessor; do not present as the final back or as final-fit evidence.",
+      "sha256": "9850870905d72d775270787f55c0fb5062aba5640dc942a46c40836e3286c4a8"
+    },
+    {
+      "excluded_attachment": "B63F4AF3-F5B0-4154-AA1C-16BC6A2221AC/1-Pasted-Image-1.jpg",
+      "reason": "Third-party Mill Mountain Star reference photo, not an owner print; exclude from product gallery."
+    }
+  ]
+}
