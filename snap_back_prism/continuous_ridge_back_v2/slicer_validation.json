@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "source": "Bambu Studio native slice; saved G-code project",
+  "slice_file": "/Users/chris/Codex Projects/roanoke-star-tree-topper/tmp/print_jobs/continuous_ridge_back_v2_A1_2026-10-15.gcode.3mf",
+  "slice_sha256": "f7f6f87fb19eb1dd40cf8a3bdb017b7b1448ec6e7a2399767b55760928b3e2ab",
+  "source_project": "continuous_ridge_back_A1.3mf",
+  "source_project_sha256": "40a1bcf008b88442bcb9194a488f2a7ee721fa9fa775fc19661288fb84b112d1",
+  "gcode_entry": "Metadata/plate_1.gcode",
+  "settings": {
+    "printer_model": "Bambu Lab A1",
+    "nozzle_diameter": "0.4",
+    "layer_height": "0.2",
+    "initial_layer_print_height": "0.2",
+    "curr_bed_type": "Textured PEI Plate",
+    "enable_support": "0",
+    "enable_prime_tower": "0",
+    "brim_width": "0"
+  },
+  "bed_temperature_c": 65,
+  "project_filament": {
+    "slot": 1,
+    "color": "white",
+    "type": "PLA"
+  },
+  "support_enabled": false,
+  "build_plate_transform": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    128.0,
+    128.0,
+    0.0
+  ],
+  "layer_count": 38,
+  "maximum_height_mm": 7.6,
+  "estimated_model_time": "51m 43s",
+  "estimated_total_time": "58m 53s",
+  "estimated_filament_g": 30.78,
+  "warnings": [
+    {
+      "message": "bed_temperature_too_high_than_filament",
+      "level": 3
+    },
+    {
+      "message": "not_support_traditional_timelapse",
+      "level": 2
+    },
+    {
+      "message": "not_support_traditional_timelapse",
+      "level": 3
+    }
+  ],
+  "fixed_tab_extrusion_presence": {
+    "all_six_tabs_passed": true,
+    "method": "Positive-E G-code motion midpoints within each tab's sliced STL cross-section, expanded 0.25 mm.",
+    "limits": "Presence only; does not measure full coverage or mechanical performance.",
+    "tabs": [
+      {
+        "tab": 1,
+        "layers_checked": 14,
+        "first_layer": 24,
+        "last_layer": 37,
+        "minimum_motion_midpoints_per_section": 7
+      },
+      {
+        "tab": 2,
+        "layers_checked": 14,
+        "first_layer": 24,
+        "last_layer": 37,
+        "minimum_motion_midpoints_per_section": 7
+      },
+      {
+        "tab": 3,
+        "layers_checked": 14,
+        "first_layer": 24,
+        "last_layer": 37,
+        "minimum_motion_midpoints_per_section": 7
+      },
+      {
+        "tab": 4,
+        "layers_checked": 14,
+        "first_layer": 24,
+        "last_layer": 37,
+        "minimum_motion_midpoints_per_section": 8
+      },
+      {
+        "tab": 5,
+        "layers_checked": 14,
+        "first_layer": 24,
+        "last_layer": 37,
+        "minimum_motion_midpoints_per_section": 7
+      },
+      {
+        "tab": 6,
+        "layers_checked": 14,
+        "first_layer": 24,
+        "last_layer": 37,
+        "minimum_motion_midpoints_per_section": 7
+      }
+    ]
+  },
+  "print_sent": false,
+  "physical_fit_tested": false,
+  "pla_deformation_validated": false
+}

@@ -1,0 +1,13 @@
+{
+  "snap_back_prism/spacing_v3/parameters.json": "4ddee66c1d3c152cf3621281894c5793ce1141b3cb17966a7edcea59f3cde951",
+  "snap_back_prism/spacing_v3/profiles.json": "39259b92be99323f43e8e7437c9b9d79dab7dd852b0f6232f4b87d778f64d900",
+  "snap_back_prism/spacing_v3/front_shell_fused.stl": "60f6275998b8c983cea2998858b40a9cd3e92f78a3e178f6a523916e813819cd",
+  "snap_back_prism/spacing_v3/front_shell_A1.3mf": "9417ee65f22cb43df969b0be5c505eaecc997c20f2ad6629158dc57b18e5527c",
+  "snap_back_prism/spacing_v3/body_black.stl": "672826b88d3de6ead328125cb9964c34ed1cfe6f6addc66a3cd3dd7ed3cd66dc",
+  "snap_back_prism/spacing_v3/body_white_diffused.stl": "e681aaa601ed61078d2577654fcc959668db9b6a5df3b120115dd9d51c41272c",
+  "snap_back_prism/validate_and_package.py": "73d4cac81dec696552df0b3b76e6f27fc3d88687b463a6b3a1b1c73705e0c4c4",
+  "snap_back_prism/two_dot/construction/builder_mark_cutter.stl": "ea786c0c7655318101dd74ca40af91ad415416e630f500bd5fce3c8c7224b3df",
+  "pentagrammic_prism/profiles.json": "e7d75cb51e0f2748418eaa96aec6f8a2dc3aad27281a01715877f31030d08cfe",
+  "pentagrammic_prism/construction/bottom_mouth.stl": "c81aa1921f251dce6183297fe97d23d3f4bfb5faf0fdbb2546b564ad276ae07d",
+  "pentagrammic_prism/construction/tree_leader_clearance_reference.stl": "4ccf9039fcf2a8c6a2902eda941de68587c53eaff88330da1645f3c85e2dc773"
+}

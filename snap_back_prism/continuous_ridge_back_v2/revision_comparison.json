@@ -1,0 +1,21 @@
+{
+  "revision": "v2 exact doubled projection",
+  "previous_project_sha256": "e58d9555bf1d197b8c1459909ca91d06257f657dc182e4f53cfd328c95d20b6d",
+  "new_project_sha256": "40a1bcf008b88442bcb9194a488f2a7ee721fa9fa775fc19661288fb84b112d1",
+  "old_projection_mm": 1.05,
+  "new_projection_mm": 2.1,
+  "ratio": 2.0,
+  "unchanged_components": {
+    "continuous_ridge.stl": {
+      "sha256": "6d70b5319edbb73c0295514af60c19586ab58f5c021ab41c4a82914b49439598",
+      "identical_bytes": true
+    },
+    "marked_plate.stl": {
+      "sha256": "50bfe7f428ca6a664d2637ff087ba9324a2c78966f2287f8587aec086db059f3",
+      "identical_bytes": true
+    }
+  },
+  "added_volume_mm3": 81.98997772708356,
+  "removed_volume_mm3": 6.596702668421958e-06,
+  "upper_catch_clearance_trim": "Only boss radial coordinates <=1.30 mm at Z>=55.00 mm are trimmed from doubled ramp; ridge unchanged. Original hole ends Z55.10 mm."
+}

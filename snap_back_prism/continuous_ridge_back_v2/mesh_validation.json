@@ -1,0 +1,244 @@
+{
+  "status": "passed",
+  "back": {
+    "watertight": true,
+    "connected_solids": 1,
+    "triangles": 10044,
+    "volume_mm3": 25409.098994502056,
+    "geometry_sha256": "e5c59dfdf47dbe6aa10a89d87b839499950244307635876d714359ee86539338",
+    "print_bounds_mm": [
+      [
+        -95.48021637066756,
+        -99.99724533188017,
+        0.0
+      ],
+      [
+        95.48021637066756,
+        99.99997886578174,
+        7.600000000000001
+      ]
+    ]
+  },
+  "printed_shell_sha256": "60f6275998b8c983cea2998858b40a9cd3e92f78a3e178f6a523916e813819cd",
+  "assembled_back_to_shell_collision_mm3": 0.0011864704523813854,
+  "ridge_contiguous_components": 1,
+  "ridge_has_catch_relief_gaps": false,
+  "ridge_axial_insertion_sweep_max_collision_mm3": 0.0011864704558873236,
+  "bottom_mouth_overlap_mm3": 0.0006103516548248865,
+  "tree_leader_overlap_mm3": 0.0,
+  "outside_mark_and_vent_difference_mm2": 0.0,
+  "catch_alignment": [
+    {
+      "tab": 1,
+      "center_xy": [
+        12.871837851296014,
+        65.90865044982613
+      ],
+      "tangent_xy": [
+        0.3141918382666678,
+        -0.949359515024004
+      ],
+      "outward_xy": [
+        0.949359515024004,
+        0.3141918382666678
+      ],
+      "actual_window_center_xy": [
+        15.385372557429356,
+        58.31377432963409
+      ],
+      "window_width_mm": 9.2,
+      "tab_width_mm": 8.0,
+      "tangential_clearance_each_side_mm": 0.6,
+      "window_z_mm": [
+        52.2,
+        55.1
+      ],
+      "full_engagement_z_mm": [
+        54.0,
+        54.4
+      ],
+      "radial_engagement_mm": 1.55,
+      "engagement_in_filled_wall_mm3": 14.669285714285698,
+      "actual_shell_collision_mm3": 0.0
+    },
+    {
+      "tab": 2,
+      "center_xy": [
+        58.46765537911989,
+        33.32607885546557
+      ],
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "outward_xy": [
+        -0.0,
+        1.0
+      ],
+      "actual_window_center_xy": [
+        66.46765537911989,
+        33.32607885546557
+      ],
+      "window_width_mm": 9.2,
+      "tab_width_mm": 8.0,
+      "tangential_clearance_each_side_mm": 0.6,
+      "window_z_mm": [
+        52.2,
+        55.1
+      ],
+      "full_engagement_z_mm": [
+        54.0,
+        54.4
+      ],
+      "radial_engagement_mm": 1.55,
+      "engagement_in_filled_wall_mm3": 14.66928571428575,
+      "actual_shell_collision_mm3": 0.0
+    },
+    {
+      "tab": 3,
+      "center_xy": [
+        52.81018440700209,
+        -56.29138687993867
+      ],
+      "tangent_xy": [
+        0.31089294947520824,
+        -0.9504449347366768
+      ],
+      "outward_xy": [
+        0.9504449347366768,
+        0.31089294947520824
+      ],
+      "actual_window_center_xy": [
+        55.29732800280376,
+        -63.89494635783208
+      ],
+      "window_width_mm": 9.2,
+      "tab_width_mm": 8.0,
+      "tangential_clearance_each_side_mm": 0.6,
+      "window_z_mm": [
+        52.2,
+        55.1
+      ],
+      "full_engagement_z_mm": [
+        54.0,
+        54.4
+      ],
+      "radial_engagement_mm": 1.55,
+      "engagement_in_filled_wall_mm3": 14.669285714285627,
+      "actual_shell_collision_mm3": 0.0
+    },
+    {
+      "tab": 4,
+      "center_xy": [
+        -52.81018440700209,
+        -56.29138687993867
+      ],
+      "tangent_xy": [
+        0.31089294947520824,
+        0.9504449347366768
+      ],
+      "outward_xy": [
+        -0.9504449347366768,
+        0.31089294947520824
+      ],
+      "actual_window_center_xy": [
+        -50.32304081120042,
+        -48.68782740204526
+      ],
+      "window_width_mm": 9.2,
+      "tab_width_mm": 8.0,
+      "tangential_clearance_each_side_mm": 0.6,
+      "window_z_mm": [
+        52.2,
+        55.1
+      ],
+      "full_engagement_z_mm": [
+        54.0,
+        54.4
+      ],
+      "radial_engagement_mm": 1.55,
+      "engagement_in_filled_wall_mm3": 14.669285714285682,
+      "actual_shell_collision_mm3": 0.0
+    },
+    {
+      "tab": 5,
+      "center_xy": [
+        -58.46765537911989,
+        33.32607885546557
+      ],
+      "tangent_xy": [
+        1.0,
+        0.0
+      ],
+      "outward_xy": [
+        -0.0,
+        1.0
+      ],
+      "actual_window_center_xy": [
+        -50.46765537911989,
+        33.32607885546557
+      ],
+      "window_width_mm": 9.2,
+      "tab_width_mm": 8.0,
+      "tangential_clearance_each_side_mm": 0.6,
+      "window_z_mm": [
+        52.2,
+        55.1
+      ],
+      "full_engagement_z_mm": [
+        54.0,
+        54.4
+      ],
+      "radial_engagement_mm": 1.55,
+      "engagement_in_filled_wall_mm3": 14.669285714285767,
+      "actual_shell_collision_mm3": 0.0
+    },
+    {
+      "tab": 6,
+      "center_xy": [
+        -12.871837851296014,
+        65.90865044982613
+      ],
+      "tangent_xy": [
+        0.3141918382666678,
+        0.949359515024004
+      ],
+      "outward_xy": [
+        -0.949359515024004,
+        0.3141918382666678
+      ],
+      "actual_window_center_xy": [
+        -10.358303145162672,
+        73.50352657001815
+      ],
+      "window_width_mm": 9.2,
+      "tab_width_mm": 8.0,
+      "tangential_clearance_each_side_mm": 0.6,
+      "window_z_mm": [
+        52.2,
+        55.1
+      ],
+      "full_engagement_z_mm": [
+        54.0,
+        54.4
+      ],
+      "radial_engagement_mm": 1.55,
+      "engagement_in_filled_wall_mm3": 14.669285714285824,
+      "actual_shell_collision_mm3": 0.0
+    }
+  ],
+  "physical_fit_tested": true,
+  "PLA_deformation_validated": false,
+  "validation_scope": "Rigid seated compatibility and ridge clearance only. Six fixed tabs require manual deformation; no insertion force, strain, creep or durability model.",
+  "packages": {
+    "continuous_ridge_back_A1.3mf": {
+      "sha256": "40a1bcf008b88442bcb9194a488f2a7ee721fa9fa775fc19661288fb84b112d1",
+      "roundtrip_passed": true,
+      "build_objects": 1,
+      "support_enabled": false,
+      "GUI_slice_complete": false
+    }
+  },
+  "physical_fit_confirmation_date": "2026-10-16",
+  "physical_fit_notes": "Owner reports the printed v2 locks onto the existing spacing_v3 front. Geometry report itself validates rigid seated clearance; retention force, cycle count, creep, and long-term durability were not measured."
+}

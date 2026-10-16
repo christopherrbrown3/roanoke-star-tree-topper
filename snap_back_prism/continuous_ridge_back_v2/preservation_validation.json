@@ -1,0 +1,6 @@
+{
+  "all_listed_source_inputs_unchanged": true,
+  "checked_file_count": 11,
+  "manifest": "preservation_before.json",
+  "manifest_scope": "Only committed files read by build.py or build_blender.py; excludes unrelated experiments, caches, local print jobs, and the modified protected source blend."
+}

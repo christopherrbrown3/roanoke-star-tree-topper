@@ -1,0 +1,62 @@
+{
+  "listing_status": "draft ready for platform entry; actual owner photos remain unavailable in this checkout",
+  "title": "Roanoke Star Snap-Back Tree Topper (Diffused Stars)",
+  "license": "CC BY-NC-SA 4.0",
+  "model_scope": "Complete current snap-back topper: spacing_v3 front plus continuous_ridge_back_v2 back",
+  "files": [
+    {
+      "path": "snap_back_prism/spacing_v3/front_shell_A1.3mf",
+      "kind": "A1 Bambu Studio project / front print profile",
+      "sha256": "9417ee65f22cb43df969b0be5c505eaecc997c20f2ad6629158dc57b18e5527c",
+      "notes": "Two-color face-down front; project filament 1 white, filament 2 black; no supports or brim."
+    },
+    {
+      "path": "snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back_A1.3mf",
+      "kind": "A1 Bambu Studio project / rear cover print profile",
+      "sha256": "40a1bcf008b88442bcb9194a488f2a7ee721fa9fa775fc19661288fb84b112d1",
+      "notes": "White, outside-face down; 2.10 mm fixed tabs, no supports."
+    },
+    {
+      "path": "snap_back_prism/spacing_v3/body_black.stl",
+      "kind": "front body material STL",
+      "sha256": "672826b88d3de6ead328125cb9964c34ed1cfe6f6addc66a3cd3dd7ed3cd66dc"
+    },
+    {
+      "path": "snap_back_prism/spacing_v3/body_white_diffused.stl",
+      "kind": "front white diffuser material STL",
+      "sha256": "e681aaa601ed61078d2577654fcc959668db9b6a5df3b120115dd9d51c41272c"
+    },
+    {
+      "path": "snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back_print.stl",
+      "kind": "rear cover STL",
+      "sha256": "ddbe303ce6945b3099ec65a5b23f88d7508c92f6e83cf05bc6964643fd3231b6"
+    }
+  ],
+  "estimates": {
+    "front": "3 h 50 min 46 s; 94.83 g, including purge and prime tower",
+    "back": "58 min 54 s; 30.78 g",
+    "note": "Separate prints. Estimates depend on slicer profile and printer settings."
+  },
+  "media": {
+    "owner_print_photos": "Requested by owner, but no attachment files were available in the current checkout when this manifest was prepared. Reattach before adding them to the gallery; use genuine photos only for actual-print evidence.",
+    "generated_illustrations": [
+      {
+        "path": "docs/makerworld/images/ai-studio-parts.png",
+        "sha256": "c50521d35ea449f2add79dd6e02817661d9bce9d0a6b5962fbaa0ce97068a6c1",
+        "disclosure": "AI-generated illustrative product visualization; not a photo or print/fit evidence."
+      },
+      {
+        "path": "docs/makerworld/images/ai-rear-cover-detail.png",
+        "sha256": "f2369c343cece1902f12b2e6459867ec9662b48e2f2ac178b87ced0969d09323",
+        "disclosure": "AI-generated illustrative product visualization; not a photo or print/fit evidence."
+      }
+    ],
+    "generation_manifest": "docs/makerworld/images/generation_manifest.json",
+    "cad_renders": [
+      "snap_back_prism/spacing_v3/previews/front.png",
+      "snap_back_prism/spacing_v3/previews/assembled.png",
+      "snap_back_prism/continuous_ridge_back_v2/previews/back_inside_direct.png",
+      "snap_back_prism/continuous_ridge_back_v2/previews/fixed_tab_detail.png"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "created": "2026-10-16",
+  "tool": "built-in Codex image_gen",
+  "disclosure": "AI-generated illustrative product visualizations based on CAD renders; not photographs of physical prints or evidence of assembly, fit, lighting performance, or testing. Keep this disclosure with each image in any MakerWorld gallery use.",
+  "references": [
+    "snap_back_prism/spacing_v3/previews/front.png",
+    "snap_back_prism/continuous_ridge_back_v2/previews/back_inside.png",
+    "snap_back_prism/continuous_ridge_back_v2/previews/back_inside_direct.png",
+    "snap_back_prism/continuous_ridge_back_v2/previews/fixed_tab_detail.png",
+    "snap_back_prism/spacing_v3/roanoke_star_spacing_v3.blend",
+    "snap_back_prism/continuous_ridge_back_v2/continuous_ridge_back.blend"
+  ],
+  "assets": [
+    {
+      "file": "ai-studio-parts.png",
+      "sha256": "c50521d35ea449f2add79dd6e02817661d9bce9d0a6b5962fbaa0ce97068a6c1",
+      "prompt_summary": "Square charcoal-gray studio visualization of the exact referenced three-track front shell and separate matching rear-cover inside face, both white, no tree, glow, text, or hardware.",
+      "generation_input_images": [
+        "snap_back_prism/spacing_v3/previews/front.png",
+        "snap_back_prism/continuous_ridge_back_v2/previews/back_inside_direct.png"
+      ]
+    },
+    {
+      "file": "ai-rear-cover-detail.png",
+      "sha256": "f2369c343cece1902f12b2e6459867ec9662b48e2f2ac178b87ced0969d09323",
+      "prompt_summary": "Near-orthographic pale-gray studio visualization of the rear cover inside face; preserve the five-point silhouette, bottom V-shaped 100 mm tree opening, continuous available-perimeter ridge, six fixed tabs, and eight square vents.",
+      "generation_input_images": [
+        "snap_back_prism/continuous_ridge_back_v2/previews/back_inside_direct.png",
+        "snap_back_prism/continuous_ridge_back_v2/previews/fixed_tab_detail.png"
+      ]
+    }
+  ],
+  "photo_availability": "No user-supplied photographs were available as workspace files during this preparation. Existing exact model renders are retained separately as non-AI geometry views."
+}

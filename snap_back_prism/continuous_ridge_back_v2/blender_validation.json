@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "method": "Live Blender MCP: bmesh manifold checks and BVH nonadjacent triangle intersection candidate check",
+  "meshes": {
+    "back": {"boundary_edges": 0, "non_manifold_edges": 0, "volume_mm3": 25409.076991867605, "nonadjacent_triangle_intersection_candidates": 0},
+    "black": {"boundary_edges": 0, "non_manifold_edges": 0, "volume_mm3": 75372.78041286721, "nonadjacent_triangle_intersection_candidates": 0},
+    "white": {"boundary_edges": 0, "non_manifold_edges": 0, "volume_mm3": 5555.5651321623245, "nonadjacent_triangle_intersection_candidates": 0}
+  }
+}
