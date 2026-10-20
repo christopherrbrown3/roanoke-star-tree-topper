@@ -21,6 +21,8 @@
 
 The Roanoke Star is one of Virginia’s most recognizable night-time landmarks. This tree topper translates its layered neon silhouette into a carefully documented, print-in-place object: a dark structural star, three white backing bands, 130 individually outlined tube sections, and an integrated rear mount for a Christmas-tree leader.
 
+For the full story behind both versions, including the research, test prints, and design revisions, read [Recreating the Roanoke Star, one neon tube at a time](https://blog.christopherbrown.io/2026/10/20/recreating-the-roanoke-star/).
+
 ## Choose between two complete topper versions
 
 This repository contains two finished designs. **Original** and **Light-diffusing snap-back** are the two product versions; `spacing_v3` and `continuous_ridge_back_v2` are internal revision names for parts of the second version.
